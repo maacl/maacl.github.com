@@ -4,7 +4,7 @@
   <title><![CDATA[Category: contracts | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/contracts/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2013-09-21T19:29:12+02:00</updated>
+  <updated>2013-09-21T20:14:14+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -18,7 +18,10 @@
     <link href="http://www.spyfoos.com/blog/2013/09/14/flexible-contracts/"/>
     <updated>2013-09-14T12:00:00+02:00</updated>
     <id>http://www.spyfoos.com/blog/2013/09/14/flexible-contracts</id>
-    <content type="html"><![CDATA[<p>It was suggested to me to look into the concept of <a href="http://flexiblecontracts.com/">Flexible Contracts</a>, a new approach to contracting for agile it projects championed by Gabrielle Benefield who will be providing training in agile practices in connection with <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>.</p>
+    <content type="html"><![CDATA[<h4 id="/posts/20130914000000.markdown"></h4>
+
+
+<p>It was suggested to me to look into the concept of <a href="http://flexiblecontracts.com/">Flexible Contracts</a>, a new approach to contracting for agile it projects championed by Gabrielle Benefield who will be providing training in agile practices in connection with <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>.</p>
 
 <p>Flexible Contracts are born out of the observation that traditional contract models are a very poor fit for agile IT projects. This is hardly a novel observation, but Gabrielle&rsquo;s work (and that of her collaborators) distinguishes itself by actually having produced a practical alternative, which they have commendably licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">CC Attribution 3.0 Unported license</a>. Only the lite version &ndash; Flexlite 0.1 as it is designated &ndash; appears to be presently available, and can be accessed if you are willing to sign up to the Flexible Contracts mailing list <a href="http://flexiblecontracts.com/list/">here</a>.</p>
 
