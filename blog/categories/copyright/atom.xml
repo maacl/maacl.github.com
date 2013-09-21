@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: copyright | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/copyright/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2013-09-21T17:04:52+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[SAS vs World Programming - SAS' Vesion]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version/"/>
+    <updated>2010-07-29T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version</id>
+    <content type="html"><![CDATA[<p>SAS issued a <a href="http://www.sas.com/news/preleases/WPL.html">press release</a> today with its take on the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">recent decision</a> in the case between the two companies.</p>
+
+<p>While WPL’s <a href="http://teamwpc.co.uk/press/world_programming_secures_high_court_victory_against_SAS">press release</a> might have been s optimistic in its evaluation of the decision, SAS’ press release is a master piece of hypocrisy and highly tendentious. The headline:</p>
+
+<blockquote><p>“Court finds World Programming Ltd. Infringed on SAS Copyrights; refers case to European Court of Justice”</p></blockquote>
+
+<p>Technically this is wrong. The judge referred a number of key questions to the ECJ – not the case it self. More specifically the judge asked for a <a href="http://en.wikipedia.org/wiki/European_Court_of_Justice#References_for_a_preliminary_ruling">preliminary ruling</a> on 6 questions (<a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii):</p>
+
+<blockquote><p>“i) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect programming languages from being copied, I agree with him that this is a question on which guidance from the ECJ is required (see paragraphs 211-218 above).</p>
+
+<p>ii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect interfaces from being copied where this can be achieved without decompiling the object code, I consider this is also a question on which guidance from the ECJ is required (see paragraphs 219-227 above).</p>
+
+<p>iii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect the functions of the programs from being copied, and although his decision on that point was upheld by the Court of Appeal in <em>Nova</em>, I consider that this is also a question on which guidance from the ECJ is required (see paragraphs 228-238 above).</p>
+
+<p>…</p>
+
+<p>v) I consider that the reasoning which supports Pumfrey J’s interpretation of Article 1(2) of the Software Directive also applies to Article 2(a) of the Information Society Directive, but again this is a question on which guidance from the ECJ is required (see paragraphs 251-256 above).</p>
+
+<p>vi) On the assumption that Article 2(a) of the Information Society Directive is to be interpreted in the same manner as Article 1(2) of the Software Directive, WPL has not infringed SAS Institute’s copyright in the SAS Manuals by producing or testing WPS (see paragraphs 257-267 above).”</p></blockquote>
+
+<p>SAS completely neglects to mention that the judge is clearly prepared to find in favor of WPL in all these questions and cites English precedents in support of such a decision. He asks for the ECJs confirmation of his interpretation because the basis for the rules in English law is EU Directives (see here for the<a href="http://www.hmcourts-service.gov.uk/cms/801.htm"> practice directions </a>the court operates under).</p>
+
+<p>SAS goes on to state the following:</p>
+
+<blockquote><p>“The court also found that WPL acted outside the scope of its license agreement for SAS Learning Edition software by using that product to develop WPL’s World Programming System (WPS) software.”</p></blockquote>
+
+<p>What the judge actually said was this (my emphasis):</p>
+
+<blockquote><p>vii) WPL’s use of the SAS Learning Edition falls outside the scope of the terms of the relevant licences (see paragraphs 276-290 above).</p>
+
+<p>viii) The interpretation of Article 5(3) of the Software Directive is another question on which guidance from the ECJ is required (see paragraphs 291-311 and 314 above).</p>
+
+<p> <em>ix) On the interpretation of Article 5(3) which I favour, WPL’s use of the Learning Edition is within Article 5(3), and to the extent that the licence terms prevent this they are null and void, with the result that none of WPL’s acts complained of was a breach of contract or an infringement of copyright except perhaps one (see paragraphs 313-315 above).</em></p></blockquote>
+
+<p>Also on this issue SAS chooses not to disclose that the judge is prepared to find in favor of WPL.</p>
+
+<p>Accusing WPL of spinning the courts decision and then applying tornado class spin to the decision yourself is just pathetic.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SAS vs. World Programming]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/23/sas-vs-world-programming/"/>
+    <updated>2010-07-23T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/23/sas-vs-world-programming</id>
+    <content type="html"><![CDATA[<p>UPDATE: I did a follow-up post on the SAS Press Release <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a></p>
+
+<p>So the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">decision</a> in “SAS Institute Inc v World Programming Ltd” has been published and it is in favor of WPL on all counts, except that the judge finds that WPL – against it’s own policy – copied certain language from SAS’ manuals into its own manuals.</p>
+
+<p>Key questions pertaining to almost all the other claims will be submitted to the ECJ for confirmation of the judges interpretation of the law(specifically Articles 1(2) and 5(3) of the <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">Software Directive</a> and Article 2(a) of the <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32001L0029:EN:HTML">Information Society Directive</a>) (see below).</p>
+
+<p>If everything holds up this is potentially a huge win for competition in the software industry.The decision means that can re-implement the functionality of other software and reference that software and its documentation in the process, as long as you do not copy any source code or documentation. The judge (who appears to be quite technically savvy) analyses in detail how the SAS language is constructed. SAS appears to argue that the PROCS steps in the SAS Language is not a programming language, but in fact a computer program in itself. The SAS expert Dr. Ivey states the following on the matter:</p>
+
+<p>&gt; the SAS Language was a domain specific computer language with many of the attributes of a command language, rather than a programming language</p>
+
+<p>It is not clear to me exactly what SAS was hoping to achieve with this line of reasoning (<a href="http://news.ycombinator.com/item?id=1545404">perhaps they were trying to escape a suspected non-copyrightability of programming languages</a>) but whatever it was it did not work as the judge slightly sarcastically <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para56">finds</a> that:</p>
+
+<p>&gt; In my judgment the SAS Language is a programming language. I am comforted by the fact that this assessment coincides not only with SAS Institute’s own assessment in paragraph 6 of its Particulars of Claim and in its literature, but also with that of the anonymous author of the entry for “SAS language” in Wikipedia (as last modified on 25 April 2010), which states:
+&gt;
+&gt; “… SAS can be considered a general programming language, though it serves largely as a database programming language and a language with a wide variety of specialized analytic and graphic procedures.”</p>
+
+<p>The judge also analyses whether the <em>functionality </em>of a computer program (not the source code) is itself protectable by copyright and <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para236">finds</a> that:</p>
+
+<p>&gt; Accordingly, I consider that the functionality of a computer program falls on the wrong side of the line drawn by Article 1(2) of the Software Directive, Article 9(2) of TRIPS and Article 2 of the WIPO Copyright Treaty.</p>
+
+<p>So the functionality of a computer program is not protectable, which is not too surprising, but as the question in the judges opinion is not _<a href="http://www.translegal.com/legal-english-dictionary/acte-clair">acte clair_</a> it is submitted together with 5 other questions (<a href="http:/www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii)) to the ECJ for guidance. Among these is also the question of whether a programming language as such is protectable by copyright. The judge finds that this is probably not the case, but appears less certain on this question than the others.</p>
+
+<p>It will be really interesting to see if this will result alternative vendors deciding to challenge other dominant software products, by producing compatible solutions that release the customers from lock-in and introduce effective competition.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[An Acceptable EULA?]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula/"/>
+    <updated>2010-06-04T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula</id>
+    <content type="html"><![CDATA[<p>Is there such a thing? Until today I did not think so, but after having
+watched Mixergy&rsquo;s
+<a href="/web/20100907205218/http://mixergy.com/balsamiq-peldi-guilizzoni-interview/">interview</a>
+with Balsamiq’s Giacomo “Peldi” Guilizzoni, I was optimistic that I
+might have finally found one. Check Balsamiq’s EULA out
+<a href="/web/20100907205218/http://www.balsamiq.com/images/BalsamiqEula.pdf">here</a>.
+Peldi mentions in the interview that a helpful customer in-house counsel
+gave him some great feedback that helped improve the license. To
+whatever she told him, I would add the following:</p>
+
+<h4>Preamble</h4>
+
+<p>Don’t use “represents and warrants” use only “represents”. The form is
+needless legalese and part of the reason why people hate lawyers. If you
+don’t agree read
+<a href="/web/20100907205218/http://www.adamsdrafting.com/2009/09/18/rs-and-ws-once-more-with-feeling/">this</a>
+– then go change it.</p>
+
+<h4>Definitions</h4>
+
+<p>“Authorized Users” and “Authorized User” – makes no sense that the
+plural form would have a completely different meaning than the singular.
+“Authorized Users” is never used in the EULA. This might make sense when
+read together with the Quote/Receipt/Invoice but I doubt it. The
+definitions of “Authorized Machine” and “Authorized Server Node” do not
+appear to deal well with virtual environments.</p>
+
+<h4>Section 3 Grant of License</h4>
+
+<p>The license granted is “irrevocable” but at he same time terminable by
+Balsamiq as per section 12. This appears inconsistent. “(except pursuant
+to Clause 12 below)” should be added after “irrevocable”.</p>
+
+<h4>Section 4 No Warranty</h4>
+
+<p>Excluding all warranties does not strike me as compatible Balsamiqs
+mission to produce high quality software. You can’t claim to aim for
+excellence in everything you do, and the refuse to back it up – that’s
+simply not credible. On the other hand warranties provided for goods are
+not appropriate for software, as these are calibrated for defects that
+occur in individual instances (copies) of the product. I would suggest a
+warranty that better correspond to the apparently fanatical customer
+service Balsamiq provides. This does no mean warranting to fix bugs
+within a certain timeframe, but it does mean warranting a meaningful
+response to reported bugs etc. If you are doing it already it such a
+warranty is essential free, if you make sure that the customers remedies
+if you fail are manageable. If such remedies for instance only apply to
+the (first) reporter of the bug, you contain the effect of the warranty
+from spreading to all customers.</p>
+
+<h4>Section 6.1 Software Maintenance – For Plug-in Versions</h4>
+
+<p>Excellent to see inclusion of a reasonable price-escalation clause for
+Software Maintenance. This is something that I have had to negotiate
+many times and which any prudent licensee should always remember. You
+don’t want to be
+<a href="/web/20100907205218/http://www.zdnet.com/blog/howlett/sap-pulls-the-trigger-on-higher-support-costs/442">treated</a>
+like SAP’s customers, do you?</p>
+
+<h4>Section 9 Investigation of Unauthorized Use and Distribution</h4>
+
+<p>This is a very pragmatic alternative to audit rights which especially a
+company the size of Balsamiq would have very little use for. The
+fairness of allocating the cost of producing the certificate to the
+licensee should be considered, since this might exceed the license fee
+by a factor of many in some cases. I would consider some kind of
+compensation (free maintenance?) to the customer if a request for a
+certificate is made and this is provided, as this is would indicate that
+Balsamiqs suspicion was not well-founded.</p>
+
+<h4>Section 10 (a) Licensee’s Restrictions</h4>
+
+<p>Very common provision which is also very unenforceable in the EU if the
+motif for the reverse engineering is a desire to “achieve the
+interoperability of an independently created computer program with other
+programs” (thanks to art. 5 and 6 of this
+EU <a href="/web/20100907205218/http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">directive</a>).</p>
+
+<h4>Section 10 (b) Licensee’s Restrictions</h4>
+
+<p>Appears superfluous. How would the customer ever unilaterally be able to
+vary the “Authorized Use”? That said there might be a technicality in
+California law that makes it prudent to include this.</p>
+
+<h4>Section 10 (d) and (e) Licensee’s Restrictions</h4>
+
+<p>WTF! I can’t refer to Balsamiq’s name or do anything that has a
+“material and adverse effect on Balsamiq’s” interests. I am glad that I
+did not license Balsamiq’s software before writing this post. How can
+you promote Balsamiq as an open organisation in continuous dialog with
+its customers, and then muffle the same audience with your EULA?</p>
+
+<h4>Section 12 – Termination</h4>
+
+<p>The destruction of all copies of the software is a practical
+impossibility in many enterprise environments due to the back-up
+strategies employed. Since this will only become a requirement in case
+of a breach it might be justified nonetheless, but a more balanced
+alternative might be to require the destruction of all “readily usable
+copies” of the software or similar.</p>
+
+<h4>Section 13 – Infringement Indemnification</h4>
+
+<p>For the software in question and taking into account the size of the
+vendor (Balsamiq) this is a very reasonable clause, and it is a wise
+move to include indemnification if you want to have any hope selling
+your software to enterprise customers.</p>
+
+<h4>Section 14 – Limitation of Liability</h4>
+
+<p>Good to see that the indemnification obligations are exempted from the
+limitation of liability.</p>
+
+<h4>Section 16 – Open Source Code</h4>
+
+<p>For Balsamiq’s present product I wouldn’t worry much about the “viral”
+nature of the GPL and other similar licenses, which is clearly what this
+section is meant to address, but the section clearly does no harm
+either. If the software was meant for combination with the customer’s
+code or other software and subsequent distribution, I would be more
+interested in the list of of open source products/licenses in Exhibit A
+as this would enable me to assess any challenges related hereto.</p>
+
+<h4>Section 17 – Publicity Rights</h4>
+
+<p>This section solves a very common problem in a fairly practical way (the
+customer can opt out of Balsamiqs right to use the customer for
+publicity purpose prior to or any time after purchase) but a better more
+honest and straight forward solution, would be to permit the customer to
+opt out via the web form used to purchase the product.</p>
+
+<h4>Section 24 – Notices</h4>
+
+<p>While not critical why appear unreasonable by biasing this section in
+Balsamiqs favour? On Export Control (especially US) you really want to
+provide the relevant export control classification codes if you expect
+any one to comply with the rules. In general you want to try to avoid
+having your software subject to US export control rules as these are
+absolutely not trivial.</p>
+
+<p>On balance Balsamiq’s EULA is above average but still suffers from a few
+weakness as outlined above. Most of these can be fixed without exposing
+Balsamiq to any liability that is unmanageable.</p>
+
+<p>DISCLAIMER: Above is not legal advice bla, bla, bla.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: zed_shaw | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/zed-shaw/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2013-09-21T17:04:52+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Contracts and Game Mechanics]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics/"/>
+    <updated>2010-05-07T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics</id>
+    <content type="html"><![CDATA[<p>Game Mechanics (see<a href="http://en.wikipedia.org/wiki/Game_mechanics"> def</a>, great intro <a href="http://www.youtube.com/watch?v=ihUt-163gZI">video</a>)</p>
+
+<h2>How are contractual game mechanics different from liquidated damages / service credits?</h2>
+
+<p>Liquidated damages / service credits appear to me a subset of contractual game mechanics. Contractual game mechanics would also include non monetary and indirect monetary rewards. These could be classical rewards like points, badges etc. but could also include rights of potential monetary value. Intuitively I don&rsquo;t think the classical rewards would have much effect in a contractual setting as they depend on individual psychological mechanisms which would be subdued by the goals of the commercial entity that is party to the contract. If the latter category more interesting especially if applied across contracts  with competing vendors.</p>
+
+<h2>Can contractual game mechanics be applied across contracts?</h2>
+
+<p>Imagine three vendors of for example systems operations services. The customer has near identical contracts with the three vendors (there are ways to deal any differences, which I will get back to below), including the service catalog. Now imagine that the contracts have built-in game mechanics that rewards/punishes the vendors performance under the contract. High up time gives you points &ndash; low the opposite. Timely reporting 3 months in a row gives you a badge etc. etc. Estimates of time and material tasks within 5% of of actual usage gives you a golden star. The customer now tenders the operations and implementation of a new system among the different vendors. This being 2010 (or later) this is obviously done using an e-auction. But here is the trick &ndash; the three vendors are handicapped in the auction in accordance with the historic points, badges and golden stars. This handicap could be applied on top of a base handicap reflecting any permanent differences between the vendor contracts. Ideally the handicaps are transparent across vendors so there is a continuous incentive to offer better terms and improve performance.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Zed Shaw On Programming]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/04/30/zed-shaw-on-programming/"/>
+    <updated>2010-04-30T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/04/30/zed-shaw-on-programming</id>
+    <content type="html"><![CDATA[<p>Zed writes the following in his work-in-progress book on programming in Python:</p>
+
+<blockquote><p>Programming as a profession is only moderately interesting. It can be a good job, but if you want to make about thesame money and be happier you could actually just go run a fast food joint. You are much better off using code as your secret weapon in another profession.</p>
+
+<p>People who can code in the world of technology companies are a dime a dozen and get no respect. People who can code in biology, medicine, government, sociology, physics, history, and mathematics are respected and can do amazing things to advance those disciplines.</p></blockquote>
+
+<p>I am not sure that even Zed realizes how profound a truth the above is.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,114 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>The Limiting Factor</title>
-  <meta name="author" content="Martin Clausen">
-
-  
-  <meta name="description" content="It was suggested to me to look into the concept of Flexible Contracts, a new approach to contracting for agile it projects championed by Gabrielle &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://www.spyfoos.com">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="The Limiting Factor" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-44225157-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">The Limiting Factor</a></h1>
-  
-    <h2>- semi-structured line noise.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:www.spyfoos.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2013-09-21T17:04:52+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2013/09/14/flexible-contracts/">Flexible Contracts</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2013-09-14T12:00:00+02:00" pubdate data-updated="true">Sep 14<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/09/14/flexible-contracts/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>It was suggested to me to look into the concept of <a href="http://flexiblecontracts.com/">Flexible Contracts</a>, a new approach to contracting for agile it projects championed by Gabrielle Benefield who will be providing training in agile practices in connection with <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>.</p>
+  <entry>
+    <title type="html"><![CDATA[Flexible Contracts]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/09/14/flexible-contracts/"/>
+    <updated>2013-09-14T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/09/14/flexible-contracts</id>
+    <content type="html"><![CDATA[<p>It was suggested to me to look into the concept of <a href="http://flexiblecontracts.com/">Flexible Contracts</a>, a new approach to contracting for agile it projects championed by Gabrielle Benefield who will be providing training in agile practices in connection with <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>.</p>
 
 <p>Flexible Contracts are born out of the observation that traditional contract models are a very poor fit for agile IT projects. This is hardly a novel observation, but Gabrielle&rsquo;s work (and that of her collaborators) distinguishes itself by actually having produced a practical alternative, which they have commendably licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">CC Attribution 3.0 Unported license</a>. Only the lite version &ndash; Flexlite 0.1 as it is designated &ndash; appears to be presently available, and can be accessed if you are willing to sign up to the Flexible Contracts mailing list <a href="http://flexiblecontracts.com/list/">here</a>.</p>
 
@@ -159,44 +69,15 @@
 <p><a href="https://delicious.com/flatspace/endeavours">My delicious links about &ldquo;best endeavours&rdquo;</a></p>
 
 <p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.Endeavours</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/09/13/goto-aarhus-2013-clojurescript/">GOTO Aarhus 2013 - ClojureScript</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-13T12:00:00+02:00" pubdate data-updated="true">Sep 13<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/09/13/goto-aarhus-2013-clojurescript/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I put together my first draft itenary for <a href="http://gotocon.com/aarhus-2013/">GOTO Aarhus 2013</a>. You can see it <a href="http://gotocon.com/aarhus-2013/schedule/my-schedule.jsp#myschedlink1">here</a>.</p>
+  <entry>
+    <title type="html"><![CDATA[GOTO Aarhus 2013 - ClojureScript]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript/"/>
+    <updated>2013-09-13T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript</id>
+    <content type="html"><![CDATA[<p>I put together my first draft itenary for <a href="http://gotocon.com/aarhus-2013/">GOTO Aarhus 2013</a>. You can see it <a href="http://gotocon.com/aarhus-2013/schedule/my-schedule.jsp#myschedlink1">here</a>.</p>
 
 <p>Fortunately the programme did not pose too many dilemma&rsquo;s for me to resolve, although choosing between &ldquo;Obstacles And Patterns To Maximize Flow In IT Operations&rdquo; and &ldquo;Lambdas in Java: A peek under the hood&rdquo; on Tuesday morning was a bit difficult.</p>
 
@@ -258,44 +139,15 @@
 <p><a href="https://github.com/clojure/clojurescript">ClojureScript</a> compiles Clojure into Javascript which is guarenteed to be digestable by the <a href="https://developers.google.com/closure/">Goolge Closure</a> compiler. While the ClojureScript implementation of core.logic is somewhat limited compared to the Clojure based one, you can still do some interesting things with it. If you are not familiar with ClojureScript you might want to check <a href="https://github.com/magomimmo/modern-cljs">this tutorial</a> out. Some interesting examples of using canvas / SVG with ClojureScript, can be found <a href="https://github.com/rm-hull/programming-enchiladas#examples">here</a></p>
 
 <p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/29/sas-vs-world-programming-sas-version/">SAS vs World Programming - SAS&#8217; Vesion</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-29T12:00:00+02:00" pubdate data-updated="true">Jul 29<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/07/29/sas-vs-world-programming-sas-version/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>SAS issued a <a href="http://www.sas.com/news/preleases/WPL.html">press release</a> today with its take on the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">recent decision</a> in the case between the two companies.</p>
+  <entry>
+    <title type="html"><![CDATA[SAS vs World Programming - SAS' Vesion]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version/"/>
+    <updated>2010-07-29T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version</id>
+    <content type="html"><![CDATA[<p>SAS issued a <a href="http://www.sas.com/news/preleases/WPL.html">press release</a> today with its take on the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">recent decision</a> in the case between the two companies.</p>
 
 <p>While WPL’s <a href="http://teamwpc.co.uk/press/world_programming_secures_high_court_victory_against_SAS">press release</a> might have been s optimistic in its evaluation of the decision, SAS’ press release is a master piece of hypocrisy and highly tendentious. The headline:</p>
 
@@ -332,86 +184,28 @@
 <p>Also on this issue SAS chooses not to disclose that the judge is prepared to find in favor of WPL.</p>
 
 <p>Accusing WPL of spinning the courts decision and then applying tornado class spin to the decision yourself is just pathetic.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/">Clojure, Jetty 7 and WebSockets</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-28T12:00:00+02:00" pubdate data-updated="true">Jul 28<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I found this <a href="http://gist.github.com/281490">gist</a> by Chris McDevitt&nbsp;which is a simple chat server and browser client that uses Jetty 7, Clojure and WebSockets.</p>
+  <entry>
+    <title type="html"><![CDATA[Clojure, Jetty 7 and WebSockets]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/28/clojure-jetty-7-and-websockets/"/>
+    <updated>2010-07-28T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/28/clojure-jetty-7-and-websockets</id>
+    <content type="html"><![CDATA[<p>I found this <a href="http://gist.github.com/281490">gist</a> by Chris McDevitt&nbsp;which is a simple chat server and browser client that uses Jetty 7, Clojure and WebSockets.</p>
 
 <p>I turned out to be quite a hassle to get it running so I thought I would document it here so others might save some time.</p>
 
 <p>I have create a <a href="http://github.com/maacl/websocket-test">project</a> on github that includes all the dependencies. I run it in Emacs using swank-clojure-project. The two last forms start the two servers – one is the websocket chat server, the other just serves the index.html file (this is necessary for the web_socket.js&nbsp; to work). I have only been able to make this work in browsers with native websocket support (Chrome and Safari). If anybody can figure out what goes wrong in the other browsers (e.g. Firefox) let me know, and I will update.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/23/sas-vs-world-programming/">SAS vs. World Programming</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-23T12:00:00+02:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2010</time>
-        
-         | <a href="/blog/2010/07/23/sas-vs-world-programming/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>UPDATE: I did a follow-up post on the SAS Press Release <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a></p>
+  <entry>
+    <title type="html"><![CDATA[SAS vs. World Programming]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/23/sas-vs-world-programming/"/>
+    <updated>2010-07-23T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/23/sas-vs-world-programming</id>
+    <content type="html"><![CDATA[<p>UPDATE: I did a follow-up post on the SAS Press Release <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a></p>
 
 <p>So the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">decision</a> in “SAS Institute Inc v World Programming Ltd” has been published and it is in favor of WPL on all counts, except that the judge finds that WPL – against it’s own policy – copied certain language from SAS’ manuals into its own manuals.</p>
 
@@ -434,89 +228,31 @@
 <p>So the functionality of a computer program is not protectable, which is not too surprising, but as the question in the judges opinion is not _<a href="http://www.translegal.com/legal-english-dictionary/acte-clair">acte clair_</a> it is submitted together with 5 other questions (<a href="http:/www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii)) to the ECJ for guidance. Among these is also the question of whether a programming language as such is protectable by copyright. The judge finds that this is probably not the case, but appears less certain on this question than the others.</p>
 
 <p>It will be really interesting to see if this will result alternative vendors deciding to challenge other dominant software products, by producing compatible solutions that release the customers from lock-in and introduce effective competition.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/06/09/export-control-and-open-source/">Open Source and Export Control</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-06-09T12:00:00+02:00" pubdate data-updated="true">Jun 9<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/06/09/export-control-and-open-source/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Ref my comments on export control rules in my previous post, it looks like these are now impacting open source in a major way. Apparently SourceForge in an effort to comply with US export control rules (specifically countries covered by sanctions administrated by <a href="http://www.ustreas.gov/offices/enforcement/ofac/">OFAC</a>) have blocked all users from Cuba, Iran, North Korea, Sudan, and Syria. <a href="http://notepad-plus-plus.org/">NotePad++</a> appears to be the first project to withdraw from SourceForge in protest.</p>
+  <entry>
+    <title type="html"><![CDATA[Open Source and Export Control]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/06/09/export-control-and-open-source/"/>
+    <updated>2010-06-09T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/06/09/export-control-and-open-source</id>
+    <content type="html"><![CDATA[<p>Ref my comments on export control rules in my previous post, it looks like these are now impacting open source in a major way. Apparently SourceForge in an effort to comply with US export control rules (specifically countries covered by sanctions administrated by <a href="http://www.ustreas.gov/offices/enforcement/ofac/">OFAC</a>) have blocked all users from Cuba, Iran, North Korea, Sudan, and Syria. <a href="http://notepad-plus-plus.org/">NotePad++</a> appears to be the first project to withdraw from SourceForge in protest.</p>
 
 <p>UPDATE: Apparently SourceForge has now made the blocking of users from sanctioned countries <a href="http://sourceforge.net/blog/some-good-news-SourceForge-removes-blanket-blocking/">optional</a>. This leaves the assessment of whether or not a project is subject to the rules up to the project owner. As export control is quite an esoteric topic some links to guidance on the applicability of US export control rules would probably have been a good idea, but SourceForge’s consel has probably counseled against that for liability reasons.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/06/04/an-acceptable-eula/">An Acceptable EULA?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-06-04T12:00:00+02:00" pubdate data-updated="true">Jun 4<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/06/04/an-acceptable-eula/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Is there such a thing? Until today I did not think so, but after having
+  <entry>
+    <title type="html"><![CDATA[An Acceptable EULA?]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula/"/>
+    <updated>2010-06-04T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula</id>
+    <content type="html"><![CDATA[<p>Is there such a thing? Until today I did not think so, but after having
 watched Mixergy&rsquo;s
-<a href="/web/20100907205218/http://mixergy.com/balsamiq-peldi-guilizzoni-interview/">interview</a>
+<a href="http://www.spyfoos.com/web/20100907205218/http://mixergy.com/balsamiq-peldi-guilizzoni-interview/">interview</a>
 with Balsamiq’s Giacomo “Peldi” Guilizzoni, I was optimistic that I
 might have finally found one. Check Balsamiq’s EULA out
-<a href="/web/20100907205218/http://www.balsamiq.com/images/BalsamiqEula.pdf">here</a>.
+<a href="http://www.spyfoos.com/web/20100907205218/http://www.balsamiq.com/images/BalsamiqEula.pdf">here</a>.
 Peldi mentions in the interview that a helpful customer in-house counsel
 gave him some great feedback that helped improve the license. To
 whatever she told him, I would add the following:</p>
@@ -526,7 +262,7 @@ whatever she told him, I would add the following:</p>
 <p>Don’t use “represents and warrants” use only “represents”. The form is
 needless legalese and part of the reason why people hate lawyers. If you
 don’t agree read
-<a href="/web/20100907205218/http://www.adamsdrafting.com/2009/09/18/rs-and-ws-once-more-with-feeling/">this</a>
+<a href="http://www.spyfoos.com/web/20100907205218/http://www.adamsdrafting.com/2009/09/18/rs-and-ws-once-more-with-feeling/">this</a>
 – then go change it.</p>
 
 <h4>Definitions</h4>
@@ -567,7 +303,7 @@ from spreading to all customers.</p>
 Software Maintenance. This is something that I have had to negotiate
 many times and which any prudent licensee should always remember. You
 don’t want to be
-<a href="/web/20100907205218/http://www.zdnet.com/blog/howlett/sap-pulls-the-trigger-on-higher-support-costs/442">treated</a>
+<a href="http://www.spyfoos.com/web/20100907205218/http://www.zdnet.com/blog/howlett/sap-pulls-the-trigger-on-higher-support-costs/442">treated</a>
 like SAP’s customers, do you?</p>
 
 <h4>Section 9 Investigation of Unauthorized Use and Distribution</h4>
@@ -587,7 +323,7 @@ Balsamiqs suspicion was not well-founded.</p>
 motif for the reverse engineering is a desire to “achieve the
 interoperability of an independently created computer program with other
 programs” (thanks to art. 5 and 6 of this
-EU <a href="/web/20100907205218/http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">directive</a>).</p>
+EU <a href="http://www.spyfoos.com/web/20100907205218/http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">directive</a>).</p>
 
 <h4>Section 10 (b) Licensee’s Restrictions</h4>
 
@@ -656,44 +392,15 @@ weakness as outlined above. Most of these can be fixed without exposing
 Balsamiq to any liability that is unmanageable.</p>
 
 <p>DISCLAIMER: Above is not legal advice bla, bla, bla.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/05/07/contracts-and-game-mechanics/">Contracts and Game Mechanics</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-07T12:00:00+02:00" pubdate data-updated="true">May 7<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/05/07/contracts-and-game-mechanics/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Game Mechanics (see<a href="http://en.wikipedia.org/wiki/Game_mechanics"> def</a>, great intro <a href="http://www.youtube.com/watch?v=ihUt-163gZI">video</a>)</p>
+  <entry>
+    <title type="html"><![CDATA[Contracts and Game Mechanics]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics/"/>
+    <updated>2010-05-07T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics</id>
+    <content type="html"><![CDATA[<p>Game Mechanics (see<a href="http://en.wikipedia.org/wiki/Game_mechanics"> def</a>, great intro <a href="http://www.youtube.com/watch?v=ihUt-163gZI">video</a>)</p>
 
 <h2>How are contractual game mechanics different from liquidated damages / service credits?</h2>
 
@@ -702,187 +409,22 @@ Balsamiq to any liability that is unmanageable.</p>
 <h2>Can contractual game mechanics be applied across contracts?</h2>
 
 <p>Imagine three vendors of for example systems operations services. The customer has near identical contracts with the three vendors (there are ways to deal any differences, which I will get back to below), including the service catalog. Now imagine that the contracts have built-in game mechanics that rewards/punishes the vendors performance under the contract. High up time gives you points &ndash; low the opposite. Timely reporting 3 months in a row gives you a badge etc. etc. Estimates of time and material tasks within 5% of of actual usage gives you a golden star. The customer now tenders the operations and implementation of a new system among the different vendors. This being 2010 (or later) this is obviously done using an e-auction. But here is the trick &ndash; the three vendors are handicapped in the auction in accordance with the historic points, badges and golden stars. This handicap could be applied on top of a base handicap reflecting any permanent differences between the vendor contracts. Ideally the handicaps are transparent across vendors so there is a continuous incentive to offer better terms and improve performance.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/04/30/zed-shaw-on-programming/">Zed Shaw on Programming</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-04-30T12:00:00+02:00" pubdate data-updated="true">Apr 30<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/04/30/zed-shaw-on-programming/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Zed writes the following in his work-in-progress book on programming in Python:</p>
+  <entry>
+    <title type="html"><![CDATA[Zed Shaw On Programming]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/04/30/zed-shaw-on-programming/"/>
+    <updated>2010-04-30T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/04/30/zed-shaw-on-programming</id>
+    <content type="html"><![CDATA[<p>Zed writes the following in his work-in-progress book on programming in Python:</p>
 
 <blockquote><p>Programming as a profession is only moderately interesting. It can be a good job, but if you want to make about thesame money and be happier you could actually just go run a fast food joint. You are much better off using code as your secret weapon in another profession.</p>
 
 <p>People who can code in the world of technology companies are a dime a dozen and get no respect. People who can code in biology, medicine, government, sociology, physics, history, and mathematics are respected and can do amazing things to advance those disciplines.</p></blockquote>
 
 <p>I am not sure that even Zed realizes how profound a truth the above is.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/09/14/flexible-contracts/">Flexible Contracts</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/09/13/goto-aarhus-2013-clojurescript/">GOTO Aarhus 2013 - ClojureScript</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/07/29/sas-vs-world-programming-sas-version/">SAS vs World Programming - SAS&#8217; Vesion</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/">Clojure, Jetty 7 and WebSockets</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/07/23/sas-vs-world-programming/">SAS vs. World Programming</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/maacl">@maacl</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'maacl',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/116274805578840683959?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Martin Clausen -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'maacl';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>GOTO Aarhus 2013 - ClojureScript - The Limiting Factor</title>
+  <meta name="author" content="Martin Clausen">
+
+  
+  <meta name="description" content="I put together my first draft itenary for GOTO Aarhus 2013. You can see it here. Fortunately the programme did not pose too many dilemma&rsquo;s for &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="The Limiting Factor" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44225157-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">The Limiting Factor</a></h1>
+  
+    <h2>- semi-structured line noise.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.spyfoos.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">GOTO Aarhus 2013 - ClojureScript</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-13T12:00:00+02:00" pubdate data-updated="true">Sep 13<span>th</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I put together my first draft itenary for <a href="http://gotocon.com/aarhus-2013/">GOTO Aarhus 2013</a>. You can see it <a href="http://gotocon.com/aarhus-2013/schedule/my-schedule.jsp#myschedlink1">here</a>.</p>
+
+<p>Fortunately the programme did not pose too many dilemma&rsquo;s for me to resolve, although choosing between &ldquo;Obstacles And Patterns To Maximize Flow In IT Operations&rdquo; and &ldquo;Lambdas in Java: A peek under the hood&rdquo; on Tuesday morning was a bit difficult.</p>
+
+<p>I was especially pleased to see that <a href="http://swannodette.github.io/">David Nolen</a> is giving a talk. David is fairly prolific in the <a href="http://clojure.org/">Clojure</a> community. He is the driving force behind core.logic and a significant contributor to <a href="https://github.com/clojure/clojurescript">ClojureScript</a>. <a href="https://github.com/clojure/core.logic">Core.logic</a> is a implementation of miniKaren and provides robust logic programming facilities in Clojure and <a href="https://github.com/clojure/clojurescript">ClojureScript</a>. As an example of how concise logic programming can be please see below Sudoku solver by David Nolen.</p>
+
+<p>;; based on core.logic 0.8-alpha2 or core.logic master branch</p>
+
+<pre><code>(ns sudoku
+    (:refer-clojure :exclude [==])
+        (:use clojure.core.logic))
+
+(defn get-square [rows x y]
+    (for [x (range x (+ x 3))
+          y (range y (+ y 3))]
+              (get-in rows [x y])))
+
+(defn init [vars hints]
+    (if (seq vars)
+        (let [hint (first hints)]
+            (all
+                (if-not (zero? hint)
+                    (== (first vars) hint)
+                        succeed)
+                            (init (next vars) (next hints))))
+                                succeed))
+
+(defn sudokufd [hints]
+    (let [vars (repeatedly 81 lvar)
+          rows (- vars (partition 9) (map vec) (into []))
+          cols (apply map vector rows)
+          sqs  (for [x (range 0 9 3)
+                     y (range 0 9 3)]
+                     (get-square rows x y))]
+                (run 1 [q]
+                    (== q vars)
+                    (everyg #(infd % (domain 1 2 3 4 5 6 7 8 9)) vars)
+                    (init vars hints)
+                    (everyg distinctfd rows)
+                    (everyg distinctfd cols)
+                    (everyg distinctfd sqs))))
+
+;; ====
+
+(comment
+(sudokufd
+    [0 0 3  0 2 0  6 0 0
+     9 0 0  3 0 5  0 0 1
+     0 0 1  8 0 6  4 0 0
+     0 0 8  1 0 2  9 0 0
+     7 0 0  0 0 0  0 0 8
+     0 0 6  7 0 8  2 0 0
+     0 0 2  6 0 9  5 0 0
+     8 0 0  2 0 3  0 0 9
+     0 0 5  0 1 0  3 0 0]))
+</code></pre>
+
+<p><a href="https://gist.github.com/swannodette/3217582#file-gistfile1-clj">gist</a></p>
+
+<p><a href="https://github.com/clojure/clojurescript">ClojureScript</a> compiles Clojure into Javascript which is guarenteed to be digestable by the <a href="https://developers.google.com/closure/">Goolge Closure</a> compiler. While the ClojureScript implementation of core.logic is somewhat limited compared to the Clojure based one, you can still do some interesting things with it. If you are not familiar with ClojureScript you might want to check <a href="https://github.com/magomimmo/modern-cljs">this tutorial</a> out. Some interesting examples of using canvas / SVG with ClojureScript, can be found <a href="https://github.com/rm-hull/programming-enchiladas#examples">here</a></p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Martin Clausen</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-13T12:00:00+02:00" pubdate data-updated="true">Sep 13<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/clojurescript/'>clojurescript</a>, <a class='category' href='/blog/categories/goto/'>goto</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript/" data-via="" data-counturl="http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2010/07/29/sas-vs-world-programming-sas-version/" title="Previous Post: SAS vs World Programming - SAS' Vesion">&laquo; SAS vs World Programming - SAS' Vesion</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/09/14/flexible-contracts/" title="Next Post: Flexible Contracts">Flexible Contracts &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/flexible-contracts/">Flexible Contracts</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/13/goto-aarhus-2013-clojurescript/">GOTO Aarhus 2013 - ClojureScript</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/07/29/sas-vs-world-programming-sas-version/">SAS vs World Programming - SAS' Vesion</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/">Clojure, Jetty 7 and WebSockets</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/07/23/sas-vs-world-programming/">SAS vs. World Programming</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/maacl">@maacl</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'maacl',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116274805578840683959?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Martin Clausen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'maacl';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript/';
+        var disqus_url = 'http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
