@@ -4,7 +4,7 @@
   <title><![CDATA[The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2013-09-21T20:14:14+02:00</updated>
+  <updated>2013-09-21T22:32:59+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -142,6 +142,157 @@
 <p><a href="https://github.com/clojure/clojurescript">ClojureScript</a> compiles Clojure into Javascript which is guarenteed to be digestable by the <a href="https://developers.google.com/closure/">Goolge Closure</a> compiler. While the ClojureScript implementation of core.logic is somewhat limited compared to the Clojure based one, you can still do some interesting things with it. If you are not familiar with ClojureScript you might want to check <a href="https://github.com/magomimmo/modern-cljs">this tutorial</a> out. Some interesting examples of using canvas / SVG with ClojureScript, can be found <a href="https://github.com/rm-hull/programming-enchiladas#examples">here</a></p>
 
 <p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle vs Google - Implementing the JVM Specification]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification/"/>
+    <updated>2013-08-24T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification</id>
+    <content type="html"><![CDATA[<p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
+
+<p>For context Oracle in the complaint defines Android as:</p>
+
+<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
+
+<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
+
+<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
+
+<p>Would the analysis under US copyright law be the same?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SAS vs. World Programming – Opinion of the Advocate General]]></title>
+    <link href="http://www.spyfoos.com/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/"/>
+    <updated>2011-11-29T12:00:00+01:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general</id>
+    <content type="html"><![CDATA[<p>So the Advocate General to the ECJ has submitted its <a href="http://curia.europa.eu/jurisp/cgi-bin/form.pl?lang=en&amp;amp;jurcdj=jurcdj&amp;amp;newform=newform&amp;amp;docj=docj&amp;amp;docop=docop&amp;amp;docnoj=docnoj&amp;amp;typeord=ALLTYP&amp;amp;numaff=&amp;amp;ddatefs=22&amp;amp;mdatefs=11&amp;amp;ydatefs=2011&amp;amp;ddatefe=29&amp;amp;mdatefe=11&amp;amp;ydatefe=2011&amp;amp;nomusuel=&amp;amp;domaine=&amp;amp;mots=&amp;amp;resmax=100&amp;amp;Submit=Rechercher">opinion</a> to the Court on the questions submitted by the High Court of Justice of England and Wales in the SAS vs World Programming case that i wrote about <a href="http://www.spyfoos.com/index.php/2010/07/23/sas-vs-world-programming/">here</a> and <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a>.</p>
+
+<p>The Advocate concludes the following:</p>
+
+<blockquote><p>(1)</p>
+
+<p>Article 1(2) of Council Directive 91/250/EEC of 14 May 1991 on the legal protection of computer programs is to be interpreted as meaning that the functionalities of a computer program and the programming language are not eligible, as such, for copyright protection. It will be for the national court to examine whether, in reproducing these functionalities in its computer program, the author of the program has reproduced a substantial part of the elements of the first program which are the expression of the author’s own intellectual creation.</p>
+
+<p>(2)</p>
+
+<p>Articles 1(2) and 6 of Directive 91/250 are to be interpreted as meaning that it is not regarded as an act subject to authorisation for a licensee to reproduce a code or to translate the form of the code of a data file format so as to be able to write, in his own computer program, a source code which reads and writes that file format, provided that that act is absolutely indispensable for the purposes of obtaining the information necessary to achieve interoperability between the elements of different programs. That act must not have the effect of enabling the licensee to recopy the code of the computer program in his own program, a question which will be for the national court to determine.</p>
+
+<p>(3)</p>
+
+<p>Article 5(3) of Directive 91/250, read in conjunction with Articles 4(a) and (b) and 5(1) thereof, is to be interpreted as meaning that the expression ‘any of the acts of loading, displaying, running, transmitting or storing the computer program [which the person having the right] is entitled to do’ relates to the acts for which that person has obtained authorisation from the rightholder and to the acts of loading and running necessary in order to use the computer program in accordance with its intended purpose. Acts of observing, studying or testing the functioning of a computer program which are performed in accordance with that provision must not have the effect of enabling the person having a right to use a copy of the program to access information which is protected by copyright, such as the source code or the object code.</p>
+
+<p>(4)</p>
+
+<p>Article 2(a) of Directive 2001/29/EC of the European Parliament and of the Council of 22 May 2001 on the harmonisation of certain aspects of copyright and related rights in the information society is to be interpreted as meaning that the reproduction, in a computer program or a user manual, of certain elements described in the manual for another computer program may constitute an infringement of the copyright in the latter manual if – a question which will be for the national court to determine – the elements reproduced in this way are the expression of their author’s own intellectual creation.</p></blockquote>
+
+<p>The opinion is pretty much a slam dunk for World Programming. The only hiccup is the issue related to the copying of parts of SAS’ manuals, but that is a minor issue compared to a situation where World Programming would have been restricted in their ability to produce a product compatible with SAS’ product. Now we just have to hope that the Court agrees with the Advocate General.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle Java 7 and 'Commercial Features']]></title>
+    <link href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/"/>
+    <updated>2011-07-28T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features</id>
+    <content type="html"><![CDATA[<p>Oracle has just announced the general availability of Java 7 SE including Java SE Advanced and Java SE Suite.</p>
+
+<p>Being a software license nerd I of course skimmed the <a href="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">Java SE License Agreement </a>(full title “Oracle Binary Code License Agreement for the Java SE Platform Products”).</p>
+
+<p>The license contains some interesting wording regarding “Commercial Features” in section 1, 2 and SUPPLEMENTAL LICENSE TERMS section A and G. The “Commercial Features” are defined in <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this</a> document (PDF version with better layout <a href="http://www.oracle.com/technetwork/java/javase/documentation/java-se-product-editions-397069.pdf">here</a>). Please note that the specification of “Commercial Features” is not part of the license as such and therefor subject to change at Oracle’s discretion.</p>
+
+<p><img src="http://www.spyfoos.com/images/posts/jvm_commercial_features_table.png" title="JVM Commercial Features Table" alt="jvm_commercial_features_table" /></p>
+
+<p>It turns out the “Commercial Features” are subject to rather draconian restrictions (SUPPLEMENTAL LICENSE TERMS section A):</p>
+
+<blockquote><p>COMMERCIAL FEATURES You may not use the Commercial Features for running Programs, Java applets or applications in your internal business operations or for any commercial or production&nbsp; purpose, or for any purpose other than as set forth in Sections B, C, D and E of these Supplemental Terms.&nbsp; If You want to use the Commercial Features for any purpose other than as permitted in this Agreement, You must obtain a separate license from Oracle.</p></blockquote>
+
+<p>As you can tell any meaningful business use of the “Commercial Features” are subject to a separate license.</p>
+
+<p>So does the regular Java 7 SE download contain any of these “Commercial Features”? It does not look like it and the Java Se Advance and Java SE Suite packages doesn’t either, because they do not exist. From below two sections that appear at end of <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this </a>document, it is clear that the Java SE Advanced and Java SE Suite “products” are a combination of the Java 7 SE and a number of separate packages.</p>
+
+<blockquote><h2>Installation of Java SE Product Editions</h2>
+
+<p>Oracle does not provide installation programs that correspond directly to Java SE, Oracle Java SE Advanced and Oracle Java SE Suite. Depending on the features licensed, one or more of the following individual packages must be downloaded:</p>
+
+<p>JRE&nbsp;JDK</p>
+
+<p>JRockit JDK</p>
+
+<p>JRockit Mission Control</p>
+
+<p>Java for Business JRE</p>
+
+<p>Java for Business JDK</p>
+
+<h3>Licensing Considerations and Restricted-Use Licensing</h3>
+
+<p>Some of the packages described in Installation of Java SE Product Editions install commercial features that are restricted to Oracle Java SE Advanced or Oracle Java SE Suite. For example, the JRockit JDK comes with a deterministic garbage collector that requires a Oracle Java SE Suite license.</p></blockquote>
+
+<p>If you download (which you can do for instance <a href="http://www.oracle.com/technetwork/java/javase/downloads/jrefb-5u30-download-401429.html">here</a> and <a href="http://www.oracle.com/technetwork/middleware/jrockit/downloads/index.html">here</a>) and use these extra packages for the purposes outlined above (any meaning full business use) in combination with Java 7 SE you are subject to a separate (ostensibly payable) license.</p>
+
+<p>The only mention I can find of this change from Oracle is <a href="http://blogs.oracle.com/henrik/entry/jrockit_is_now_free_and">this</a> blog post with the clearly misleading title “JRockit is Now Free (and Other Java License Updates)”, as this does not apply to the JRockit “Commercial Features” listed above.</p>
+
+<p>You should make sure that your developers, ops people and relevant vendors of such service knows this, or you could end up breaching your license and owing Oracle a lot of money.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dropbox Unzip]]></title>
+    <link href="http://www.spyfoos.com/blog/2011/04/24/dropbox-unzip/"/>
+    <updated>2011-04-24T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/04/24/dropbox-unzip</id>
+    <content type="html"><![CDATA[<p>Inspirer by this <a href="http://wetzler.me/ios-unzipping/">post</a> where the author shows how to add automatic unzipping to a <a href="http://www.dropbox.com/">Dropbox</a> folder on OS X, I wanted to see if something similar was easily achievable on Ubuntu (10.10).</p>
+
+<p>After a bit of searching I found <a href="http://inotify.aiken.cz/?section=inotify&amp;page=about&amp;lang=en">incron</a>. Quoting from the website incron “is an “inotify cron” system. It consists of a daemon and a table manipulator. You can use it a similar way as the regular cron. The difference is that the inotify cron handles filesystem events rather than time periods.”</p>
+
+<p>To create a folder in your Dropbox that automatically unzips any zip file dropped into it first install incron. It is available in the Ubuntu Universe repository and can be installed using:</p>
+
+<pre><code>sudo apt-get install incron
+</code></pre>
+
+<p>After the package is installed you must add the username of all users who should be permitted to add jobs to incron to /etc/incron.allow like this(replace [username] with your username):</p>
+
+<pre><code>sudo echo “[username]” &gt;&gt; /etc/incron.allow
+</code></pre>
+
+<p>Next create the unzip folder in your Dropbox folder:</p>
+
+<pre><code>mkdir [path to your Dropbox folder]/unzip
+</code></pre>
+
+<p>Next we need to add the actual unzip job row to incron like this:</p>
+
+<pre><code>icrontab -e
+</code></pre>
+
+<p>This opens the user incron table in the deafult editor. Insert the following line, replacing [path to your Dropbox folder] with the absolute path (don’t use ~) to your Dropbox folder:</p>
+
+<pre><code>[path to your Dropbox folder]/unzip IN_CLOSE_WRITE unzip $@/$# -d $@
+</code></pre>
+
+<p>Check that the job row was added to your incron table:</p>
+
+<pre><code>incrontab -l
+</code></pre>
+
+<p>This should output the line you just added above. If this works try copying a zip file into the Dropbox/unzip folder. If everything works it should unzip automatically. This obviously only so long the machine you installed the incron job is online.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Simple Chat App Using Aleph, Websockets and Clojure]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/08/27/a-simple-chat-app-using-clojure-aleph-and-websockets/"/>
+    <updated>2010-08-27T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/08/27/a-simple-chat-app-using-clojure-aleph-and-websockets</id>
+    <content type="html"><![CDATA[<p>I have implemented a small example shoving how to use the websocket support in <a href="http://github.com/ztellman/aleph">Aleph</a>, asynchronous webframework for <a href="http://clojure.org/">Clojure</a> built on <a href="http://www.jboss.org/netty">Netty</a>.</p>
+
+<p>The example is tested with Chrome and Firefox on Ubuntu. It should work in all modern browsers as it relies on <a href="http://github.com/gimite/web-socket-js/">web-socket-js</a> for websocket emulation in browsers that do not have native support. Please note the updated Usage instructions. The socket-policy-server necessary for Flash websocket emulation has to listen on port 843 (at least that is the first place Flash asks for the policy file) so the server has to be run using sudo.</p>
+
+<p>If you are interested the example is at hosted on <a href="http://github.com/maacl/aleph-ws-test">github</a>, along with usage instructions.</p>
 ]]></content>
   </entry>
   

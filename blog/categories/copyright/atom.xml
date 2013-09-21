@@ -4,7 +4,7 @@
   <title><![CDATA[Category: copyright | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/copyright/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2013-09-21T20:14:14+02:00</updated>
+  <updated>2013-09-21T22:32:59+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -12,6 +12,101 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle vs Google - Implementing the JVM Specification]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification/"/>
+    <updated>2013-08-24T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification</id>
+    <content type="html"><![CDATA[<p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
+
+<p>For context Oracle in the complaint defines Android as:</p>
+
+<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
+
+<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
+
+<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
+
+<p>Would the analysis under US copyright law be the same?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SAS vs. World Programming – Opinion of the Advocate General]]></title>
+    <link href="http://www.spyfoos.com/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/"/>
+    <updated>2011-11-29T12:00:00+01:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general</id>
+    <content type="html"><![CDATA[<p>So the Advocate General to the ECJ has submitted its <a href="http://curia.europa.eu/jurisp/cgi-bin/form.pl?lang=en&amp;amp;jurcdj=jurcdj&amp;amp;newform=newform&amp;amp;docj=docj&amp;amp;docop=docop&amp;amp;docnoj=docnoj&amp;amp;typeord=ALLTYP&amp;amp;numaff=&amp;amp;ddatefs=22&amp;amp;mdatefs=11&amp;amp;ydatefs=2011&amp;amp;ddatefe=29&amp;amp;mdatefe=11&amp;amp;ydatefe=2011&amp;amp;nomusuel=&amp;amp;domaine=&amp;amp;mots=&amp;amp;resmax=100&amp;amp;Submit=Rechercher">opinion</a> to the Court on the questions submitted by the High Court of Justice of England and Wales in the SAS vs World Programming case that i wrote about <a href="http://www.spyfoos.com/index.php/2010/07/23/sas-vs-world-programming/">here</a> and <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a>.</p>
+
+<p>The Advocate concludes the following:</p>
+
+<blockquote><p>(1)</p>
+
+<p>Article 1(2) of Council Directive 91/250/EEC of 14 May 1991 on the legal protection of computer programs is to be interpreted as meaning that the functionalities of a computer program and the programming language are not eligible, as such, for copyright protection. It will be for the national court to examine whether, in reproducing these functionalities in its computer program, the author of the program has reproduced a substantial part of the elements of the first program which are the expression of the author’s own intellectual creation.</p>
+
+<p>(2)</p>
+
+<p>Articles 1(2) and 6 of Directive 91/250 are to be interpreted as meaning that it is not regarded as an act subject to authorisation for a licensee to reproduce a code or to translate the form of the code of a data file format so as to be able to write, in his own computer program, a source code which reads and writes that file format, provided that that act is absolutely indispensable for the purposes of obtaining the information necessary to achieve interoperability between the elements of different programs. That act must not have the effect of enabling the licensee to recopy the code of the computer program in his own program, a question which will be for the national court to determine.</p>
+
+<p>(3)</p>
+
+<p>Article 5(3) of Directive 91/250, read in conjunction with Articles 4(a) and (b) and 5(1) thereof, is to be interpreted as meaning that the expression ‘any of the acts of loading, displaying, running, transmitting or storing the computer program [which the person having the right] is entitled to do’ relates to the acts for which that person has obtained authorisation from the rightholder and to the acts of loading and running necessary in order to use the computer program in accordance with its intended purpose. Acts of observing, studying or testing the functioning of a computer program which are performed in accordance with that provision must not have the effect of enabling the person having a right to use a copy of the program to access information which is protected by copyright, such as the source code or the object code.</p>
+
+<p>(4)</p>
+
+<p>Article 2(a) of Directive 2001/29/EC of the European Parliament and of the Council of 22 May 2001 on the harmonisation of certain aspects of copyright and related rights in the information society is to be interpreted as meaning that the reproduction, in a computer program or a user manual, of certain elements described in the manual for another computer program may constitute an infringement of the copyright in the latter manual if – a question which will be for the national court to determine – the elements reproduced in this way are the expression of their author’s own intellectual creation.</p></blockquote>
+
+<p>The opinion is pretty much a slam dunk for World Programming. The only hiccup is the issue related to the copying of parts of SAS’ manuals, but that is a minor issue compared to a situation where World Programming would have been restricted in their ability to produce a product compatible with SAS’ product. Now we just have to hope that the Court agrees with the Advocate General.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle Java 7 and 'Commercial Features']]></title>
+    <link href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/"/>
+    <updated>2011-07-28T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features</id>
+    <content type="html"><![CDATA[<p>Oracle has just announced the general availability of Java 7 SE including Java SE Advanced and Java SE Suite.</p>
+
+<p>Being a software license nerd I of course skimmed the <a href="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">Java SE License Agreement </a>(full title “Oracle Binary Code License Agreement for the Java SE Platform Products”).</p>
+
+<p>The license contains some interesting wording regarding “Commercial Features” in section 1, 2 and SUPPLEMENTAL LICENSE TERMS section A and G. The “Commercial Features” are defined in <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this</a> document (PDF version with better layout <a href="http://www.oracle.com/technetwork/java/javase/documentation/java-se-product-editions-397069.pdf">here</a>). Please note that the specification of “Commercial Features” is not part of the license as such and therefor subject to change at Oracle’s discretion.</p>
+
+<p><img src="/images/posts/jvm_commercial_features_table.png" title="JVM Commercial Features Table" alt="jvm_commercial_features_table" /></p>
+
+<p>It turns out the “Commercial Features” are subject to rather draconian restrictions (SUPPLEMENTAL LICENSE TERMS section A):</p>
+
+<blockquote><p>COMMERCIAL FEATURES You may not use the Commercial Features for running Programs, Java applets or applications in your internal business operations or for any commercial or production&nbsp; purpose, or for any purpose other than as set forth in Sections B, C, D and E of these Supplemental Terms.&nbsp; If You want to use the Commercial Features for any purpose other than as permitted in this Agreement, You must obtain a separate license from Oracle.</p></blockquote>
+
+<p>As you can tell any meaningful business use of the “Commercial Features” are subject to a separate license.</p>
+
+<p>So does the regular Java 7 SE download contain any of these “Commercial Features”? It does not look like it and the Java Se Advance and Java SE Suite packages doesn’t either, because they do not exist. From below two sections that appear at end of <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this </a>document, it is clear that the Java SE Advanced and Java SE Suite “products” are a combination of the Java 7 SE and a number of separate packages.</p>
+
+<blockquote><h2>Installation of Java SE Product Editions</h2>
+
+<p>Oracle does not provide installation programs that correspond directly to Java SE, Oracle Java SE Advanced and Oracle Java SE Suite. Depending on the features licensed, one or more of the following individual packages must be downloaded:</p>
+
+<p>JRE&nbsp;JDK</p>
+
+<p>JRockit JDK</p>
+
+<p>JRockit Mission Control</p>
+
+<p>Java for Business JRE</p>
+
+<p>Java for Business JDK</p>
+
+<h3>Licensing Considerations and Restricted-Use Licensing</h3>
+
+<p>Some of the packages described in Installation of Java SE Product Editions install commercial features that are restricted to Oracle Java SE Advanced or Oracle Java SE Suite. For example, the JRockit JDK comes with a deterministic garbage collector that requires a Oracle Java SE Suite license.</p></blockquote>
+
+<p>If you download (which you can do for instance <a href="http://www.oracle.com/technetwork/java/javase/downloads/jrefb-5u30-download-401429.html">here</a> and <a href="http://www.oracle.com/technetwork/middleware/jrockit/downloads/index.html">here</a>) and use these extra packages for the purposes outlined above (any meaning full business use) in combination with Java 7 SE you are subject to a separate (ostensibly payable) license.</p>
+
+<p>The only mention I can find of this change from Oracle is <a href="http://blogs.oracle.com/henrik/entry/jrockit_is_now_free_and">this</a> blog post with the clearly misleading title “JRockit is Now Free (and Other Java License Updates)”, as this does not apply to the JRockit “Commercial Features” listed above.</p>
+
+<p>You should make sure that your developers, ops people and relevant vendors of such service knows this, or you could end up breaching your license and owing Oracle a lot of money.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SAS vs World Programming - SAS' Vesion]]></title>
@@ -86,159 +181,6 @@
 <p>So the functionality of a computer program is not protectable, which is not too surprising, but as the question in the judges opinion is not _<a href="http://www.translegal.com/legal-english-dictionary/acte-clair">acte clair_</a> it is submitted together with 5 other questions (<a href="http:/www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii)) to the ECJ for guidance. Among these is also the question of whether a programming language as such is protectable by copyright. The judge finds that this is probably not the case, but appears less certain on this question than the others.</p>
 
 <p>It will be really interesting to see if this will result alternative vendors deciding to challenge other dominant software products, by producing compatible solutions that release the customers from lock-in and introduce effective competition.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[An Acceptable EULA?]]></title>
-    <link href="http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula/"/>
-    <updated>2010-06-04T12:00:00+02:00</updated>
-    <id>http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula</id>
-    <content type="html"><![CDATA[<p>Is there such a thing? Until today I did not think so, but after having
-watched Mixergy&rsquo;s
-<a href="/web/20100907205218/http://mixergy.com/balsamiq-peldi-guilizzoni-interview/">interview</a>
-with Balsamiq’s Giacomo “Peldi” Guilizzoni, I was optimistic that I
-might have finally found one. Check Balsamiq’s EULA out
-<a href="/web/20100907205218/http://www.balsamiq.com/images/BalsamiqEula.pdf">here</a>.
-Peldi mentions in the interview that a helpful customer in-house counsel
-gave him some great feedback that helped improve the license. To
-whatever she told him, I would add the following:</p>
-
-<h4>Preamble</h4>
-
-<p>Don’t use “represents and warrants” use only “represents”. The form is
-needless legalese and part of the reason why people hate lawyers. If you
-don’t agree read
-<a href="/web/20100907205218/http://www.adamsdrafting.com/2009/09/18/rs-and-ws-once-more-with-feeling/">this</a>
-– then go change it.</p>
-
-<h4>Definitions</h4>
-
-<p>“Authorized Users” and “Authorized User” – makes no sense that the
-plural form would have a completely different meaning than the singular.
-“Authorized Users” is never used in the EULA. This might make sense when
-read together with the Quote/Receipt/Invoice but I doubt it. The
-definitions of “Authorized Machine” and “Authorized Server Node” do not
-appear to deal well with virtual environments.</p>
-
-<h4>Section 3 Grant of License</h4>
-
-<p>The license granted is “irrevocable” but at he same time terminable by
-Balsamiq as per section 12. This appears inconsistent. “(except pursuant
-to Clause 12 below)” should be added after “irrevocable”.</p>
-
-<h4>Section 4 No Warranty</h4>
-
-<p>Excluding all warranties does not strike me as compatible Balsamiqs
-mission to produce high quality software. You can’t claim to aim for
-excellence in everything you do, and the refuse to back it up – that’s
-simply not credible. On the other hand warranties provided for goods are
-not appropriate for software, as these are calibrated for defects that
-occur in individual instances (copies) of the product. I would suggest a
-warranty that better correspond to the apparently fanatical customer
-service Balsamiq provides. This does no mean warranting to fix bugs
-within a certain timeframe, but it does mean warranting a meaningful
-response to reported bugs etc. If you are doing it already it such a
-warranty is essential free, if you make sure that the customers remedies
-if you fail are manageable. If such remedies for instance only apply to
-the (first) reporter of the bug, you contain the effect of the warranty
-from spreading to all customers.</p>
-
-<h4>Section 6.1 Software Maintenance – For Plug-in Versions</h4>
-
-<p>Excellent to see inclusion of a reasonable price-escalation clause for
-Software Maintenance. This is something that I have had to negotiate
-many times and which any prudent licensee should always remember. You
-don’t want to be
-<a href="/web/20100907205218/http://www.zdnet.com/blog/howlett/sap-pulls-the-trigger-on-higher-support-costs/442">treated</a>
-like SAP’s customers, do you?</p>
-
-<h4>Section 9 Investigation of Unauthorized Use and Distribution</h4>
-
-<p>This is a very pragmatic alternative to audit rights which especially a
-company the size of Balsamiq would have very little use for. The
-fairness of allocating the cost of producing the certificate to the
-licensee should be considered, since this might exceed the license fee
-by a factor of many in some cases. I would consider some kind of
-compensation (free maintenance?) to the customer if a request for a
-certificate is made and this is provided, as this is would indicate that
-Balsamiqs suspicion was not well-founded.</p>
-
-<h4>Section 10 (a) Licensee’s Restrictions</h4>
-
-<p>Very common provision which is also very unenforceable in the EU if the
-motif for the reverse engineering is a desire to “achieve the
-interoperability of an independently created computer program with other
-programs” (thanks to art. 5 and 6 of this
-EU <a href="/web/20100907205218/http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">directive</a>).</p>
-
-<h4>Section 10 (b) Licensee’s Restrictions</h4>
-
-<p>Appears superfluous. How would the customer ever unilaterally be able to
-vary the “Authorized Use”? That said there might be a technicality in
-California law that makes it prudent to include this.</p>
-
-<h4>Section 10 (d) and (e) Licensee’s Restrictions</h4>
-
-<p>WTF! I can’t refer to Balsamiq’s name or do anything that has a
-“material and adverse effect on Balsamiq’s” interests. I am glad that I
-did not license Balsamiq’s software before writing this post. How can
-you promote Balsamiq as an open organisation in continuous dialog with
-its customers, and then muffle the same audience with your EULA?</p>
-
-<h4>Section 12 – Termination</h4>
-
-<p>The destruction of all copies of the software is a practical
-impossibility in many enterprise environments due to the back-up
-strategies employed. Since this will only become a requirement in case
-of a breach it might be justified nonetheless, but a more balanced
-alternative might be to require the destruction of all “readily usable
-copies” of the software or similar.</p>
-
-<h4>Section 13 – Infringement Indemnification</h4>
-
-<p>For the software in question and taking into account the size of the
-vendor (Balsamiq) this is a very reasonable clause, and it is a wise
-move to include indemnification if you want to have any hope selling
-your software to enterprise customers.</p>
-
-<h4>Section 14 – Limitation of Liability</h4>
-
-<p>Good to see that the indemnification obligations are exempted from the
-limitation of liability.</p>
-
-<h4>Section 16 – Open Source Code</h4>
-
-<p>For Balsamiq’s present product I wouldn’t worry much about the “viral”
-nature of the GPL and other similar licenses, which is clearly what this
-section is meant to address, but the section clearly does no harm
-either. If the software was meant for combination with the customer’s
-code or other software and subsequent distribution, I would be more
-interested in the list of of open source products/licenses in Exhibit A
-as this would enable me to assess any challenges related hereto.</p>
-
-<h4>Section 17 – Publicity Rights</h4>
-
-<p>This section solves a very common problem in a fairly practical way (the
-customer can opt out of Balsamiqs right to use the customer for
-publicity purpose prior to or any time after purchase) but a better more
-honest and straight forward solution, would be to permit the customer to
-opt out via the web form used to purchase the product.</p>
-
-<h4>Section 24 – Notices</h4>
-
-<p>While not critical why appear unreasonable by biasing this section in
-Balsamiqs favour? On Export Control (especially US) you really want to
-provide the relevant export control classification codes if you expect
-any one to comply with the rules. In general you want to try to avoid
-having your software subject to US export control rules as these are
-absolutely not trivial.</p>
-
-<p>On balance Balsamiq’s EULA is above average but still suffers from a few
-weakness as outlined above. Most of these can be fixed without exposing
-Balsamiq to any liability that is unmanageable.</p>
-
-<p>DISCLAIMER: Above is not legal advice bla, bla, bla.</p>
 ]]></content>
   </entry>
   
