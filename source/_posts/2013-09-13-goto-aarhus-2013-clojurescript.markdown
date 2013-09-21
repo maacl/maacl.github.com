@@ -5,7 +5,9 @@ date: 2013-09-13 12:00
 comments: true
 external-url:
 categories: [goto, clojurescript]
-alias: "#/posts/20130913000000.markdown"
+alias: "/#/posts/20130913000000.markdown"
+
+http://www.spyfoos.com/#/posts/20130913000000.markdown
 ---
 I put together my first draft itenary for [GOTO Aarhus 2013](http://gotocon.com/aarhus-2013/). You can see it [here](http://gotocon.com/aarhus-2013/schedule/my-schedule.jsp#myschedlink1).
 

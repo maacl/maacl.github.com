@@ -5,7 +5,7 @@ date: 2013-09-14 12:00
 comments: true
 external-url:
 categories: [contracts, law, drafting]
-alias: "#/posts/20130914000000.markdown"
+alias: "/#/posts/20130914000000.markdown"
 ---
 It was suggested to me to look into the concept of [Flexible Contracts](http://flexiblecontracts.com/), a new approach to contracting for agile it projects championed by Gabrielle Benefield who will be providing training in agile practices in connection with [goto Aarhus 2013](http://gotocon.com/aarhus-2013/).
 
@@ -58,3 +58,5 @@ Links regarding best endeavours:
 [My delicious links about "best endeavours"](https://delicious.com/flatspace/endeavours)
 
 Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.
+
+
