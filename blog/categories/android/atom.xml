@@ -4,7 +4,7 @@
   <title><![CDATA[Category: android | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2013-09-21T22:32:59+02:00</updated>
+  <updated>2013-09-21T22:34:33+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Oracle vs Google - Implementing the JVM Specification]]></title>
-    <link href="http://www.spyfoos.com/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification/"/>
-    <updated>2013-08-24T12:00:00+02:00</updated>
-    <id>http://www.spyfoos.com/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification</id>
+    <link href="http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/"/>
+    <updated>2010-08-24T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification</id>
     <content type="html"><![CDATA[<p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
 
 <p>For context Oracle in the complaint defines Android as:</p>

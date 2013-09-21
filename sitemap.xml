@@ -30,6 +30,12 @@
     </url>
     <url>
         <loc>
+            http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/
+        </loc>
+        <lastmod>2013-09-21T22:34:02+02:00</lastmod>
+    </url>
+    <url>
+        <loc>
             http://www.spyfoos.com/blog/2010/08/27/a-simple-chat-app-using-clojure-aleph-and-websockets/
         </loc>
         <lastmod>2013-09-21T22:03:41+02:00</lastmod>
@@ -49,12 +55,6 @@
         <lastmod>2013-09-21T22:30:21+02:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://www.spyfoos.com/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification/
-        </loc>
-        <lastmod>2013-09-21T21:47:56+02:00</lastmod>
-    </url>
-    <url>
         <loc>http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript/</loc>
         <lastmod>2013-09-21T19:28:39+02:00</lastmod>
     </url>
@@ -64,11 +64,11 @@
     </url>
     <url>
         <loc>http://www.spyfoos.com/blog/archives/</loc>
-        <lastmod>2013-09-21T22:30:21+02:00</lastmod>
+        <lastmod>2013-09-21T22:34:02+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.spyfoos.com/</loc>
-        <lastmod>2013-09-21T22:30:21+02:00</lastmod>
+        <lastmod>2013-09-21T22:34:02+02:00</lastmod>
     </url>
     <url>
         <loc>http://www.spyfoos.com/robots.txt</loc>

@@ -273,54 +273,6 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification/">Oracle vs Google - Implementing the JVM Specification</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-24T12:00:00+02:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
-
-<p>For context Oracle in the complaint defines Android as:</p>
-
-<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
-
-<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
-
-<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
-
-<p>Would the analysis under US copyright law be the same?</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
       <h1 class="entry-title"><a href="/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/">SAS vs. World Programming – Opinion of the Advocate General</a></h1>
     
     
@@ -569,6 +521,54 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/">Oracle vs Google - Implementing the JVM Specification</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-24T12:00:00+02:00" pubdate data-updated="true">Aug 24<span>th</span>, 2010</time>
+        
+         | <a href="/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
+
+<p>For context Oracle in the complaint defines Android as:</p>
+
+<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
+
+<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
+
+<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
+
+<p>Would the analysis under US copyright law be the same?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2010/07/29/sas-vs-world-programming-sas-version/">SAS vs World Programming - SAS&#8217; Vesion</a></h1>
     
     
@@ -763,15 +763,15 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2013/08/24/oracle-vs-google-implementing-the-jvm-specification/">Oracle vs Google - Implementing the JVM Specification</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/">SAS vs. World Programming – Opinion of the Advocate General</a>
       </li>
     
       <li class="post">
         <a href="/blog/2011/07/28/oracle-java-7-and-commercial-features/">Oracle Java 7 and &#8216;Commercial Features&#8217;</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/24/dropbox-unzip/">Dropbox Unzip</a>
       </li>
     
   </ul>
