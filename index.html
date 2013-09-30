@@ -479,6 +479,56 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2010/09/30/hit-record/">Hit Record!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-30T16:29:00+02:00" pubdate data-updated="true">Sep 30<span>th</span>, 2010</time>
+        
+         | <a href="/blog/2010/09/30/hit-record/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Richard Baeckman just did an excellent presentation on <a href="http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html">Java Flight Recorder</a> at <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>. Java Flight Recorder is an &ndash; enhanced &ndash; port of JRockit Flight Recorder to the Oracle(Sun) JVM. It ships with  Java SE Development Kit 7u40 and includes a very nifty GUI called Java Mission Control that provides an excellent overvie of all the data collected in your recordings. I was very interested in seeing how useful JFR is when running Clojure code. Fortunately installation is very easy. After installing <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Platform (JDK) 7u40</a> I just added the following options to my project.clj file.</p>
+
+<p><code>:jvm-opts ["-XX:+UnlockCommercialFeatures" "-XX:+FlightRecorder"]</code></p>
+
+<p>On OS X you have to start the JMC from a terminal invoking the binary located at:</p>
+
+<p><code>/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/bin/jmc</code></p>
+
+<p>This brings up the JMC GUI. If you start your Clojure app (in my case Rich&rsquo;s ants.clj), your jvm(s) should be visible under the JVM Browser tab. From here you can start a recording by double-clicking the relevant JVM, right-clicking the Flight Recorder entry and choosing &ldquo;Start Flight Recording&hellip;&rdquo;. I have inlcuded a screenshot below of a 1 minute recording of ants.clj. As you can tell JFR collects an immense amount of information but the overhead is minimal, approx 3% according to Richard.</p>
+
+<p><img src="/images/posts/jmc.png" title="Java Mission Control Screenshot" alt="Java Mission Control" /></p>
+
+<p>Please do note that the Java Flight Recorder and JMC are both Commercial Features, which I have written about previously <a href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/">here</a>. This means that neither JFR and JMC may not be used for production purposes without a separate license from Oracle for such use. There is currently no public information regarding prices and other conditions available from Oracle.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2010/08/27/a-simple-chat-app-using-clojure-aleph-and-websockets/">A Simple Chat App Using Aleph, Websockets and Clojure</a></h1>
     
     
@@ -673,66 +723,6 @@
 <p>I turned out to be quite a hassle to get it running so I thought I would document it here so others might save some time.</p>
 
 <p>I have create a <a href="http://github.com/maacl/websocket-test">project</a> on github that includes all the dependencies. I run it in Emacs using swank-clojure-project. The two last forms start the two servers – one is the websocket chat server, the other just serves the index.html file (this is necessary for the web_socket.js&nbsp; to work). I have only been able to make this work in browsers with native websocket support (Chrome and Safari). If anybody can figure out what goes wrong in the other browsers (e.g. Firefox) let me know, and I will update.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/23/sas-vs-world-programming/">SAS vs. World Programming</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-23T12:00:00+02:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2010</time>
-        
-         | <a href="/blog/2010/07/23/sas-vs-world-programming/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>UPDATE: I did a follow-up post on the SAS Press Release <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a></p>
-
-<p>So the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">decision</a> in “SAS Institute Inc v World Programming Ltd” has been published and it is in favor of WPL on all counts, except that the judge finds that WPL – against it’s own policy – copied certain language from SAS’ manuals into its own manuals.</p>
-
-<p>Key questions pertaining to almost all the other claims will be submitted to the ECJ for confirmation of the judges interpretation of the law(specifically Articles 1(2) and 5(3) of the <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">Software Directive</a> and Article 2(a) of the <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32001L0029:EN:HTML">Information Society Directive</a>) (see below).</p>
-
-<p>If everything holds up this is potentially a huge win for competition in the software industry.The decision means that can re-implement the functionality of other software and reference that software and its documentation in the process, as long as you do not copy any source code or documentation. The judge (who appears to be quite technically savvy) analyses in detail how the SAS language is constructed. SAS appears to argue that the PROCS steps in the SAS Language is not a programming language, but in fact a computer program in itself. The SAS expert Dr. Ivey states the following on the matter:</p>
-
-<p>&gt; the SAS Language was a domain specific computer language with many of the attributes of a command language, rather than a programming language</p>
-
-<p>It is not clear to me exactly what SAS was hoping to achieve with this line of reasoning (<a href="http://news.ycombinator.com/item?id=1545404">perhaps they were trying to escape a suspected non-copyrightability of programming languages</a>) but whatever it was it did not work as the judge slightly sarcastically <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para56">finds</a> that:</p>
-
-<p>&gt; In my judgment the SAS Language is a programming language. I am comforted by the fact that this assessment coincides not only with SAS Institute’s own assessment in paragraph 6 of its Particulars of Claim and in its literature, but also with that of the anonymous author of the entry for “SAS language” in Wikipedia (as last modified on 25 April 2010), which states:
-&gt;
-&gt; “… SAS can be considered a general programming language, though it serves largely as a database programming language and a language with a wide variety of specialized analytic and graphic procedures.”</p>
-
-<p>The judge also analyses whether the <em>functionality </em>of a computer program (not the source code) is itself protectable by copyright and <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para236">finds</a> that:</p>
-
-<p>&gt; Accordingly, I consider that the functionality of a computer program falls on the wrong side of the line drawn by Article 1(2) of the Software Directive, Article 9(2) of TRIPS and Article 2 of the WIPO Copyright Treaty.</p>
-
-<p>So the functionality of a computer program is not protectable, which is not too surprising, but as the question in the judges opinion is not _<a href="http://www.translegal.com/legal-english-dictionary/acte-clair">acte clair_</a> it is submitted together with 5 other questions (<a href="http:/www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii)) to the ECJ for guidance. Among these is also the question of whether a programming language as such is protectable by copyright. The judge finds that this is probably not the case, but appears less certain on this question than the others.</p>
-
-<p>It will be really interesting to see if this will result alternative vendors deciding to challenge other dominant software products, by producing compatible solutions that release the customers from lock-in and introduce effective competition.</p>
 </div>
   
   
