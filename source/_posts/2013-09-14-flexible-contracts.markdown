@@ -5,8 +5,10 @@ date: 2013-09-14 12:00
 comments: true
 external-url:
 categories: [contracts, law, drafting]
-alias: "/#/posts/20130914000000.markdown"
+alias: "#/posts/20130914000000.markdown/"
 ---
+<h4 id="/posts/20130914000000.markdown"></h4>
+
 It was suggested to me to look into the concept of [Flexible Contracts](http://flexiblecontracts.com/), a new approach to contracting for agile it projects championed by Gabrielle Benefield who will be providing training in agile practices in connection with [goto Aarhus 2013](http://gotocon.com/aarhus-2013/).
 
 Flexible Contracts are born out of the observation that traditional contract models are a very poor fit for agile IT projects. This is hardly a novel observation, but Gabrielle's work (and that of her collaborators) distinguishes itself by actually having produced a practical alternative, which they have commendably licensed under the [CC Attribution 3.0 Unported license](http://creativecommons.org/licenses/by/3.0/). Only the lite version - Flexlite 0.1 as it is designated - appears to be presently available, and can be accessed if you are willing to sign up to the Flexible Contracts mailing list [here](http://flexiblecontracts.com/list/).
