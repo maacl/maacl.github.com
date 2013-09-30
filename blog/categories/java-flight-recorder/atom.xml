@@ -4,7 +4,7 @@
   <title><![CDATA[Category: java_flight_recorder | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/java-flight-recorder/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2013-09-30T16:36:06+02:00</updated>
+  <updated>2013-09-30T16:38:17+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hit Record!]]></title>
-    <link href="http://www.spyfoos.com/blog/2010/09/30/hit-record/"/>
-    <updated>2010-09-30T16:29:00+02:00</updated>
-    <id>http://www.spyfoos.com/blog/2010/09/30/hit-record</id>
+    <link href="http://www.spyfoos.com/blog/2013/09/30/hit-record/"/>
+    <updated>2013-09-30T16:29:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/09/30/hit-record</id>
     <content type="html"><![CDATA[<p>Richard Baeckman just did an excellent presentation on <a href="http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html">Java Flight Recorder</a> at <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>. Java Flight Recorder is an &ndash; enhanced &ndash; port of JRockit Flight Recorder to the Oracle(Sun) JVM. It ships with  Java SE Development Kit 7u40 and includes a very nifty GUI called Java Mission Control that provides an excellent overvie of all the data collected in your recordings. I was very interested in seeing how useful JFR is when running Clojure code. Fortunately installation is very easy. After installing <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Platform (JDK) 7u40</a> I just added the following options to my project.clj file.</p>
 
 <p><code>:jvm-opts ["-XX:+UnlockCommercialFeatures" "-XX:+FlightRecorder"]</code></p>
