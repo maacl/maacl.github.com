@@ -4,7 +4,7 @@
   <title><![CDATA[Category: java | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/java/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2013-09-30T16:47:31+02:00</updated>
+  <updated>2013-09-30T21:43:46+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -30,7 +30,7 @@
 
 <p><img src="/images/posts/jmc.png" title="Java Mission Control Screenshot" alt="Java Mission Control" /></p>
 
-<p>Please do note that the Java Flight Recorder and JMC are both Commercial Features, which I have written about previously <a href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/">here</a>. This means that neither JFR and JMC may not be used for production purposes without a separate license from Oracle for such use. There is currently no public information regarding prices and other conditions available from Oracle.</p>
+<p>Please do note that the Java Flight Recorder and JMC are both Commercial Features, which I have written about previously <a href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/">here</a>. This means that neither JFR and JMC may be used for production purposes without a separate payable license from Oracle. There is currently no public information regarding prices and other conditions available from Oracle.</p>
 ]]></content>
   </entry>
   
