@@ -9,7 +9,7 @@
   <meta name="author" content="Martin Clausen">
 
   
-  <meta name="description" content="UPDATE: I did a follow-up post on the SAS Press Release here So the decision in “SAS Institute Inc v World Programming Ltd” has been published and it &hellip;">
+  <meta name="description" content="I found this gist by Chris McDevitt&nbsp;which is a simple chat server and browser client that uses Jetty 7, Clojure and WebSockets. I turned out to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,48 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/">Clojure, Jetty 7 and WebSockets</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-28T12:00:00+02:00" pubdate data-updated="true">Jul 28<span>th</span>, 2010</time>
+        
+         | <a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I found this <a href="http://gist.github.com/281490">gist</a> by Chris McDevitt&nbsp;which is a simple chat server and browser client that uses Jetty 7, Clojure and WebSockets.</p>
+
+<p>I turned out to be quite a hassle to get it running so I thought I would document it here so others might save some time.</p>
+
+<p>I have create a <a href="http://github.com/maacl/websocket-test">project</a> on github that includes all the dependencies. I run it in Emacs using swank-clojure-project. The two last forms start the two servers – one is the websocket chat server, the other just serves the index.html file (this is necessary for the web_socket.js&nbsp; to work). I have only been able to make this work in browsers with native websocket support (Chrome and Safari). If anybody can figure out what goes wrong in the other browsers (e.g. Firefox) let me know, and I will update.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -465,6 +507,10 @@ Balsamiq to any liability that is unmanageable.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/09/30/hit-record/">Hit Record!</a>
       </li>
     
@@ -478,10 +524,6 @@ Balsamiq to any liability that is unmanageable.</p>
     
       <li class="post">
         <a href="/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/">SAS vs. World Programming – Opinion of the Advocate General</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/07/28/oracle-java-7-and-commercial-features/">Oracle Java 7 and &#8216;Commercial Features&#8217;</a>
       </li>
     
   </ul>

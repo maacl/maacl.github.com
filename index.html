@@ -9,7 +9,7 @@
   <meta name="author" content="Martin Clausen">
 
   
-  <meta name="description" content="Richard Baeckman just did an excellent presentation on Java Flight Recorder at goto Aarhus 2013. Java Flight Recorder is an &ndash; enhanced &ndash; &hellip;">
+  <meta name="description" content="Just attended a very nice overview talk on the Unity game development system at goto Aarhus 2013. The tech in Unity itself is very impressive, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,56 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-01T19:40:00+02:00" pubdate data-updated="true">Oct 1<span>st</span>, 2013</time>
+        
+         | <a href="/blog/2013/10/01/licensing-done-right/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Just attended a very nice overview talk on the Unity game development system at <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>.</p>
+
+<p>The tech in Unity itself is very impressive, especially the ability to deploy the same code base and assets to 10+ platforms, including iOS. But Unity has also put a lot of thought into how the product is licensed. Not only was it a very conscious decision by the founders that Unity be royalty free, but the same thoughtfulness has also been applied to the Unity Asset Store.</p>
+
+<p>The Asset Store is Unity&rsquo;s equivalent of the App Store, but instead of apps you can buy art (e.g. graphics, models, audio) and code assets for inclusion in your Unity project. Had Unity left the choice of license up to the creators of the submitted assets, it would have completely undermined the royalty free nature of the Unity engine, as each asset could potentially inject it&rsquo;s own royalty model into a product created with Unity. Instead all assets are per definition subject to standard royalty free <a href="http://unity3d.com/company/legal/as_terms">TOS &amp; EULA</a>, and as explained in the below excerpt from Unity&rsquo;s Asset Store <a href="http://unity3d.com/asset-store/sell-assets/submission-guidelines">submission guidelines</a> it is not possible to sell assets in the Asset Store that are subject to other/additional terms.</p>
+
+<blockquote><p>6.2 Licensing your Content</p>
+
+<p>For consistency sake, all Asset Store offerings are covered by a license we have created. Please have a look at the End User License Agreement to be sure you are comfortable with it. If you are offering your content for free, you have the further option of selecting one of three free-licenses, which override the basics of our commercial license. Please do not include your own license terms in your offering.</p></blockquote>
+
+<p>It is very refreshing to see how licensing models can be designed to enhance the usefulness of a product and its eco-system, while at the same time serve as the underpinning of an indisputable financial success.</p>
+
+<p>If you have any use-cases involving 3D graphics you really should check Unity out. And please note that Unity is not limited to games. Unity Studios have done some really cool non-game applications, including a simulation for training safety procedures at sea and a brilliant <a href="http://www.velux.dk/private/inspiration/velux_ovenlysdesigner">app</a> for Velux that let&rsquo;s you simulate the effects of installing Velux windows in your own home.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -688,48 +738,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/">Clojure, Jetty 7 and WebSockets</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-28T12:00:00+02:00" pubdate data-updated="true">Jul 28<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I found this <a href="http://gist.github.com/281490">gist</a> by Chris McDevitt&nbsp;which is a simple chat server and browser client that uses Jetty 7, Clojure and WebSockets.</p>
-
-<p>I turned out to be quite a hassle to get it running so I thought I would document it here so others might save some time.</p>
-
-<p>I have create a <a href="http://github.com/maacl/websocket-test">project</a> on github that includes all the dependencies. I run it in Emacs using swank-clojure-project. The two last forms start the two servers – one is the websocket chat server, the other just serves the index.html file (this is necessary for the web_socket.js&nbsp; to work). I have only been able to make this work in browsers with native websocket support (Chrome and Safari). If anybody can figure out what goes wrong in the other browsers (e.g. Firefox) let me know, and I will update.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -745,6 +753,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/09/30/hit-record/">Hit Record!</a>
       </li>
     
@@ -758,10 +770,6 @@
     
       <li class="post">
         <a href="/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/">SAS vs. World Programming – Opinion of the Advocate General</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/07/28/oracle-java-7-and-commercial-features/">Oracle Java 7 and &#8216;Commercial Features&#8217;</a>
       </li>
     
   </ul>
