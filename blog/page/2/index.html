@@ -9,7 +9,7 @@
   <meta name="author" content="Martin Clausen">
 
   
-  <meta name="description" content="I found this gist by Chris McDevitt&nbsp;which is a simple chat server and browser client that uses Jetty 7, Clojure and WebSockets. I turned out to &hellip;">
+  <meta name="description" content="SAS issued a press release today with its take on the recent decision in the case between the two companies. While WPL’s press release might have &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,7 +24,7 @@
   <link href="/atom.xml" rel="alternate" title="The Limiting Factor" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -83,6 +83,81 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2010/07/29/sas-vs-world-programming-sas-version/">SAS vs World Programming - SAS&#8217; Vesion</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-29T12:00:00+02:00" pubdate data-updated="true">Jul 29<span>th</span>, 2010</time>
+        
+           | <a href="/blog/2010/07/29/sas-vs-world-programming-sas-version/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>SAS issued a <a href="http://www.sas.com/news/preleases/WPL.html">press release</a> today with its take on the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">recent decision</a> in the case between the two companies.</p>
+
+<p>While WPL’s <a href="http://teamwpc.co.uk/press/world_programming_secures_high_court_victory_against_SAS">press release</a> might have been s optimistic in its evaluation of the decision, SAS’ press release is a master piece of hypocrisy and highly tendentious. The headline:</p>
+
+<blockquote><p>“Court finds World Programming Ltd. Infringed on SAS Copyrights; refers case to European Court of Justice”</p></blockquote>
+
+<p>Technically this is wrong. The judge referred a number of key questions to the ECJ – not the case it self. More specifically the judge asked for a <a href="http://en.wikipedia.org/wiki/European_Court_of_Justice#References_for_a_preliminary_ruling">preliminary ruling</a> on 6 questions (<a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii):</p>
+
+<blockquote><p>“i) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect programming languages from being copied, I agree with him that this is a question on which guidance from the ECJ is required (see paragraphs 211-218 above).</p>
+
+<p>ii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect interfaces from being copied where this can be achieved without decompiling the object code, I consider this is also a question on which guidance from the ECJ is required (see paragraphs 219-227 above).</p>
+
+<p>iii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect the functions of the programs from being copied, and although his decision on that point was upheld by the Court of Appeal in <em>Nova</em>, I consider that this is also a question on which guidance from the ECJ is required (see paragraphs 228-238 above).</p>
+
+<p>…</p>
+
+<p>v) I consider that the reasoning which supports Pumfrey J’s interpretation of Article 1(2) of the Software Directive also applies to Article 2(a) of the Information Society Directive, but again this is a question on which guidance from the ECJ is required (see paragraphs 251-256 above).</p>
+
+<p>vi) On the assumption that Article 2(a) of the Information Society Directive is to be interpreted in the same manner as Article 1(2) of the Software Directive, WPL has not infringed SAS Institute’s copyright in the SAS Manuals by producing or testing WPS (see paragraphs 257-267 above).”</p></blockquote>
+
+<p>SAS completely neglects to mention that the judge is clearly prepared to find in favor of WPL in all these questions and cites English precedents in support of such a decision. He asks for the ECJs confirmation of his interpretation because the basis for the rules in English law is EU Directives (see here for the<a href="http://www.hmcourts-service.gov.uk/cms/801.htm"> practice directions </a>the court operates under).</p>
+
+<p>SAS goes on to state the following:</p>
+
+<blockquote><p>“The court also found that WPL acted outside the scope of its license agreement for SAS Learning Edition software by using that product to develop WPL’s World Programming System (WPS) software.”</p></blockquote>
+
+<p>What the judge actually said was this (my emphasis):</p>
+
+<blockquote><p>vii) WPL’s use of the SAS Learning Edition falls outside the scope of the terms of the relevant licences (see paragraphs 276-290 above).</p>
+
+<p>viii) The interpretation of Article 5(3) of the Software Directive is another question on which guidance from the ECJ is required (see paragraphs 291-311 and 314 above).</p>
+
+<p> <em>ix) On the interpretation of Article 5(3) which I favour, WPL’s use of the Learning Edition is within Article 5(3), and to the extent that the licence terms prevent this they are null and void, with the result that none of WPL’s acts complained of was a breach of contract or an infringement of copyright except perhaps one (see paragraphs 313-315 above).</em></p></blockquote>
+
+<p>Also on this issue SAS chooses not to disclose that the judge is prepared to find in favor of WPL.</p>
+
+<p>Accusing WPL of spinning the courts decision and then applying tornado class spin to the decision yourself is just pathetic.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/">Clojure, Jetty 7 and WebSockets</a></h1>
     
     
@@ -101,7 +176,8 @@
 
 <time datetime="2010-07-28T12:00:00+02:00" pubdate data-updated="true">Jul 28<span>th</span>, 2010</time>
         
-         | <a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/#disqus_thread">Comments</a>
+           | <a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/07/28/clojure-jetty-7-and-websockets/">Comments</a>
         
       </p>
     
@@ -143,7 +219,8 @@
 
 <time datetime="2010-07-23T12:00:00+02:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2010</time>
         
-         | <a href="/blog/2010/07/23/sas-vs-world-programming/#disqus_thread">Comments</a>
+           | <a href="/blog/2010/07/23/sas-vs-world-programming/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/07/23/sas-vs-world-programming/">Comments</a>
         
       </p>
     
@@ -203,7 +280,8 @@
 
 <time datetime="2010-06-09T12:00:00+02:00" pubdate data-updated="true">Jun 9<span>th</span>, 2010</time>
         
-         | <a href="/blog/2010/06/09/export-control-and-open-source/#disqus_thread">Comments</a>
+           | <a href="/blog/2010/06/09/export-control-and-open-source/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/06/09/export-control-and-open-source/">Comments</a>
         
       </p>
     
@@ -243,7 +321,8 @@
 
 <time datetime="2010-06-04T12:00:00+02:00" pubdate data-updated="true">Jun 4<span>th</span>, 2010</time>
         
-         | <a href="/blog/2010/06/04/an-acceptable-eula/#disqus_thread">Comments</a>
+           | <a href="/blog/2010/06/04/an-acceptable-eula/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula/">Comments</a>
         
       </p>
     
@@ -425,7 +504,8 @@ Balsamiq to any liability that is unmanageable.</p>
 
 <time datetime="2010-05-07T12:00:00+02:00" pubdate data-updated="true">May 7<span>th</span>, 2010</time>
         
-         | <a href="/blog/2010/05/07/contracts-and-game-mechanics/#disqus_thread">Comments</a>
+           | <a href="/blog/2010/05/07/contracts-and-game-mechanics/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics/">Comments</a>
         
       </p>
     
@@ -471,7 +551,8 @@ Balsamiq to any liability that is unmanageable.</p>
 
 <time datetime="2010-04-30T12:00:00+02:00" pubdate data-updated="true">Apr 30<span>th</span>, 2010</time>
         
-         | <a href="/blog/2010/04/30/zed-shaw-on-programming/#disqus_thread">Comments</a>
+           | <a href="/blog/2010/04/30/zed-shaw-on-programming/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/04/30/zed-shaw-on-programming/">Comments</a>
         
       </p>
     
@@ -507,6 +588,10 @@ Balsamiq to any liability that is unmanageable.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/06/15/Om+my+CSP%21/">Om My CSP!</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a>
       </li>
     
@@ -520,10 +605,6 @@ Balsamiq to any liability that is unmanageable.</p>
     
       <li class="post">
         <a href="/blog/2013/09/13/goto-aarhus-2013-clojurescript/">GOTO Aarhus 2013 - ClojureScript</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/">SAS vs. World Programming – Opinion of the Advocate General</a>
       </li>
     
   </ul>
@@ -577,7 +658,7 @@ Balsamiq to any liability that is unmanageable.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Martin Clausen -
+  Copyright &copy; 2014 - Martin Clausen -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -592,7 +673,7 @@ Balsamiq to any liability that is unmanageable.</p>
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>

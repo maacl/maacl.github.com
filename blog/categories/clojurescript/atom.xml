@@ -4,7 +4,7 @@
   <title><![CDATA[Category: clojurescript | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/clojurescript/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2013-10-02T10:00:07+02:00</updated>
+  <updated>2014-06-22T11:51:57+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Om my CSP!]]></title>
+    <link href="http://www.spyfoos.com/blog/2014/06/15/Om+my+CSP%21/"/>
+    <updated>2014-06-15T19:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2014/06/15/Om my CSP!</id>
+    <content type="html"><![CDATA[<p>Looks like I will be at <a href="http://gotocon.com/cph-2014/">goto CPH</a> again this year.</p>
+
+<p>The format this year is quite different, but looks very interesting nonetheless. Especially the Leading &amp; Bleeding Edge trakc looks interesting. At this track I am especially looking forward to seeing <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
+
+<p>David has created a <a href="https://github.com/clojure/clojurescript">ClojureScript</a> framework on top of <a href="http://facebook.github.io/react/">React</a> called <a href="https://github.com/swannodette/om">Om</a>. Om is not just a wrapper around React. It leverages ClojureScript&rsquo;s immutable datastructures to substitute costly object and array compares with reference equality checks. This results in quite significant <a href="http://swannodette.github.io/2013/12/17/the-future-of-javascript-mvcs/">performance improvements</a>.</p>
+
+<p>David in his <a href="https://github.com/swannodette/om/wiki/Basic-Tutorial#intercomponent-communication">tutorials</a> encourage another ClojureScript feature <a href="https://github.com/clojure/core.async">core.async</a> for intercomponent communication.</p>
+
+<p>As Om is still very new there are not many presentations available but <a href="https://vimeo.com/97516219">Functional UI programming with React.JS and ClojureScript</a> is a very good introduction.</p>
+
+<p>If you understand Norwegian (and maybe even if you don&rsquo;t) <a href="https://github.com/magnars">Magnar Sveen</a> and <a href="https://github.com/cjohansen">Christian Johansen</a> have recorded a very entertaining series of pair programming screencast where they use ClojureScript, <a href="https://github.com/levand/quiescent">Quiescent</a> (an alternative React ClojureScript library) and a TDD approach to create a Zombie themed Memory Flash Game called <a href="http://www.zombieclj.no/">ZOMBIECLJ</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GOTO Aarhus 2013 - ClojureScript]]></title>
