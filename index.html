@@ -9,7 +9,7 @@
   <meta name="author" content="Martin Clausen">
 
   
-  <meta name="description" content="Looks like I will be at goto CPH again this year. The format this year is quite different, but looks very interesting nonetheless. Especially the &hellip;">
+  <meta name="description" content="goto CPH is closing in rapidly. As mentioned previously I am especially looking forward to David Nolen&rsquo;s talk Putting the Dream Machine to Work &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,53 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/">Om, Clojure/ClojureScript and Event Sourcing</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-09T22:00:00+02:00" pubdate data-updated="true">Sep 9<span>th</span>, 2014</time>
+        
+           | <a href="/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://gotocon.com/cph-2014/">goto CPH</a> is closing in rapidly.</p>
+
+<p>As mentioned previously I am especially looking forward to  <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
+
+<p><a href="https://github.com/swannodette/om">Om</a> is getting a lot of coverage and even if it is still very new, it is seeing some heavy duty prodcution usage, for instance at <a href="http://www.getprismatic.com/">Prismatic</a>. But Prismatic has gone even further that just using Om and released <a href="https://github.com/Prismatic/om-tools">om-tools</a>, which makes it even more straight forward to use Om. I especially like how it smoothes over some of the slightly ugly Javascript interop that Om requires out of the box.</p>
+
+<p>Another talk I am looking very much forward to is <a href="http://gotocon.com/cph-2014/presentation/Event-sourcing">Greg Young&rsquo;s talk on Event Sourcing</a>. Event Sourcing is a very interesting <a href="http://martinfowler.com/eaaDev/EventSourcing.html">pattern</a> which has a very natural fit to many common business scenarios, and I am looking forward to Greg Young giving us some examples of that. The benefits of the event sourcing pattern appears to me to overlap somewhat with the benefits of the Clojure based database <a href="http://www.datomic.com/">Datomic</a> which also emphazises the need for a solid model of time.</p>
+
+<p>If you are interested in dabbling with Event Sourcing and have been inspired by David&rsquo;s talk on Om/ClojureScript you should check out the <a href="http://jvmsoup.com/2014/06/23/clojure-websockets-server-and-event-sourcing/">JVM Soup post on Event Sourcing in Clojure</a>. This post demonstrates how to use <a href="https://github.com/clojure/core.async">core.async</a> Clojure/ClojureScripts CSP implentation, which David also recommends to do inter component communication when using Om, to do event sourcing in Clojure/ClojureScript.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/06/15/Om-my-CSP/">Om My CSP</a></h1>
     
     
@@ -111,7 +158,7 @@
 
   <div class="entry-content"><p>Looks like I will be at <a href="http://gotocon.com/cph-2014/">goto CPH</a> again this year.</p>
 
-<p>The format this year is quite different, but looks very interesting nonetheless. Especially the Leading &amp; Bleeding Edge trakc looks interesting. At this track I am especially looking forward to seeing <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
+<p>The format this year is quite different, but looks very interesting nonetheless. Especially the Leading &amp; Bleeding Edge track looks interesting. At this track I am especially looking forward to seeing <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
 
 <p>David has created a <a href="https://github.com/clojure/clojurescript">ClojureScript</a> framework on top of <a href="http://facebook.github.io/react/">React</a> called <a href="https://github.com/swannodette/om">Om</a>. Om is not just a wrapper around React. It leverages ClojureScript&rsquo;s immutable datastructures to substitute costly object and array compares with reference equality checks. This results in quite significant <a href="http://swannodette.github.io/2013/12/17/the-future-of-javascript-mvcs/">performance improvements</a>.</p>
 
@@ -673,55 +720,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/">Oracle vs Google - Implementing the JVM Specification</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-08-24T12:00:00+02:00" pubdate data-updated="true">Aug 24<span>th</span>, 2010</time>
-        
-           | <a href="/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/#disqus_thread"
-             data-disqus-identifier="http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
-
-<p>For context Oracle in the complaint defines Android as:</p>
-
-<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
-
-<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
-
-<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
-
-<p>Would the analysis under US copyright law be the same?</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -737,6 +735,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/">Om, Clojure/ClojureScript and Event Sourcing</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/06/15/Om-my-CSP/">Om My CSP</a>
       </li>
     
@@ -750,10 +752,6 @@
     
       <li class="post">
         <a href="/blog/2013/09/14/flexible-contracts/">Flexible Contracts</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/09/13/goto-aarhus-2013-clojurescript/">GOTO Aarhus 2013 - ClojureScript</a>
       </li>
     
   </ul>
