@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Oracle Java 7 and 'Commercial Features' - The Limiting Factor</title>
+  <meta name="author" content="Martin Clausen">
+
+  
+  <meta name="description" content="Oracle has just announced the general availability of Java 7 SE including Java SE Advanced and Java SE Suite. Being a software license nerd I of &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="The Limiting Factor" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44225157-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">The Limiting Factor</a></h1>
+  
+    <h2>- semi-structured line noise.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.spyfoos.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Oracle Java 7 and 'Commercial Features'</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-28T12:00:00+02:00" pubdate data-updated="true">Jul 28<span>th</span>, 2011</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Oracle has just announced the general availability of Java 7 SE including Java SE Advanced and Java SE Suite.</p>
+
+<p>Being a software license nerd I of course skimmed the <a href="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">Java SE License Agreement </a>(full title “Oracle Binary Code License Agreement for the Java SE Platform Products”).</p>
+
+<p>The license contains some interesting wording regarding “Commercial Features” in section 1, 2 and SUPPLEMENTAL LICENSE TERMS section A and G. The “Commercial Features” are defined in <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this</a> document (PDF version with better layout <a href="http://www.oracle.com/technetwork/java/javase/documentation/java-se-product-editions-397069.pdf">here</a>). Please note that the specification of “Commercial Features” is not part of the license as such and therefor subject to change at Oracle’s discretion.</p>
+
+<p><img src="/images/posts/jvm_commercial_features_table.png" title="JVM Commercial Features Table" alt="jvm_commercial_features_table" /></p>
+
+<p>It turns out the “Commercial Features” are subject to rather draconian restrictions (SUPPLEMENTAL LICENSE TERMS section A):</p>
+
+<blockquote><p>COMMERCIAL FEATURES You may not use the Commercial Features for running Programs, Java applets or applications in your internal business operations or for any commercial or production&nbsp; purpose, or for any purpose other than as set forth in Sections B, C, D and E of these Supplemental Terms.&nbsp; If You want to use the Commercial Features for any purpose other than as permitted in this Agreement, You must obtain a separate license from Oracle.</p></blockquote>
+
+<p>As you can tell any meaningful business use of the “Commercial Features” are subject to a separate license.</p>
+
+<p>So does the regular Java 7 SE download contain any of these “Commercial Features”? It does not look like it and the Java Se Advance and Java SE Suite packages doesn’t either, because they do not exist. From below two sections that appear at end of <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this </a>document, it is clear that the Java SE Advanced and Java SE Suite “products” are a combination of the Java 7 SE and a number of separate packages.</p>
+
+<blockquote><h2>Installation of Java SE Product Editions</h2>
+
+<p>Oracle does not provide installation programs that correspond directly to Java SE, Oracle Java SE Advanced and Oracle Java SE Suite. Depending on the features licensed, one or more of the following individual packages must be downloaded:</p>
+
+<p>JRE&nbsp;JDK</p>
+
+<p>JRockit JDK</p>
+
+<p>JRockit Mission Control</p>
+
+<p>Java for Business JRE</p>
+
+<p>Java for Business JDK</p>
+
+<h3>Licensing Considerations and Restricted-Use Licensing</h3>
+
+<p>Some of the packages described in Installation of Java SE Product Editions install commercial features that are restricted to Oracle Java SE Advanced or Oracle Java SE Suite. For example, the JRockit JDK comes with a deterministic garbage collector that requires a Oracle Java SE Suite license.</p></blockquote>
+
+<p>If you download (which you can do for instance <a href="http://www.oracle.com/technetwork/java/javase/downloads/jrefb-5u30-download-401429.html">here</a> and <a href="http://www.oracle.com/technetwork/middleware/jrockit/downloads/index.html">here</a>) and use these extra packages for the purposes outlined above (any meaning full business use) in combination with Java 7 SE you are subject to a separate (ostensibly payable) license.</p>
+
+<p>The only mention I can find of this change from Oracle is <a href="http://blogs.oracle.com/henrik/entry/jrockit_is_now_free_and">this</a> blog post with the clearly misleading title “JRockit is Now Free (and Other Java License Updates)”, as this does not apply to the JRockit “Commercial Features” listed above.</p>
+
+<p>You should make sure that your developers, ops people and relevant vendors of such service knows this, or you could end up breaching your license and owing Oracle a lot of money.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Martin Clausen</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-28T12:00:00+02:00" pubdate data-updated="true">Jul 28<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/copyright/'>copyright</a>, <a class='category' href='/blog/categories/evil/'>evil</a>, <a class='category' href='/blog/categories/jvm/'>jvm</a>, <a class='category' href='/blog/categories/license/'>license</a>, <a class='category' href='/blog/categories/oracle/'>oracle</a>, <a class='category' href='/blog/categories/sla/'>sla</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/" data-via="" data-counturl="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/04/24/dropbox-unzip/" title="Previous Post: Dropbox Unzip">&laquo; Dropbox Unzip</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/" title="Next Post: SAS vs. World Programming – Opinion of the Advocate General">SAS vs. World Programming – Opinion of the Advocate General &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/">Om, Clojure/ClojureScript and Event Sourcing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/15/Om-my-CSP/">Om My CSP</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/hit-record/">Hit Record!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/flexible-contracts/">Flexible Contracts</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/maacl">@maacl</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'maacl',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116274805578840683959?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Martin Clausen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'thelimitingfactor';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/';
+        var disqus_url = 'http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

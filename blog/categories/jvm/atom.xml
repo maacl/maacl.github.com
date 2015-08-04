@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: jvm | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/jvm/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2014-09-09T22:20:09+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle Java 7 and 'Commercial Features']]></title>
+    <link href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/"/>
+    <updated>2011-07-28T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features</id>
+    <content type="html"><![CDATA[<p>Oracle has just announced the general availability of Java 7 SE including Java SE Advanced and Java SE Suite.</p>
+
+<p>Being a software license nerd I of course skimmed the <a href="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">Java SE License Agreement </a>(full title “Oracle Binary Code License Agreement for the Java SE Platform Products”).</p>
+
+<p>The license contains some interesting wording regarding “Commercial Features” in section 1, 2 and SUPPLEMENTAL LICENSE TERMS section A and G. The “Commercial Features” are defined in <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this</a> document (PDF version with better layout <a href="http://www.oracle.com/technetwork/java/javase/documentation/java-se-product-editions-397069.pdf">here</a>). Please note that the specification of “Commercial Features” is not part of the license as such and therefor subject to change at Oracle’s discretion.</p>
+
+<p><img src="/images/posts/jvm_commercial_features_table.png" title="JVM Commercial Features Table" alt="jvm_commercial_features_table" /></p>
+
+<p>It turns out the “Commercial Features” are subject to rather draconian restrictions (SUPPLEMENTAL LICENSE TERMS section A):</p>
+
+<blockquote><p>COMMERCIAL FEATURES You may not use the Commercial Features for running Programs, Java applets or applications in your internal business operations or for any commercial or production&nbsp; purpose, or for any purpose other than as set forth in Sections B, C, D and E of these Supplemental Terms.&nbsp; If You want to use the Commercial Features for any purpose other than as permitted in this Agreement, You must obtain a separate license from Oracle.</p></blockquote>
+
+<p>As you can tell any meaningful business use of the “Commercial Features” are subject to a separate license.</p>
+
+<p>So does the regular Java 7 SE download contain any of these “Commercial Features”? It does not look like it and the Java Se Advance and Java SE Suite packages doesn’t either, because they do not exist. From below two sections that appear at end of <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this </a>document, it is clear that the Java SE Advanced and Java SE Suite “products” are a combination of the Java 7 SE and a number of separate packages.</p>
+
+<blockquote><h2>Installation of Java SE Product Editions</h2>
+
+<p>Oracle does not provide installation programs that correspond directly to Java SE, Oracle Java SE Advanced and Oracle Java SE Suite. Depending on the features licensed, one or more of the following individual packages must be downloaded:</p>
+
+<p>JRE&nbsp;JDK</p>
+
+<p>JRockit JDK</p>
+
+<p>JRockit Mission Control</p>
+
+<p>Java for Business JRE</p>
+
+<p>Java for Business JDK</p>
+
+<h3>Licensing Considerations and Restricted-Use Licensing</h3>
+
+<p>Some of the packages described in Installation of Java SE Product Editions install commercial features that are restricted to Oracle Java SE Advanced or Oracle Java SE Suite. For example, the JRockit JDK comes with a deterministic garbage collector that requires a Oracle Java SE Suite license.</p></blockquote>
+
+<p>If you download (which you can do for instance <a href="http://www.oracle.com/technetwork/java/javase/downloads/jrefb-5u30-download-401429.html">here</a> and <a href="http://www.oracle.com/technetwork/middleware/jrockit/downloads/index.html">here</a>) and use these extra packages for the purposes outlined above (any meaning full business use) in combination with Java 7 SE you are subject to a separate (ostensibly payable) license.</p>
+
+<p>The only mention I can find of this change from Oracle is <a href="http://blogs.oracle.com/henrik/entry/jrockit_is_now_free_and">this</a> blog post with the clearly misleading title “JRockit is Now Free (and Other Java License Updates)”, as this does not apply to the JRockit “Commercial Features” listed above.</p>
+
+<p>You should make sure that your developers, ops people and relevant vendors of such service knows this, or you could end up breaching your license and owing Oracle a lot of money.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle vs Google - Implementing the JVM Specification]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/"/>
+    <updated>2010-08-24T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification</id>
+    <content type="html"><![CDATA[<p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
+
+<p>For context Oracle in the complaint defines Android as:</p>
+
+<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
+
+<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
+
+<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
+
+<p>Would the analysis under US copyright law be the same?</p>
+]]></content>
+  </entry>
+  
+</feed>

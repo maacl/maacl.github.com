@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: jetty | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/jetty/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2014-09-09T22:20:09+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Clojure, Jetty 7 and WebSockets]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/28/clojure-jetty-7-and-websockets/"/>
+    <updated>2010-07-28T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/28/clojure-jetty-7-and-websockets</id>
+    <content type="html"><![CDATA[<p>I found this <a href="http://gist.github.com/281490">gist</a> by Chris McDevitt&nbsp;which is a simple chat server and browser client that uses Jetty 7, Clojure and WebSockets.</p>
+
+<p>I turned out to be quite a hassle to get it running so I thought I would document it here so others might save some time.</p>
+
+<p>I have create a <a href="http://github.com/maacl/websocket-test">project</a> on github that includes all the dependencies. I run it in Emacs using swank-clojure-project. The two last forms start the two servers – one is the websocket chat server, the other just serves the index.html file (this is necessary for the web_socket.js&nbsp; to work). I have only been able to make this work in browsers with native websocket support (Chrome and Safari). If anybody can figure out what goes wrong in the other browsers (e.g. Firefox) let me know, and I will update.</p>
+]]></content>
+  </entry>
+  
+</feed>

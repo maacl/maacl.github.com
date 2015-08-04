@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: unity | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/unity/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2014-09-09T22:20:09+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Licensing Done Right!]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/10/01/licensing-done-right/"/>
+    <updated>2013-10-01T19:40:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/10/01/licensing-done-right</id>
+    <content type="html"><![CDATA[<p>Just attended a very nice overview talk on the Unity game development system at <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>.</p>
+
+<p>The tech in Unity itself is very impressive, especially the ability to deploy the same code base and assets to 10+ platforms, including iOS. But Unity has also put a lot of thought into how the product is licensed. Not only was it a very conscious decision by the founders that Unity be royalty free, but the same thoughtfulness has also been applied to the Unity Asset Store.</p>
+
+<p>The Asset Store is Unity&rsquo;s equivalent of the App Store, but instead of apps you can buy art (e.g. graphics, models, audio) and code assets for inclusion in your Unity project. Had Unity left the choice of license up to the creators of the submitted assets, it would have completely undermined the royalty free nature of the Unity engine, as each asset could potentially inject it&rsquo;s own royalty model into a product created with Unity. Instead all assets are per definition subject to standard royalty free <a href="http://unity3d.com/company/legal/as_terms">TOS &amp; EULA</a>, and as explained in the below excerpt from Unity&rsquo;s Asset Store <a href="http://unity3d.com/asset-store/sell-assets/submission-guidelines">submission guidelines</a> it is not possible to sell assets in the Asset Store that are subject to other/additional terms.</p>
+
+<blockquote><p>6.2 Licensing your Content</p>
+
+<p>For consistency sake, all Asset Store offerings are covered by a license we have created. Please have a look at the End User License Agreement to be sure you are comfortable with it. If you are offering your content for free, you have the further option of selecting one of three free-licenses, which override the basics of our commercial license. Please do not include your own license terms in your offering.</p></blockquote>
+
+<p>It is very refreshing to see how licensing models can be designed to enhance the usefulness of a product and its eco-system, while at the same time serve as the underpinning of an indisputable financial success.</p>
+
+<p>If you have any use-cases involving 3D graphics you really should check Unity out. And please note that Unity is not limited to games. Unity Studios have done some really cool non-game applications, including a simulation for training safety procedures at sea and a brilliant <a href="http://www.velux.dk/private/inspiration/velux_ovenlysdesigner">app</a> for Velux that let&rsquo;s you simulate the effects of installing Velux windows in your own home.</p>
+]]></content>
+  </entry>
+  
+</feed>

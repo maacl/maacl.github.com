@@ -1,0 +1,759 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>The Limiting Factor</title>
+  <meta name="author" content="Martin Clausen">
+
+  
+  <meta name="description" content="A lot has already been written on the Oracle vs. Google Android case. Some of it is brilliant. Some is illuminating, some less so. Since the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.spyfoos.com/blog/page/2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="The Limiting Factor" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44225157-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">The Limiting Factor</a></h1>
+  
+    <h2>- semi-structured line noise.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.spyfoos.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/">Oracle vs Google - Implementing the JVM Specification</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-24T12:00:00+02:00" pubdate data-updated="true">Aug 24<span>th</span>, 2010</time>
+        
+           | <a href="/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
+
+<p>For context Oracle in the complaint defines Android as:</p>
+
+<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
+
+<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
+
+<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
+
+<p>Would the analysis under US copyright law be the same?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/07/29/sas-vs-world-programming-sas-version/">SAS vs World Programming - SAS&#8217; Vesion</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-29T12:00:00+02:00" pubdate data-updated="true">Jul 29<span>th</span>, 2010</time>
+        
+           | <a href="/blog/2010/07/29/sas-vs-world-programming-sas-version/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>SAS issued a <a href="http://www.sas.com/news/preleases/WPL.html">press release</a> today with its take on the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">recent decision</a> in the case between the two companies.</p>
+
+<p>While WPL’s <a href="http://teamwpc.co.uk/press/world_programming_secures_high_court_victory_against_SAS">press release</a> might have been s optimistic in its evaluation of the decision, SAS’ press release is a master piece of hypocrisy and highly tendentious. The headline:</p>
+
+<blockquote><p>“Court finds World Programming Ltd. Infringed on SAS Copyrights; refers case to European Court of Justice”</p></blockquote>
+
+<p>Technically this is wrong. The judge referred a number of key questions to the ECJ – not the case it self. More specifically the judge asked for a <a href="http://en.wikipedia.org/wiki/European_Court_of_Justice#References_for_a_preliminary_ruling">preliminary ruling</a> on 6 questions (<a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii):</p>
+
+<blockquote><p>“i) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect programming languages from being copied, I agree with him that this is a question on which guidance from the ECJ is required (see paragraphs 211-218 above).</p>
+
+<p>ii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect interfaces from being copied where this can be achieved without decompiling the object code, I consider this is also a question on which guidance from the ECJ is required (see paragraphs 219-227 above).</p>
+
+<p>iii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect the functions of the programs from being copied, and although his decision on that point was upheld by the Court of Appeal in <em>Nova</em>, I consider that this is also a question on which guidance from the ECJ is required (see paragraphs 228-238 above).</p>
+
+<p>…</p>
+
+<p>v) I consider that the reasoning which supports Pumfrey J’s interpretation of Article 1(2) of the Software Directive also applies to Article 2(a) of the Information Society Directive, but again this is a question on which guidance from the ECJ is required (see paragraphs 251-256 above).</p>
+
+<p>vi) On the assumption that Article 2(a) of the Information Society Directive is to be interpreted in the same manner as Article 1(2) of the Software Directive, WPL has not infringed SAS Institute’s copyright in the SAS Manuals by producing or testing WPS (see paragraphs 257-267 above).”</p></blockquote>
+
+<p>SAS completely neglects to mention that the judge is clearly prepared to find in favor of WPL in all these questions and cites English precedents in support of such a decision. He asks for the ECJs confirmation of his interpretation because the basis for the rules in English law is EU Directives (see here for the<a href="http://www.hmcourts-service.gov.uk/cms/801.htm"> practice directions </a>the court operates under).</p>
+
+<p>SAS goes on to state the following:</p>
+
+<blockquote><p>“The court also found that WPL acted outside the scope of its license agreement for SAS Learning Edition software by using that product to develop WPL’s World Programming System (WPS) software.”</p></blockquote>
+
+<p>What the judge actually said was this (my emphasis):</p>
+
+<blockquote><p>vii) WPL’s use of the SAS Learning Edition falls outside the scope of the terms of the relevant licences (see paragraphs 276-290 above).</p>
+
+<p>viii) The interpretation of Article 5(3) of the Software Directive is another question on which guidance from the ECJ is required (see paragraphs 291-311 and 314 above).</p>
+
+<p> <em>ix) On the interpretation of Article 5(3) which I favour, WPL’s use of the Learning Edition is within Article 5(3), and to the extent that the licence terms prevent this they are null and void, with the result that none of WPL’s acts complained of was a breach of contract or an infringement of copyright except perhaps one (see paragraphs 313-315 above).</em></p></blockquote>
+
+<p>Also on this issue SAS chooses not to disclose that the judge is prepared to find in favor of WPL.</p>
+
+<p>Accusing WPL of spinning the courts decision and then applying tornado class spin to the decision yourself is just pathetic.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/">Clojure, Jetty 7 and WebSockets</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-28T12:00:00+02:00" pubdate data-updated="true">Jul 28<span>th</span>, 2010</time>
+        
+           | <a href="/blog/2010/07/28/clojure-jetty-7-and-websockets/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/07/28/clojure-jetty-7-and-websockets/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I found this <a href="http://gist.github.com/281490">gist</a> by Chris McDevitt&nbsp;which is a simple chat server and browser client that uses Jetty 7, Clojure and WebSockets.</p>
+
+<p>I turned out to be quite a hassle to get it running so I thought I would document it here so others might save some time.</p>
+
+<p>I have create a <a href="http://github.com/maacl/websocket-test">project</a> on github that includes all the dependencies. I run it in Emacs using swank-clojure-project. The two last forms start the two servers – one is the websocket chat server, the other just serves the index.html file (this is necessary for the web_socket.js&nbsp; to work). I have only been able to make this work in browsers with native websocket support (Chrome and Safari). If anybody can figure out what goes wrong in the other browsers (e.g. Firefox) let me know, and I will update.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/07/23/sas-vs-world-programming/">SAS vs. World Programming</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-23T12:00:00+02:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2010</time>
+        
+           | <a href="/blog/2010/07/23/sas-vs-world-programming/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/07/23/sas-vs-world-programming/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>UPDATE: I did a follow-up post on the SAS Press Release <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a></p>
+
+<p>So the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">decision</a> in “SAS Institute Inc v World Programming Ltd” has been published and it is in favor of WPL on all counts, except that the judge finds that WPL – against it’s own policy – copied certain language from SAS’ manuals into its own manuals.</p>
+
+<p>Key questions pertaining to almost all the other claims will be submitted to the ECJ for confirmation of the judges interpretation of the law(specifically Articles 1(2) and 5(3) of the <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">Software Directive</a> and Article 2(a) of the <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32001L0029:EN:HTML">Information Society Directive</a>) (see below).</p>
+
+<p>If everything holds up this is potentially a huge win for competition in the software industry.The decision means that can re-implement the functionality of other software and reference that software and its documentation in the process, as long as you do not copy any source code or documentation. The judge (who appears to be quite technically savvy) analyses in detail how the SAS language is constructed. SAS appears to argue that the PROCS steps in the SAS Language is not a programming language, but in fact a computer program in itself. The SAS expert Dr. Ivey states the following on the matter:</p>
+
+<p>&gt; the SAS Language was a domain specific computer language with many of the attributes of a command language, rather than a programming language</p>
+
+<p>It is not clear to me exactly what SAS was hoping to achieve with this line of reasoning (<a href="http://news.ycombinator.com/item?id=1545404">perhaps they were trying to escape a suspected non-copyrightability of programming languages</a>) but whatever it was it did not work as the judge slightly sarcastically <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para56">finds</a> that:</p>
+
+<p>&gt; In my judgment the SAS Language is a programming language. I am comforted by the fact that this assessment coincides not only with SAS Institute’s own assessment in paragraph 6 of its Particulars of Claim and in its literature, but also with that of the anonymous author of the entry for “SAS language” in Wikipedia (as last modified on 25 April 2010), which states:
+&gt;
+&gt; “… SAS can be considered a general programming language, though it serves largely as a database programming language and a language with a wide variety of specialized analytic and graphic procedures.”</p>
+
+<p>The judge also analyses whether the <em>functionality </em>of a computer program (not the source code) is itself protectable by copyright and <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para236">finds</a> that:</p>
+
+<p>&gt; Accordingly, I consider that the functionality of a computer program falls on the wrong side of the line drawn by Article 1(2) of the Software Directive, Article 9(2) of TRIPS and Article 2 of the WIPO Copyright Treaty.</p>
+
+<p>So the functionality of a computer program is not protectable, which is not too surprising, but as the question in the judges opinion is not _<a href="http://www.translegal.com/legal-english-dictionary/acte-clair">acte clair_</a> it is submitted together with 5 other questions (<a href="http:/www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii)) to the ECJ for guidance. Among these is also the question of whether a programming language as such is protectable by copyright. The judge finds that this is probably not the case, but appears less certain on this question than the others.</p>
+
+<p>It will be really interesting to see if this will result alternative vendors deciding to challenge other dominant software products, by producing compatible solutions that release the customers from lock-in and introduce effective competition.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/06/09/export-control-and-open-source/">Open Source and Export Control</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-09T12:00:00+02:00" pubdate data-updated="true">Jun 9<span>th</span>, 2010</time>
+        
+           | <a href="/blog/2010/06/09/export-control-and-open-source/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/06/09/export-control-and-open-source/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ref my comments on export control rules in my previous post, it looks like these are now impacting open source in a major way. Apparently SourceForge in an effort to comply with US export control rules (specifically countries covered by sanctions administrated by <a href="http://www.ustreas.gov/offices/enforcement/ofac/">OFAC</a>) have blocked all users from Cuba, Iran, North Korea, Sudan, and Syria. <a href="http://notepad-plus-plus.org/">NotePad++</a> appears to be the first project to withdraw from SourceForge in protest.</p>
+
+<p>UPDATE: Apparently SourceForge has now made the blocking of users from sanctioned countries <a href="http://sourceforge.net/blog/some-good-news-SourceForge-removes-blanket-blocking/">optional</a>. This leaves the assessment of whether or not a project is subject to the rules up to the project owner. As export control is quite an esoteric topic some links to guidance on the applicability of US export control rules would probably have been a good idea, but SourceForge’s consel has probably counseled against that for liability reasons.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/06/04/an-acceptable-eula/">An Acceptable EULA?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-04T12:00:00+02:00" pubdate data-updated="true">Jun 4<span>th</span>, 2010</time>
+        
+           | <a href="/blog/2010/06/04/an-acceptable-eula/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Is there such a thing? Until today I did not think so, but after having
+watched Mixergy&rsquo;s
+<a href="/web/20100907205218/http://mixergy.com/balsamiq-peldi-guilizzoni-interview/">interview</a>
+with Balsamiq’s Giacomo “Peldi” Guilizzoni, I was optimistic that I
+might have finally found one. Check Balsamiq’s EULA out
+<a href="/web/20100907205218/http://www.balsamiq.com/images/BalsamiqEula.pdf">here</a>.
+Peldi mentions in the interview that a helpful customer in-house counsel
+gave him some great feedback that helped improve the license. To
+whatever she told him, I would add the following:</p>
+
+<h4>Preamble</h4>
+
+<p>Don’t use “represents and warrants” use only “represents”. The form is
+needless legalese and part of the reason why people hate lawyers. If you
+don’t agree read
+<a href="/web/20100907205218/http://www.adamsdrafting.com/2009/09/18/rs-and-ws-once-more-with-feeling/">this</a>
+– then go change it.</p>
+
+<h4>Definitions</h4>
+
+<p>“Authorized Users” and “Authorized User” – makes no sense that the
+plural form would have a completely different meaning than the singular.
+“Authorized Users” is never used in the EULA. This might make sense when
+read together with the Quote/Receipt/Invoice but I doubt it. The
+definitions of “Authorized Machine” and “Authorized Server Node” do not
+appear to deal well with virtual environments.</p>
+
+<h4>Section 3 Grant of License</h4>
+
+<p>The license granted is “irrevocable” but at he same time terminable by
+Balsamiq as per section 12. This appears inconsistent. “(except pursuant
+to Clause 12 below)” should be added after “irrevocable”.</p>
+
+<h4>Section 4 No Warranty</h4>
+
+<p>Excluding all warranties does not strike me as compatible Balsamiqs
+mission to produce high quality software. You can’t claim to aim for
+excellence in everything you do, and the refuse to back it up – that’s
+simply not credible. On the other hand warranties provided for goods are
+not appropriate for software, as these are calibrated for defects that
+occur in individual instances (copies) of the product. I would suggest a
+warranty that better correspond to the apparently fanatical customer
+service Balsamiq provides. This does no mean warranting to fix bugs
+within a certain timeframe, but it does mean warranting a meaningful
+response to reported bugs etc. If you are doing it already it such a
+warranty is essential free, if you make sure that the customers remedies
+if you fail are manageable. If such remedies for instance only apply to
+the (first) reporter of the bug, you contain the effect of the warranty
+from spreading to all customers.</p>
+
+<h4>Section 6.1 Software Maintenance – For Plug-in Versions</h4>
+
+<p>Excellent to see inclusion of a reasonable price-escalation clause for
+Software Maintenance. This is something that I have had to negotiate
+many times and which any prudent licensee should always remember. You
+don’t want to be
+<a href="/web/20100907205218/http://www.zdnet.com/blog/howlett/sap-pulls-the-trigger-on-higher-support-costs/442">treated</a>
+like SAP’s customers, do you?</p>
+
+<h4>Section 9 Investigation of Unauthorized Use and Distribution</h4>
+
+<p>This is a very pragmatic alternative to audit rights which especially a
+company the size of Balsamiq would have very little use for. The
+fairness of allocating the cost of producing the certificate to the
+licensee should be considered, since this might exceed the license fee
+by a factor of many in some cases. I would consider some kind of
+compensation (free maintenance?) to the customer if a request for a
+certificate is made and this is provided, as this is would indicate that
+Balsamiqs suspicion was not well-founded.</p>
+
+<h4>Section 10 (a) Licensee’s Restrictions</h4>
+
+<p>Very common provision which is also very unenforceable in the EU if the
+motif for the reverse engineering is a desire to “achieve the
+interoperability of an independently created computer program with other
+programs” (thanks to art. 5 and 6 of this
+EU <a href="/web/20100907205218/http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">directive</a>).</p>
+
+<h4>Section 10 (b) Licensee’s Restrictions</h4>
+
+<p>Appears superfluous. How would the customer ever unilaterally be able to
+vary the “Authorized Use”? That said there might be a technicality in
+California law that makes it prudent to include this.</p>
+
+<h4>Section 10 (d) and (e) Licensee’s Restrictions</h4>
+
+<p>WTF! I can’t refer to Balsamiq’s name or do anything that has a
+“material and adverse effect on Balsamiq’s” interests. I am glad that I
+did not license Balsamiq’s software before writing this post. How can
+you promote Balsamiq as an open organisation in continuous dialog with
+its customers, and then muffle the same audience with your EULA?</p>
+
+<h4>Section 12 – Termination</h4>
+
+<p>The destruction of all copies of the software is a practical
+impossibility in many enterprise environments due to the back-up
+strategies employed. Since this will only become a requirement in case
+of a breach it might be justified nonetheless, but a more balanced
+alternative might be to require the destruction of all “readily usable
+copies” of the software or similar.</p>
+
+<h4>Section 13 – Infringement Indemnification</h4>
+
+<p>For the software in question and taking into account the size of the
+vendor (Balsamiq) this is a very reasonable clause, and it is a wise
+move to include indemnification if you want to have any hope selling
+your software to enterprise customers.</p>
+
+<h4>Section 14 – Limitation of Liability</h4>
+
+<p>Good to see that the indemnification obligations are exempted from the
+limitation of liability.</p>
+
+<h4>Section 16 – Open Source Code</h4>
+
+<p>For Balsamiq’s present product I wouldn’t worry much about the “viral”
+nature of the GPL and other similar licenses, which is clearly what this
+section is meant to address, but the section clearly does no harm
+either. If the software was meant for combination with the customer’s
+code or other software and subsequent distribution, I would be more
+interested in the list of of open source products/licenses in Exhibit A
+as this would enable me to assess any challenges related hereto.</p>
+
+<h4>Section 17 – Publicity Rights</h4>
+
+<p>This section solves a very common problem in a fairly practical way (the
+customer can opt out of Balsamiqs right to use the customer for
+publicity purpose prior to or any time after purchase) but a better more
+honest and straight forward solution, would be to permit the customer to
+opt out via the web form used to purchase the product.</p>
+
+<h4>Section 24 – Notices</h4>
+
+<p>While not critical why appear unreasonable by biasing this section in
+Balsamiqs favour? On Export Control (especially US) you really want to
+provide the relevant export control classification codes if you expect
+any one to comply with the rules. In general you want to try to avoid
+having your software subject to US export control rules as these are
+absolutely not trivial.</p>
+
+<p>On balance Balsamiq’s EULA is above average but still suffers from a few
+weakness as outlined above. Most of these can be fixed without exposing
+Balsamiq to any liability that is unmanageable.</p>
+
+<p>DISCLAIMER: Above is not legal advice bla, bla, bla.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/05/07/contracts-and-game-mechanics/">Contracts and Game Mechanics</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-07T12:00:00+02:00" pubdate data-updated="true">May 7<span>th</span>, 2010</time>
+        
+           | <a href="/blog/2010/05/07/contracts-and-game-mechanics/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Game Mechanics (see<a href="http://en.wikipedia.org/wiki/Game_mechanics"> def</a>, great intro <a href="http://www.youtube.com/watch?v=ihUt-163gZI">video</a>)</p>
+
+<h2>How are contractual game mechanics different from liquidated damages / service credits?</h2>
+
+<p>Liquidated damages / service credits appear to me a subset of contractual game mechanics. Contractual game mechanics would also include non monetary and indirect monetary rewards. These could be classical rewards like points, badges etc. but could also include rights of potential monetary value. Intuitively I don&rsquo;t think the classical rewards would have much effect in a contractual setting as they depend on individual psychological mechanisms which would be subdued by the goals of the commercial entity that is party to the contract. If the latter category more interesting especially if applied across contracts  with competing vendors.</p>
+
+<h2>Can contractual game mechanics be applied across contracts?</h2>
+
+<p>Imagine three vendors of for example systems operations services. The customer has near identical contracts with the three vendors (there are ways to deal any differences, which I will get back to below), including the service catalog. Now imagine that the contracts have built-in game mechanics that rewards/punishes the vendors performance under the contract. High up time gives you points &ndash; low the opposite. Timely reporting 3 months in a row gives you a badge etc. etc. Estimates of time and material tasks within 5% of of actual usage gives you a golden star. The customer now tenders the operations and implementation of a new system among the different vendors. This being 2010 (or later) this is obviously done using an e-auction. But here is the trick &ndash; the three vendors are handicapped in the auction in accordance with the historic points, badges and golden stars. This handicap could be applied on top of a base handicap reflecting any permanent differences between the vendor contracts. Ideally the handicaps are transparent across vendors so there is a continuous incentive to offer better terms and improve performance.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/04/30/zed-shaw-on-programming/">Zed Shaw on Programming</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-04-30T12:00:00+02:00" pubdate data-updated="true">Apr 30<span>th</span>, 2010</time>
+        
+           | <a href="/blog/2010/04/30/zed-shaw-on-programming/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2010/04/30/zed-shaw-on-programming/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Zed writes the following in his work-in-progress book on programming in Python:</p>
+
+<blockquote><p>Programming as a profession is only moderately interesting. It can be a good job, but if you want to make about thesame money and be happier you could actually just go run a fast food joint. You are much better off using code as your secret weapon in another profession.</p>
+
+<p>People who can code in the world of technology companies are a dime a dozen and get no respect. People who can code in biology, medicine, government, sociology, physics, history, and mathematics are respected and can do amazing things to advance those disciplines.</p></blockquote>
+
+<p>I am not sure that even Zed realizes how profound a truth the above is.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/">Om, Clojure/ClojureScript and Event Sourcing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/15/Om-my-CSP/">Om My CSP</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/hit-record/">Hit Record!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/flexible-contracts/">Flexible Contracts</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/maacl">@maacl</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'maacl',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116274805578840683959?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Martin Clausen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'thelimitingfactor';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

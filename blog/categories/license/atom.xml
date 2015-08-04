@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: license | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/license/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2014-09-09T22:20:09+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle Java 7 and 'Commercial Features']]></title>
+    <link href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/"/>
+    <updated>2011-07-28T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features</id>
+    <content type="html"><![CDATA[<p>Oracle has just announced the general availability of Java 7 SE including Java SE Advanced and Java SE Suite.</p>
+
+<p>Being a software license nerd I of course skimmed the <a href="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">Java SE License Agreement </a>(full title “Oracle Binary Code License Agreement for the Java SE Platform Products”).</p>
+
+<p>The license contains some interesting wording regarding “Commercial Features” in section 1, 2 and SUPPLEMENTAL LICENSE TERMS section A and G. The “Commercial Features” are defined in <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this</a> document (PDF version with better layout <a href="http://www.oracle.com/technetwork/java/javase/documentation/java-se-product-editions-397069.pdf">here</a>). Please note that the specification of “Commercial Features” is not part of the license as such and therefor subject to change at Oracle’s discretion.</p>
+
+<p><img src="/images/posts/jvm_commercial_features_table.png" title="JVM Commercial Features Table" alt="jvm_commercial_features_table" /></p>
+
+<p>It turns out the “Commercial Features” are subject to rather draconian restrictions (SUPPLEMENTAL LICENSE TERMS section A):</p>
+
+<blockquote><p>COMMERCIAL FEATURES You may not use the Commercial Features for running Programs, Java applets or applications in your internal business operations or for any commercial or production&nbsp; purpose, or for any purpose other than as set forth in Sections B, C, D and E of these Supplemental Terms.&nbsp; If You want to use the Commercial Features for any purpose other than as permitted in this Agreement, You must obtain a separate license from Oracle.</p></blockquote>
+
+<p>As you can tell any meaningful business use of the “Commercial Features” are subject to a separate license.</p>
+
+<p>So does the regular Java 7 SE download contain any of these “Commercial Features”? It does not look like it and the Java Se Advance and Java SE Suite packages doesn’t either, because they do not exist. From below two sections that appear at end of <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this </a>document, it is clear that the Java SE Advanced and Java SE Suite “products” are a combination of the Java 7 SE and a number of separate packages.</p>
+
+<blockquote><h2>Installation of Java SE Product Editions</h2>
+
+<p>Oracle does not provide installation programs that correspond directly to Java SE, Oracle Java SE Advanced and Oracle Java SE Suite. Depending on the features licensed, one or more of the following individual packages must be downloaded:</p>
+
+<p>JRE&nbsp;JDK</p>
+
+<p>JRockit JDK</p>
+
+<p>JRockit Mission Control</p>
+
+<p>Java for Business JRE</p>
+
+<p>Java for Business JDK</p>
+
+<h3>Licensing Considerations and Restricted-Use Licensing</h3>
+
+<p>Some of the packages described in Installation of Java SE Product Editions install commercial features that are restricted to Oracle Java SE Advanced or Oracle Java SE Suite. For example, the JRockit JDK comes with a deterministic garbage collector that requires a Oracle Java SE Suite license.</p></blockquote>
+
+<p>If you download (which you can do for instance <a href="http://www.oracle.com/technetwork/java/javase/downloads/jrefb-5u30-download-401429.html">here</a> and <a href="http://www.oracle.com/technetwork/middleware/jrockit/downloads/index.html">here</a>) and use these extra packages for the purposes outlined above (any meaning full business use) in combination with Java 7 SE you are subject to a separate (ostensibly payable) license.</p>
+
+<p>The only mention I can find of this change from Oracle is <a href="http://blogs.oracle.com/henrik/entry/jrockit_is_now_free_and">this</a> blog post with the clearly misleading title “JRockit is Now Free (and Other Java License Updates)”, as this does not apply to the JRockit “Commercial Features” listed above.</p>
+
+<p>You should make sure that your developers, ops people and relevant vendors of such service knows this, or you could end up breaching your license and owing Oracle a lot of money.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[An Acceptable EULA?]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula/"/>
+    <updated>2010-06-04T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula</id>
+    <content type="html"><![CDATA[<p>Is there such a thing? Until today I did not think so, but after having
+watched Mixergy&rsquo;s
+<a href="/web/20100907205218/http://mixergy.com/balsamiq-peldi-guilizzoni-interview/">interview</a>
+with Balsamiq’s Giacomo “Peldi” Guilizzoni, I was optimistic that I
+might have finally found one. Check Balsamiq’s EULA out
+<a href="/web/20100907205218/http://www.balsamiq.com/images/BalsamiqEula.pdf">here</a>.
+Peldi mentions in the interview that a helpful customer in-house counsel
+gave him some great feedback that helped improve the license. To
+whatever she told him, I would add the following:</p>
+
+<h4>Preamble</h4>
+
+<p>Don’t use “represents and warrants” use only “represents”. The form is
+needless legalese and part of the reason why people hate lawyers. If you
+don’t agree read
+<a href="/web/20100907205218/http://www.adamsdrafting.com/2009/09/18/rs-and-ws-once-more-with-feeling/">this</a>
+– then go change it.</p>
+
+<h4>Definitions</h4>
+
+<p>“Authorized Users” and “Authorized User” – makes no sense that the
+plural form would have a completely different meaning than the singular.
+“Authorized Users” is never used in the EULA. This might make sense when
+read together with the Quote/Receipt/Invoice but I doubt it. The
+definitions of “Authorized Machine” and “Authorized Server Node” do not
+appear to deal well with virtual environments.</p>
+
+<h4>Section 3 Grant of License</h4>
+
+<p>The license granted is “irrevocable” but at he same time terminable by
+Balsamiq as per section 12. This appears inconsistent. “(except pursuant
+to Clause 12 below)” should be added after “irrevocable”.</p>
+
+<h4>Section 4 No Warranty</h4>
+
+<p>Excluding all warranties does not strike me as compatible Balsamiqs
+mission to produce high quality software. You can’t claim to aim for
+excellence in everything you do, and the refuse to back it up – that’s
+simply not credible. On the other hand warranties provided for goods are
+not appropriate for software, as these are calibrated for defects that
+occur in individual instances (copies) of the product. I would suggest a
+warranty that better correspond to the apparently fanatical customer
+service Balsamiq provides. This does no mean warranting to fix bugs
+within a certain timeframe, but it does mean warranting a meaningful
+response to reported bugs etc. If you are doing it already it such a
+warranty is essential free, if you make sure that the customers remedies
+if you fail are manageable. If such remedies for instance only apply to
+the (first) reporter of the bug, you contain the effect of the warranty
+from spreading to all customers.</p>
+
+<h4>Section 6.1 Software Maintenance – For Plug-in Versions</h4>
+
+<p>Excellent to see inclusion of a reasonable price-escalation clause for
+Software Maintenance. This is something that I have had to negotiate
+many times and which any prudent licensee should always remember. You
+don’t want to be
+<a href="/web/20100907205218/http://www.zdnet.com/blog/howlett/sap-pulls-the-trigger-on-higher-support-costs/442">treated</a>
+like SAP’s customers, do you?</p>
+
+<h4>Section 9 Investigation of Unauthorized Use and Distribution</h4>
+
+<p>This is a very pragmatic alternative to audit rights which especially a
+company the size of Balsamiq would have very little use for. The
+fairness of allocating the cost of producing the certificate to the
+licensee should be considered, since this might exceed the license fee
+by a factor of many in some cases. I would consider some kind of
+compensation (free maintenance?) to the customer if a request for a
+certificate is made and this is provided, as this is would indicate that
+Balsamiqs suspicion was not well-founded.</p>
+
+<h4>Section 10 (a) Licensee’s Restrictions</h4>
+
+<p>Very common provision which is also very unenforceable in the EU if the
+motif for the reverse engineering is a desire to “achieve the
+interoperability of an independently created computer program with other
+programs” (thanks to art. 5 and 6 of this
+EU <a href="/web/20100907205218/http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">directive</a>).</p>
+
+<h4>Section 10 (b) Licensee’s Restrictions</h4>
+
+<p>Appears superfluous. How would the customer ever unilaterally be able to
+vary the “Authorized Use”? That said there might be a technicality in
+California law that makes it prudent to include this.</p>
+
+<h4>Section 10 (d) and (e) Licensee’s Restrictions</h4>
+
+<p>WTF! I can’t refer to Balsamiq’s name or do anything that has a
+“material and adverse effect on Balsamiq’s” interests. I am glad that I
+did not license Balsamiq’s software before writing this post. How can
+you promote Balsamiq as an open organisation in continuous dialog with
+its customers, and then muffle the same audience with your EULA?</p>
+
+<h4>Section 12 – Termination</h4>
+
+<p>The destruction of all copies of the software is a practical
+impossibility in many enterprise environments due to the back-up
+strategies employed. Since this will only become a requirement in case
+of a breach it might be justified nonetheless, but a more balanced
+alternative might be to require the destruction of all “readily usable
+copies” of the software or similar.</p>
+
+<h4>Section 13 – Infringement Indemnification</h4>
+
+<p>For the software in question and taking into account the size of the
+vendor (Balsamiq) this is a very reasonable clause, and it is a wise
+move to include indemnification if you want to have any hope selling
+your software to enterprise customers.</p>
+
+<h4>Section 14 – Limitation of Liability</h4>
+
+<p>Good to see that the indemnification obligations are exempted from the
+limitation of liability.</p>
+
+<h4>Section 16 – Open Source Code</h4>
+
+<p>For Balsamiq’s present product I wouldn’t worry much about the “viral”
+nature of the GPL and other similar licenses, which is clearly what this
+section is meant to address, but the section clearly does no harm
+either. If the software was meant for combination with the customer’s
+code or other software and subsequent distribution, I would be more
+interested in the list of of open source products/licenses in Exhibit A
+as this would enable me to assess any challenges related hereto.</p>
+
+<h4>Section 17 – Publicity Rights</h4>
+
+<p>This section solves a very common problem in a fairly practical way (the
+customer can opt out of Balsamiqs right to use the customer for
+publicity purpose prior to or any time after purchase) but a better more
+honest and straight forward solution, would be to permit the customer to
+opt out via the web form used to purchase the product.</p>
+
+<h4>Section 24 – Notices</h4>
+
+<p>While not critical why appear unreasonable by biasing this section in
+Balsamiqs favour? On Export Control (especially US) you really want to
+provide the relevant export control classification codes if you expect
+any one to comply with the rules. In general you want to try to avoid
+having your software subject to US export control rules as these are
+absolutely not trivial.</p>
+
+<p>On balance Balsamiq’s EULA is above average but still suffers from a few
+weakness as outlined above. Most of these can be fixed without exposing
+Balsamiq to any liability that is unmanageable.</p>
+
+<p>DISCLAIMER: Above is not legal advice bla, bla, bla.</p>
+]]></content>
+  </entry>
+  
+</feed>
