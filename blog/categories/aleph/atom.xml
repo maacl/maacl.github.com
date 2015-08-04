@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: aleph | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/aleph/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2015-08-04T10:46:51+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Simple Chat App Using Aleph, Websockets and Clojure]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/08/27/a-simple-chat-app-using-clojure-aleph-and-websockets/"/>
+    <updated>2010-08-27T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/08/27/a-simple-chat-app-using-clojure-aleph-and-websockets</id>
+    <content type="html"><![CDATA[<p>I have implemented a small example shoving how to use the websocket support in <a href="http://github.com/ztellman/aleph">Aleph</a>, asynchronous webframework for <a href="http://clojure.org/">Clojure</a> built on <a href="http://www.jboss.org/netty">Netty</a>.</p>
+
+<p>The example is tested with Chrome and Firefox on Ubuntu. It should work in all modern browsers as it relies on <a href="http://github.com/gimite/web-socket-js/">web-socket-js</a> for websocket emulation in browsers that do not have native support. Please note the updated Usage instructions. The socket-policy-server necessary for Flash websocket emulation has to listen on port 843 (at least that is the first place Flash asks for the policy file) so the server has to be run using sudo.</p>
+
+<p>If you are interested the example is at hosted on <a href="http://github.com/maacl/aleph-ws-test">github</a>, along with usage instructions.</p>
+]]></content>
+  </entry>
+  
+</feed>

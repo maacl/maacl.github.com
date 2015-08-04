@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: export_control | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/export-control/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2015-08-04T10:46:51+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Open Source and Export Control]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/06/09/export-control-and-open-source/"/>
+    <updated>2010-06-09T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/06/09/export-control-and-open-source</id>
+    <content type="html"><![CDATA[<p>Ref my comments on export control rules in my previous post, it looks like these are now impacting open source in a major way. Apparently SourceForge in an effort to comply with US export control rules (specifically countries covered by sanctions administrated by <a href="http://www.ustreas.gov/offices/enforcement/ofac/">OFAC</a>) have blocked all users from Cuba, Iran, North Korea, Sudan, and Syria. <a href="http://notepad-plus-plus.org/">NotePad++</a> appears to be the first project to withdraw from SourceForge in protest.</p>
+
+<p>UPDATE: Apparently SourceForge has now made the blocking of users from sanctioned countries <a href="http://sourceforge.net/blog/some-good-news-SourceForge-removes-blanket-blocking/">optional</a>. This leaves the assessment of whether or not a project is subject to the rules up to the project owner. As export control is quite an esoteric topic some links to guidance on the applicability of US export control rules would probably have been a good idea, but SourceForge’s consel has probably counseled against that for liability reasons.</p>
+]]></content>
+  </entry>
+  
+</feed>

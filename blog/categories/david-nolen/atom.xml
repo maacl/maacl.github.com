@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: david_nolen | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/david-nolen/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2015-08-04T10:46:51+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Om, Clojure/ClojureScript and Event Sourcing]]></title>
+    <link href="http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/"/>
+    <updated>2014-09-09T22:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing</id>
+    <content type="html"><![CDATA[<p><a href="http://gotocon.com/cph-2014/">goto CPH</a> is closing in rapidly.</p>
+
+<p>As mentioned previously I am especially looking forward to  <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
+
+<p><a href="https://github.com/swannodette/om">Om</a> is getting a lot of coverage and even if it is still very new, it is seeing some heavy duty prodcution usage, for instance at <a href="http://www.getprismatic.com/">Prismatic</a>. But Prismatic has gone even further that just using Om and released <a href="https://github.com/Prismatic/om-tools">om-tools</a>, which makes it even more straight forward to use Om. I especially like how it smoothes over some of the slightly ugly Javascript interop that Om requires out of the box.</p>
+
+<p>Another talk I am looking very much forward to is <a href="http://gotocon.com/cph-2014/presentation/Event-sourcing">Greg Young&rsquo;s talk on Event Sourcing</a>. Event Sourcing is a very interesting <a href="http://martinfowler.com/eaaDev/EventSourcing.html">pattern</a> which has a very natural fit to many common business scenarios, and I am looking forward to Greg Young giving us some examples of that. The benefits of the event sourcing pattern appears to me to overlap somewhat with the benefits of the Clojure based database <a href="http://www.datomic.com/">Datomic</a> which also emphazises the need for a solid model of time.</p>
+
+<p>If you are interested in dabbling with Event Sourcing and have been inspired by David&rsquo;s talk on Om/ClojureScript you should check out the <a href="http://jvmsoup.com/2014/06/23/clojure-websockets-server-and-event-sourcing/">JVM Soup post on Event Sourcing in Clojure</a>. This post demonstrates how to use <a href="https://github.com/clojure/core.async">core.async</a> Clojure/ClojureScripts CSP implentation, which David also recommends to do inter component communication when using Om, to do event sourcing in Clojure/ClojureScript.</p>
+]]></content>
+  </entry>
+  
+</feed>

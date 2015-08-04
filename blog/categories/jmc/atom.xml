@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: jmc | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/jmc/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2015-08-04T10:46:51+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hit Record!]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/09/30/hit-record/"/>
+    <updated>2013-09-30T16:29:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/09/30/hit-record</id>
+    <content type="html"><![CDATA[<p>Richard Baeckman just did an excellent presentation on <a href="http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html">Java Flight Recorder</a> at <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>. Java Flight Recorder is an &ndash; enhanced &ndash; port of JRockit Flight Recorder to the Oracle(Sun) JVM. It ships with  Java SE Development Kit 7u40 and includes a very nifty GUI called Java Mission Control that provides an excellent overvie of all the data collected in your recordings. I was very interested in seeing how useful JFR is when running Clojure code. Fortunately installation is very easy. After installing <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Platform (JDK) 7u40</a> I just added the following options to my project.clj file.</p>
+
+<p><code>:jvm-opts ["-XX:+UnlockCommercialFeatures" "-XX:+FlightRecorder"]</code></p>
+
+<p>On OS X you have to start the JMC from a terminal invoking the binary located at:</p>
+
+<p><code>/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/bin/jmc</code></p>
+
+<p>This brings up the JMC GUI. If you start your Clojure app (in my case Rich&rsquo;s ants.clj), your jvm(s) should be visible under the JVM Browser tab. From here you can start a recording by double-clicking the relevant JVM, right-clicking the Flight Recorder entry and choosing &ldquo;Start Flight Recording&hellip;&rdquo;. I have inlcuded a screenshot below of a 1 minute recording of ants.clj. As you can tell JFR collects an immense amount of information but the overhead is minimal, approx 3% according to Richard.</p>
+
+<p><img src="/images/posts/jmc.png" title="Java Mission Control Screenshot" alt="Java Mission Control" /></p>
+
+<p>Please do note that the Java Flight Recorder and JMC are both Commercial Features, which I have written about previously <a href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/">here</a>. This means that neither JFR and JMC may be used for production purposes without a separate payable license from Oracle. There is currently no public information regarding prices and other conditions available from Oracle.</p>
+]]></content>
+  </entry>
+  
+</feed>

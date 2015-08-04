@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Om, Clojure/ClojureScript and Event Sourcing - The Limiting Factor</title>
+  <meta name="author" content="Martin Clausen">
+
+  
+  <meta name="description" content="goto CPH is closing in rapidly. As mentioned previously I am especially looking forward to David Nolen&rsquo;s talk Putting the Dream Machine to Work &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="The Limiting Factor" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44225157-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">The Limiting Factor</a></h1>
+  
+    <h2>- semi-structured line noise.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.spyfoos.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Om, Clojure/ClojureScript and Event Sourcing</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-09T22:00:00+02:00" pubdate data-updated="true">Sep 9<span>th</span>, 2014</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="http://gotocon.com/cph-2014/">goto CPH</a> is closing in rapidly.</p>
+
+<p>As mentioned previously I am especially looking forward to  <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
+
+<p><a href="https://github.com/swannodette/om">Om</a> is getting a lot of coverage and even if it is still very new, it is seeing some heavy duty prodcution usage, for instance at <a href="http://www.getprismatic.com/">Prismatic</a>. But Prismatic has gone even further that just using Om and released <a href="https://github.com/Prismatic/om-tools">om-tools</a>, which makes it even more straight forward to use Om. I especially like how it smoothes over some of the slightly ugly Javascript interop that Om requires out of the box.</p>
+
+<p>Another talk I am looking very much forward to is <a href="http://gotocon.com/cph-2014/presentation/Event-sourcing">Greg Young&rsquo;s talk on Event Sourcing</a>. Event Sourcing is a very interesting <a href="http://martinfowler.com/eaaDev/EventSourcing.html">pattern</a> which has a very natural fit to many common business scenarios, and I am looking forward to Greg Young giving us some examples of that. The benefits of the event sourcing pattern appears to me to overlap somewhat with the benefits of the Clojure based database <a href="http://www.datomic.com/">Datomic</a> which also emphazises the need for a solid model of time.</p>
+
+<p>If you are interested in dabbling with Event Sourcing and have been inspired by David&rsquo;s talk on Om/ClojureScript you should check out the <a href="http://jvmsoup.com/2014/06/23/clojure-websockets-server-and-event-sourcing/">JVM Soup post on Event Sourcing in Clojure</a>. This post demonstrates how to use <a href="https://github.com/clojure/core.async">core.async</a> Clojure/ClojureScripts CSP implentation, which David also recommends to do inter component communication when using Om, to do event sourcing in Clojure/ClojureScript.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Martin Clausen</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-09T22:00:00+02:00" pubdate data-updated="true">Sep 9<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/clojure/'>clojure</a>, <a class='category' href='/blog/categories/clojurescript/'>clojurescript</a>, <a class='category' href='/blog/categories/david-nolen/'>david_nolen</a>, <a class='category' href='/blog/categories/event-sourcing/'>event_sourcing</a>, <a class='category' href='/blog/categories/gotocph/'>gotocph</a>, <a class='category' href='/blog/categories/greg-young/'>greg_young</a>, <a class='category' href='/blog/categories/om/'>om</a>, <a class='category' href='/blog/categories/react-dot-js/'>react.js</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/" data-via="" data-counturl="http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/06/15/Om-my-CSP/" title="Previous Post: Om my CSP">&laquo; Om my CSP</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2015/08/04/open-source-upsides/" title="Next Post: Open Source Upsides">Open Source Upsides &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/08/04/open-source-upsides/">Open Source Upsides</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/">Om, Clojure/ClojureScript and Event Sourcing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/15/Om-my-CSP/">Om My CSP</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/hit-record/">Hit Record!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/maacl">@maacl</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'maacl',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116274805578840683959?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Martin Clausen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'thelimitingfactor';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/';
+        var disqus_url = 'http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

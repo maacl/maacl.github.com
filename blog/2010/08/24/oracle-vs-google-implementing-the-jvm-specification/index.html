@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Oracle vs Google - Implementing the JVM Specification - The Limiting Factor</title>
+  <meta name="author" content="Martin Clausen">
+
+  
+  <meta name="description" content="A lot has already been written on the Oracle vs. Google Android case. Some of it is brilliant. Some is illuminating, some less so. Since the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="The Limiting Factor" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44225157-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">The Limiting Factor</a></h1>
+  
+    <h2>- semi-structured line noise.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.spyfoos.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Oracle vs Google - Implementing the JVM Specification</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-24T12:00:00+02:00" pubdate data-updated="true">Aug 24<span>th</span>, 2010</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
+
+<p>For context Oracle in the complaint defines Android as:</p>
+
+<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
+
+<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
+
+<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
+
+<p>Would the analysis under US copyright law be the same?</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Martin Clausen</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-24T12:00:00+02:00" pubdate data-updated="true">Aug 24<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/android/'>android</a>, <a class='category' href='/blog/categories/copyright/'>copyright</a>, <a class='category' href='/blog/categories/dalvik/'>dalvik</a>, <a class='category' href='/blog/categories/google/'>google</a>, <a class='category' href='/blog/categories/java/'>java</a>, <a class='category' href='/blog/categories/jvm/'>jvm</a>, <a class='category' href='/blog/categories/oracle/'>oracle</a>, <a class='category' href='/blog/categories/patents/'>patents</a>, <a class='category' href='/blog/categories/specification/'>specification</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/" data-via="" data-counturl="http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2010/07/29/sas-vs-world-programming-sas-version/" title="Previous Post: SAS vs World Programming - SAS' Vesion">&laquo; SAS vs World Programming - SAS' Vesion</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2010/08/27/a-simple-chat-app-using-clojure-aleph-and-websockets/" title="Next Post: A Simple Chat App Using Aleph, Websockets and Clojure">A Simple Chat App Using Aleph, Websockets and Clojure &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/08/04/open-source-upsides/">Open Source Upsides</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/">Om, Clojure/ClojureScript and Event Sourcing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/15/Om-my-CSP/">Om My CSP</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/hit-record/">Hit Record!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/maacl">@maacl</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'maacl',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116274805578840683959?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Martin Clausen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'thelimitingfactor';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/';
+        var disqus_url = 'http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

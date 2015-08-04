@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2015-08-04T10:46:51+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Open Source Upsides]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/08/04/open-source-upsides/"/>
+    <updated>2015-08-04T10:00:03+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/08/04/open-source-upsides</id>
+    <content type="html"><![CDATA[<p>I am really looking forward to the <a href="http://gotocon.com/cph-2015">goto cph conference</a> this year.</p>
+
+<p>One of the talks on my personal iteneary is <a href="http://gotocon.com/cph-2015/presentation/How%20to%20train%20your%20corporation%20to%20prefer%20open%20source">How to train your corporation to prefer open source</a> by Richard Lander from the Microsoft core.net team.</p>
+
+<p>Microsoft is undergoing profound changes at the moment expecially in its approach to open source. One of the more prominent examples of this is the open sourcing of the <a href="https://github.com/Microsoft/dotnet">.NET stack</a> which I am sure Richard will be mentioning in his talk.</p>
+
+<p>The irony of course is that Microsoft still inflicts the pain of closed source on its customers on a monumental scale &ndash; and as closed licensors go Microsoft unfortunately is at the bad end of the spectrum and showing no signs of becoming even more rigid with time. My last encounter with Microsoft&rsquo;s licensing machine was less than a year ago, and for the umpteenth time numerous very reasonable requests for changes and clarifications to the license terms were summarily dismissed. It would be great to see a fresh approach to software licensing from Microsoft similar to how IBM has &ndash; although imperfectly &ndash; reinvented its <a href="http://www-05.ibm.com/support/operations/us/en/documents.html">terms and conditions</a>.</p>
+
+<p>There are of course many reasons to prefer open source to the extent possible. A prominent one is that you avoid the pain of license audits by vendors who missed their last quarter or who wants to strong arm you into using their latest solution that they haven&rsquo;t been able to sell to customers voluntarily, better known as the <a href="http://fortune.com/2015/07/10/oracle-sales-cloud-hard/">Oracle approach</a></p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Om, Clojure/ClojureScript and Event Sourcing]]></title>
+    <link href="http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/"/>
+    <updated>2014-09-09T22:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing</id>
+    <content type="html"><![CDATA[<p><a href="http://gotocon.com/cph-2014/">goto CPH</a> is closing in rapidly.</p>
+
+<p>As mentioned previously I am especially looking forward to  <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
+
+<p><a href="https://github.com/swannodette/om">Om</a> is getting a lot of coverage and even if it is still very new, it is seeing some heavy duty prodcution usage, for instance at <a href="http://www.getprismatic.com/">Prismatic</a>. But Prismatic has gone even further that just using Om and released <a href="https://github.com/Prismatic/om-tools">om-tools</a>, which makes it even more straight forward to use Om. I especially like how it smoothes over some of the slightly ugly Javascript interop that Om requires out of the box.</p>
+
+<p>Another talk I am looking very much forward to is <a href="http://gotocon.com/cph-2014/presentation/Event-sourcing">Greg Young&rsquo;s talk on Event Sourcing</a>. Event Sourcing is a very interesting <a href="http://martinfowler.com/eaaDev/EventSourcing.html">pattern</a> which has a very natural fit to many common business scenarios, and I am looking forward to Greg Young giving us some examples of that. The benefits of the event sourcing pattern appears to me to overlap somewhat with the benefits of the Clojure based database <a href="http://www.datomic.com/">Datomic</a> which also emphazises the need for a solid model of time.</p>
+
+<p>If you are interested in dabbling with Event Sourcing and have been inspired by David&rsquo;s talk on Om/ClojureScript you should check out the <a href="http://jvmsoup.com/2014/06/23/clojure-websockets-server-and-event-sourcing/">JVM Soup post on Event Sourcing in Clojure</a>. This post demonstrates how to use <a href="https://github.com/clojure/core.async">core.async</a> Clojure/ClojureScripts CSP implentation, which David also recommends to do inter component communication when using Om, to do event sourcing in Clojure/ClojureScript.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Om My CSP]]></title>
+    <link href="http://www.spyfoos.com/blog/2014/06/15/Om-my-CSP/"/>
+    <updated>2014-06-15T19:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2014/06/15/Om-my-CSP</id>
+    <content type="html"><![CDATA[<p>Looks like I will be at <a href="http://gotocon.com/cph-2014/">goto CPH</a> again this year.</p>
+
+<p>The format this year is quite different, but looks very interesting nonetheless. Especially the Leading &amp; Bleeding Edge track looks interesting. At this track I am especially looking forward to seeing <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
+
+<p>David has created a <a href="https://github.com/clojure/clojurescript">ClojureScript</a> framework on top of <a href="http://facebook.github.io/react/">React</a> called <a href="https://github.com/swannodette/om">Om</a>. Om is not just a wrapper around React. It leverages ClojureScript&rsquo;s immutable datastructures to substitute costly object and array compares with reference equality checks. This results in quite significant <a href="http://swannodette.github.io/2013/12/17/the-future-of-javascript-mvcs/">performance improvements</a>.</p>
+
+<p>David in his <a href="https://github.com/swannodette/om/wiki/Basic-Tutorial#intercomponent-communication">tutorials</a> encourage another ClojureScript feature <a href="https://github.com/clojure/core.async">core.async</a> for intercomponent communication.</p>
+
+<p>As Om is still very new there are not many presentations available but <a href="https://vimeo.com/97516219">Functional UI programming with React.JS and ClojureScript</a> is a very good introduction.</p>
+
+<p>If you understand Norwegian (and maybe even if you don&rsquo;t) <a href="https://github.com/magnars">Magnar Sveen</a> and <a href="https://github.com/cjohansen">Christian Johansen</a> have recorded a very entertaining series of pair programming screencast where they use ClojureScript, <a href="https://github.com/levand/quiescent">Quiescent</a> (an alternative React ClojureScript library) and a TDD approach to create a Zombie themed Memory Flash Game called <a href="http://www.zombieclj.no/">ZOMBIECLJ</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Licensing Done Right!]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/10/01/licensing-done-right/"/>
+    <updated>2013-10-01T19:40:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/10/01/licensing-done-right</id>
+    <content type="html"><![CDATA[<p>Just attended a very nice overview talk on the Unity game development system at <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>.</p>
+
+<p>The tech in Unity itself is very impressive, especially the ability to deploy the same code base and assets to 10+ platforms, including iOS. But Unity has also put a lot of thought into how the product is licensed. Not only was it a very conscious decision by the founders that Unity be royalty free, but the same thoughtfulness has also been applied to the Unity Asset Store.</p>
+
+<p>The Asset Store is Unity&rsquo;s equivalent of the App Store, but instead of apps you can buy art (e.g. graphics, models, audio) and code assets for inclusion in your Unity project. Had Unity left the choice of license up to the creators of the submitted assets, it would have completely undermined the royalty free nature of the Unity engine, as each asset could potentially inject it&rsquo;s own royalty model into a product created with Unity. Instead all assets are per definition subject to standard royalty free <a href="http://unity3d.com/company/legal/as_terms">TOS &amp; EULA</a>, and as explained in the below excerpt from Unity&rsquo;s Asset Store <a href="http://unity3d.com/asset-store/sell-assets/submission-guidelines">submission guidelines</a> it is not possible to sell assets in the Asset Store that are subject to other/additional terms.</p>
+
+<blockquote><p>6.2 Licensing your Content</p>
+
+<p>For consistency sake, all Asset Store offerings are covered by a license we have created. Please have a look at the End User License Agreement to be sure you are comfortable with it. If you are offering your content for free, you have the further option of selecting one of three free-licenses, which override the basics of our commercial license. Please do not include your own license terms in your offering.</p></blockquote>
+
+<p>It is very refreshing to see how licensing models can be designed to enhance the usefulness of a product and its eco-system, while at the same time serve as the underpinning of an indisputable financial success.</p>
+
+<p>If you have any use-cases involving 3D graphics you really should check Unity out. And please note that Unity is not limited to games. Unity Studios have done some really cool non-game applications, including a simulation for training safety procedures at sea and a brilliant <a href="http://www.velux.dk/private/inspiration/velux_ovenlysdesigner">app</a> for Velux that let&rsquo;s you simulate the effects of installing Velux windows in your own home.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hit Record!]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/09/30/hit-record/"/>
+    <updated>2013-09-30T16:29:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/09/30/hit-record</id>
+    <content type="html"><![CDATA[<p>Richard Baeckman just did an excellent presentation on <a href="http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html">Java Flight Recorder</a> at <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>. Java Flight Recorder is an &ndash; enhanced &ndash; port of JRockit Flight Recorder to the Oracle(Sun) JVM. It ships with  Java SE Development Kit 7u40 and includes a very nifty GUI called Java Mission Control that provides an excellent overvie of all the data collected in your recordings. I was very interested in seeing how useful JFR is when running Clojure code. Fortunately installation is very easy. After installing <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Platform (JDK) 7u40</a> I just added the following options to my project.clj file.</p>
+
+<p><code>:jvm-opts ["-XX:+UnlockCommercialFeatures" "-XX:+FlightRecorder"]</code></p>
+
+<p>On OS X you have to start the JMC from a terminal invoking the binary located at:</p>
+
+<p><code>/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/bin/jmc</code></p>
+
+<p>This brings up the JMC GUI. If you start your Clojure app (in my case Rich&rsquo;s ants.clj), your jvm(s) should be visible under the JVM Browser tab. From here you can start a recording by double-clicking the relevant JVM, right-clicking the Flight Recorder entry and choosing &ldquo;Start Flight Recording&hellip;&rdquo;. I have inlcuded a screenshot below of a 1 minute recording of ants.clj. As you can tell JFR collects an immense amount of information but the overhead is minimal, approx 3% according to Richard.</p>
+
+<p><img src="http://www.spyfoos.com/images/posts/jmc.png" title="Java Mission Control Screenshot" alt="Java Mission Control" /></p>
+
+<p>Please do note that the Java Flight Recorder and JMC are both Commercial Features, which I have written about previously <a href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/">here</a>. This means that neither JFR and JMC may be used for production purposes without a separate payable license from Oracle. There is currently no public information regarding prices and other conditions available from Oracle.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Flexible Contracts]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/09/14/flexible-contracts/"/>
+    <updated>2013-09-14T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/09/14/flexible-contracts</id>
+    <content type="html"><![CDATA[<h4 id="/posts/20130914000000.markdown"></h4>
+
+
+<p>It was suggested to me to look into the concept of <a href="http://flexiblecontracts.com/">Flexible Contracts</a>, a new approach to contracting for agile it projects championed by Gabrielle Benefield who will be providing training in agile practices in connection with <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>.</p>
+
+<p>Flexible Contracts are born out of the observation that traditional contract models are a very poor fit for agile IT projects. This is hardly a novel observation, but Gabrielle&rsquo;s work (and that of her collaborators) distinguishes itself by actually having produced a practical alternative, which they have commendably licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">CC Attribution 3.0 Unported license</a>. Only the lite version &ndash; Flexlite 0.1 as it is designated &ndash; appears to be presently available, and can be accessed if you are willing to sign up to the Flexible Contracts mailing list <a href="http://flexiblecontracts.com/list/">here</a>.</p>
+
+<p>It is worth noting that the overview attached to the contract clearly states that the Flexlite contract is to be considered a &ldquo;minimum viable contract&rdquo;, but after having reviewed the document I still find that the current version lacking in a number of ways.</p>
+
+<p>Below I will outline a subset of the issues I have identified and for some suggests some possible remedies. Please note that I am commenting on the UK version (which you might want to keep handy if you want to make sense of my comments) of the contract which is the system of law I am most familiar with, but most of my comments should apply to both versions, with the exception of the issue of &ldquo;best endeavours&rdquo; where there is a significant difference between US and UK law.</p>
+
+<h2>Statetment of Target Outcomes (SOTO)</h2>
+
+<p>The contract focuses on the use of SOTOs instead of specifying the desired results through requirements or a more traditional solution specification. A SOTO:</p>
+
+<blockquote><p>means a statement of target outcomes as agreed by the parties in accordance with clause 1.1;</p></blockquote>
+
+<p>According to clause 2.2 the Supplier must for each Target Outcome create:</p>
+
+<blockquote><p>Options that have the potential to achieve the Target Outcome.  In respect of each Option the Supplier shall provide a forecast in terms of the estimated value, costs, risks and expiry date (if any) for that Option and shall inform the Customer of any requirements for execution of the Option and any circumstances in which the Option may expire.</p></blockquote>
+
+<p>Even after reading the overview it remains unclear exactly what the function of the Options are and what, if any, the work-flow for calling these are.</p>
+
+<p>It appears odd that acceptance (adoption) of the Outcome Delivery is left to the Supplier but I assume this is considered reasonable given that one of the objectives of the Flexible Contract is to provide as much flexibility to vendor in deciding in how to achieve the SOTO. I don&rsquo;t think any customer would be comfortable with this construct, especially if the Supplier&rsquo;s payment hinges in part on achieving the Target Outcomes, which is one of the models (option B) suggested in the model SOTO schedule attached to the contract. Clause 2.7 isn&rsquo;t much help in this context, as 2.7. (a) is stating the obvious and (b) lacks fundamental precision. As such in can easily be interpreted as granting the Customer defacto veto rights against any Outcome Delivery, which is hardly constructive either.</p>
+
+<p>Related to this issue is the lack of consistency between clause 3.1 which states that:</p>
+
+<blockquote><p>In consideration of the provision of the Services by the Supplier, the Customer shall pay the fees in the amount and on the dates or with the frequency as set out in each SOTO.</p></blockquote>
+
+<p>and the &ldquo;Hybrid Outcome-based fees&rdquo; model in the model SOTO schedule, where payment is conditioned upon achieving the Target Outcomes.</p>
+
+<h2>Best Endeavours</h2>
+
+<p>I also find it fundamentally concerning that the contract relies on a unqualified &ldquo;best endeavours&rdquo; standard when defining the Suppliers responsibility under the contract. It is simply not good practice not to agree some further specification of what the parties intend &ldquo;best endeavours&rdquo; to mean. This can for instance be done by indicating what financial/resources the Supplier must expend in its attempt to fulfill its obligation. Failing to provide such guidance is to invite conflict and to introduce unnecessary uncertainty. While I applaud the authors stated aim of brevity this is not an area where one wants to sacrifice lack of precision for terseness. I have included a few links below that provides more in-depth information on the subject.</p>
+
+<h2>Intellectual Property Rights (IPR)</h2>
+
+<p>The IPR as specified in clause 5 model appears fairly sensible and reflects the reality of the deliverables being a composite of bespoke, vendor, third party proprietary and FOSS. That said the specific license granted to the Customer in respect of Supplier Software (clause 5.4) will in many cases have to be adapted to the needs of the Customers, both in respect of scope but also rights to create derived works etc. I would suggest moving the specification of this license to the SOTO schedule to facilitate this. This also applies to the specification of what types of software (Customised, Supplier, Third Party, Open Source) will constitute part of the Outcome Delivery, so the Customer may determine the feasibility of the rights obtained and clear any necessary rights.</p>
+
+<p>While the contract does provide a warranty for non-infringement in respect of the Services and Outcome Delivery it does not address the issue of indemnification for such infringement, which any prudent customer will require.</p>
+
+<p>The above is a summary of some of the issues I have identified with the current draft of the Flexlite contract. I summation I think the contract does a good job of capturing the idea of an outcomes focused contract, but unfortunately it does so at the expense of the customers position under the contract should things not go as planned.</p>
+
+<p>I hope to have the opportunity to discuss Flexible Contracts with Gabrielle during <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a> and do one or more follow posts on Flexible Contracts.</p>
+
+<p>Links regarding best endeavours:</p>
+
+<p><a href="http://www.ashfords.co.uk/news/reasonable_endeavours_aug10">&ldquo;All reasonable endeavours&rdquo; a lesser obligation than &ldquo;best endeavours&rdquo;</a></p>
+
+<p><a href="http://www.jonesday.com/best-efforts-and-endeavourscase-analysis-and-practical-guidance-under-us-and-uk-law-07-30-2007/">Best and EffortsCase Analysis and Practical Guidance Under U.S. and U.K. Law</a></p>
+
+<p><a href="https://delicious.com/flatspace/endeavours">My delicious links about &ldquo;best endeavours&rdquo;</a></p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GOTO Aarhus 2013 - ClojureScript]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript/"/>
+    <updated>2013-09-13T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript</id>
+    <content type="html"><![CDATA[<p>I put together my first draft itenary for <a href="http://gotocon.com/aarhus-2013/">GOTO Aarhus 2013</a>. You can see it <a href="http://gotocon.com/aarhus-2013/schedule/my-schedule.jsp#myschedlink1">here</a>.</p>
+
+<p>Fortunately the programme did not pose too many dilemma&rsquo;s for me to resolve, although choosing between &ldquo;Obstacles And Patterns To Maximize Flow In IT Operations&rdquo; and &ldquo;Lambdas in Java: A peek under the hood&rdquo; on Tuesday morning was a bit difficult.</p>
+
+<p>I was especially pleased to see that <a href="http://swannodette.github.io/">David Nolen</a> is giving a talk. David is fairly prolific in the <a href="http://clojure.org/">Clojure</a> community. He is the driving force behind core.logic and a significant contributor to <a href="https://github.com/clojure/clojurescript">ClojureScript</a>. <a href="https://github.com/clojure/core.logic">Core.logic</a> is a implementation of miniKaren and provides robust logic programming facilities in Clojure and <a href="https://github.com/clojure/clojurescript">ClojureScript</a>. As an example of how concise logic programming can be please see below Sudoku solver by David Nolen.</p>
+
+<p>;; based on core.logic 0.8-alpha2 or core.logic master branch</p>
+
+<pre><code>(ns sudoku
+    (:refer-clojure :exclude [==])
+        (:use clojure.core.logic))
+
+(defn get-square [rows x y]
+    (for [x (range x (+ x 3))
+          y (range y (+ y 3))]
+              (get-in rows [x y])))
+
+(defn init [vars hints]
+    (if (seq vars)
+        (let [hint (first hints)]
+            (all
+                (if-not (zero? hint)
+                    (== (first vars) hint)
+                        succeed)
+                            (init (next vars) (next hints))))
+                                succeed))
+
+(defn sudokufd [hints]
+    (let [vars (repeatedly 81 lvar)
+          rows (- vars (partition 9) (map vec) (into []))
+          cols (apply map vector rows)
+          sqs  (for [x (range 0 9 3)
+                     y (range 0 9 3)]
+                     (get-square rows x y))]
+                (run 1 [q]
+                    (== q vars)
+                    (everyg #(infd % (domain 1 2 3 4 5 6 7 8 9)) vars)
+                    (init vars hints)
+                    (everyg distinctfd rows)
+                    (everyg distinctfd cols)
+                    (everyg distinctfd sqs))))
+
+;; ====
+
+(comment
+(sudokufd
+    [0 0 3  0 2 0  6 0 0
+     9 0 0  3 0 5  0 0 1
+     0 0 1  8 0 6  4 0 0
+     0 0 8  1 0 2  9 0 0
+     7 0 0  0 0 0  0 0 8
+     0 0 6  7 0 8  2 0 0
+     0 0 2  6 0 9  5 0 0
+     8 0 0  2 0 3  0 0 9
+     0 0 5  0 1 0  3 0 0]))
+</code></pre>
+
+<p><a href="https://gist.github.com/swannodette/3217582#file-gistfile1-clj">gist</a></p>
+
+<p><a href="https://github.com/clojure/clojurescript">ClojureScript</a> compiles Clojure into Javascript which is guarenteed to be digestable by the <a href="https://developers.google.com/closure/">Goolge Closure</a> compiler. While the ClojureScript implementation of core.logic is somewhat limited compared to the Clojure based one, you can still do some interesting things with it. If you are not familiar with ClojureScript you might want to check <a href="https://github.com/magomimmo/modern-cljs">this tutorial</a> out. Some interesting examples of using canvas / SVG with ClojureScript, can be found <a href="https://github.com/rm-hull/programming-enchiladas#examples">here</a></p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SAS vs. World Programming – Opinion of the Advocate General]]></title>
+    <link href="http://www.spyfoos.com/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/"/>
+    <updated>2011-11-29T12:00:00+01:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general</id>
+    <content type="html"><![CDATA[<p>So the Advocate General to the ECJ has submitted its <a href="http://curia.europa.eu/jurisp/cgi-bin/form.pl?lang=en&amp;amp;jurcdj=jurcdj&amp;amp;newform=newform&amp;amp;docj=docj&amp;amp;docop=docop&amp;amp;docnoj=docnoj&amp;amp;typeord=ALLTYP&amp;amp;numaff=&amp;amp;ddatefs=22&amp;amp;mdatefs=11&amp;amp;ydatefs=2011&amp;amp;ddatefe=29&amp;amp;mdatefe=11&amp;amp;ydatefe=2011&amp;amp;nomusuel=&amp;amp;domaine=&amp;amp;mots=&amp;amp;resmax=100&amp;amp;Submit=Rechercher">opinion</a> to the Court on the questions submitted by the High Court of Justice of England and Wales in the SAS vs World Programming case that i wrote about <a href="http://www.spyfoos.com/index.php/2010/07/23/sas-vs-world-programming/">here</a> and <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a>.</p>
+
+<p>The Advocate concludes the following:</p>
+
+<blockquote><p>(1)</p>
+
+<p>Article 1(2) of Council Directive 91/250/EEC of 14 May 1991 on the legal protection of computer programs is to be interpreted as meaning that the functionalities of a computer program and the programming language are not eligible, as such, for copyright protection. It will be for the national court to examine whether, in reproducing these functionalities in its computer program, the author of the program has reproduced a substantial part of the elements of the first program which are the expression of the author’s own intellectual creation.</p>
+
+<p>(2)</p>
+
+<p>Articles 1(2) and 6 of Directive 91/250 are to be interpreted as meaning that it is not regarded as an act subject to authorisation for a licensee to reproduce a code or to translate the form of the code of a data file format so as to be able to write, in his own computer program, a source code which reads and writes that file format, provided that that act is absolutely indispensable for the purposes of obtaining the information necessary to achieve interoperability between the elements of different programs. That act must not have the effect of enabling the licensee to recopy the code of the computer program in his own program, a question which will be for the national court to determine.</p>
+
+<p>(3)</p>
+
+<p>Article 5(3) of Directive 91/250, read in conjunction with Articles 4(a) and (b) and 5(1) thereof, is to be interpreted as meaning that the expression ‘any of the acts of loading, displaying, running, transmitting or storing the computer program [which the person having the right] is entitled to do’ relates to the acts for which that person has obtained authorisation from the rightholder and to the acts of loading and running necessary in order to use the computer program in accordance with its intended purpose. Acts of observing, studying or testing the functioning of a computer program which are performed in accordance with that provision must not have the effect of enabling the person having a right to use a copy of the program to access information which is protected by copyright, such as the source code or the object code.</p>
+
+<p>(4)</p>
+
+<p>Article 2(a) of Directive 2001/29/EC of the European Parliament and of the Council of 22 May 2001 on the harmonisation of certain aspects of copyright and related rights in the information society is to be interpreted as meaning that the reproduction, in a computer program or a user manual, of certain elements described in the manual for another computer program may constitute an infringement of the copyright in the latter manual if – a question which will be for the national court to determine – the elements reproduced in this way are the expression of their author’s own intellectual creation.</p></blockquote>
+
+<p>The opinion is pretty much a slam dunk for World Programming. The only hiccup is the issue related to the copying of parts of SAS’ manuals, but that is a minor issue compared to a situation where World Programming would have been restricted in their ability to produce a product compatible with SAS’ product. Now we just have to hope that the Court agrees with the Advocate General.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle Java 7 and 'Commercial Features']]></title>
+    <link href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/"/>
+    <updated>2011-07-28T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features</id>
+    <content type="html"><![CDATA[<p>Oracle has just announced the general availability of Java 7 SE including Java SE Advanced and Java SE Suite.</p>
+
+<p>Being a software license nerd I of course skimmed the <a href="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">Java SE License Agreement </a>(full title “Oracle Binary Code License Agreement for the Java SE Platform Products”).</p>
+
+<p>The license contains some interesting wording regarding “Commercial Features” in section 1, 2 and SUPPLEMENTAL LICENSE TERMS section A and G. The “Commercial Features” are defined in <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this</a> document (PDF version with better layout <a href="http://www.oracle.com/technetwork/java/javase/documentation/java-se-product-editions-397069.pdf">here</a>). Please note that the specification of “Commercial Features” is not part of the license as such and therefor subject to change at Oracle’s discretion.</p>
+
+<p><img src="http://www.spyfoos.com/images/posts/jvm_commercial_features_table.png" title="JVM Commercial Features Table" alt="jvm_commercial_features_table" /></p>
+
+<p>It turns out the “Commercial Features” are subject to rather draconian restrictions (SUPPLEMENTAL LICENSE TERMS section A):</p>
+
+<blockquote><p>COMMERCIAL FEATURES You may not use the Commercial Features for running Programs, Java applets or applications in your internal business operations or for any commercial or production&nbsp; purpose, or for any purpose other than as set forth in Sections B, C, D and E of these Supplemental Terms.&nbsp; If You want to use the Commercial Features for any purpose other than as permitted in this Agreement, You must obtain a separate license from Oracle.</p></blockquote>
+
+<p>As you can tell any meaningful business use of the “Commercial Features” are subject to a separate license.</p>
+
+<p>So does the regular Java 7 SE download contain any of these “Commercial Features”? It does not look like it and the Java Se Advance and Java SE Suite packages doesn’t either, because they do not exist. From below two sections that appear at end of <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this </a>document, it is clear that the Java SE Advanced and Java SE Suite “products” are a combination of the Java 7 SE and a number of separate packages.</p>
+
+<blockquote><h2>Installation of Java SE Product Editions</h2>
+
+<p>Oracle does not provide installation programs that correspond directly to Java SE, Oracle Java SE Advanced and Oracle Java SE Suite. Depending on the features licensed, one or more of the following individual packages must be downloaded:</p>
+
+<p>JRE&nbsp;JDK</p>
+
+<p>JRockit JDK</p>
+
+<p>JRockit Mission Control</p>
+
+<p>Java for Business JRE</p>
+
+<p>Java for Business JDK</p>
+
+<h3>Licensing Considerations and Restricted-Use Licensing</h3>
+
+<p>Some of the packages described in Installation of Java SE Product Editions install commercial features that are restricted to Oracle Java SE Advanced or Oracle Java SE Suite. For example, the JRockit JDK comes with a deterministic garbage collector that requires a Oracle Java SE Suite license.</p></blockquote>
+
+<p>If you download (which you can do for instance <a href="http://www.oracle.com/technetwork/java/javase/downloads/jrefb-5u30-download-401429.html">here</a> and <a href="http://www.oracle.com/technetwork/middleware/jrockit/downloads/index.html">here</a>) and use these extra packages for the purposes outlined above (any meaning full business use) in combination with Java 7 SE you are subject to a separate (ostensibly payable) license.</p>
+
+<p>The only mention I can find of this change from Oracle is <a href="http://blogs.oracle.com/henrik/entry/jrockit_is_now_free_and">this</a> blog post with the clearly misleading title “JRockit is Now Free (and Other Java License Updates)”, as this does not apply to the JRockit “Commercial Features” listed above.</p>
+
+<p>You should make sure that your developers, ops people and relevant vendors of such service knows this, or you could end up breaching your license and owing Oracle a lot of money.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dropbox Unzip]]></title>
+    <link href="http://www.spyfoos.com/blog/2011/04/24/dropbox-unzip/"/>
+    <updated>2011-04-24T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/04/24/dropbox-unzip</id>
+    <content type="html"><![CDATA[<p>Inspirer by this <a href="http://wetzler.me/ios-unzipping/">post</a> where the author shows how to add automatic unzipping to a <a href="http://www.dropbox.com/">Dropbox</a> folder on OS X, I wanted to see if something similar was easily achievable on Ubuntu (10.10).</p>
+
+<p>After a bit of searching I found <a href="http://inotify.aiken.cz/?section=inotify&amp;page=about&amp;lang=en">incron</a>. Quoting from the website incron “is an “inotify cron” system. It consists of a daemon and a table manipulator. You can use it a similar way as the regular cron. The difference is that the inotify cron handles filesystem events rather than time periods.”</p>
+
+<p>To create a folder in your Dropbox that automatically unzips any zip file dropped into it first install incron. It is available in the Ubuntu Universe repository and can be installed using:</p>
+
+<pre><code>sudo apt-get install incron
+</code></pre>
+
+<p>After the package is installed you must add the username of all users who should be permitted to add jobs to incron to /etc/incron.allow like this(replace [username] with your username):</p>
+
+<pre><code>sudo echo “[username]” &gt;&gt; /etc/incron.allow
+</code></pre>
+
+<p>Next create the unzip folder in your Dropbox folder:</p>
+
+<pre><code>mkdir [path to your Dropbox folder]/unzip
+</code></pre>
+
+<p>Next we need to add the actual unzip job row to incron like this:</p>
+
+<pre><code>icrontab -e
+</code></pre>
+
+<p>This opens the user incron table in the deafult editor. Insert the following line, replacing [path to your Dropbox folder] with the absolute path (don’t use ~) to your Dropbox folder:</p>
+
+<pre><code>[path to your Dropbox folder]/unzip IN_CLOSE_WRITE unzip $@/$# -d $@
+</code></pre>
+
+<p>Check that the job row was added to your incron table:</p>
+
+<pre><code>incrontab -l
+</code></pre>
+
+<p>This should output the line you just added above. If this works try copying a zip file into the Dropbox/unzip folder. If everything works it should unzip automatically. This obviously only so long the machine you installed the incron job is online.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Simple Chat App Using Aleph, Websockets and Clojure]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/08/27/a-simple-chat-app-using-clojure-aleph-and-websockets/"/>
+    <updated>2010-08-27T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/08/27/a-simple-chat-app-using-clojure-aleph-and-websockets</id>
+    <content type="html"><![CDATA[<p>I have implemented a small example shoving how to use the websocket support in <a href="http://github.com/ztellman/aleph">Aleph</a>, asynchronous webframework for <a href="http://clojure.org/">Clojure</a> built on <a href="http://www.jboss.org/netty">Netty</a>.</p>
+
+<p>The example is tested with Chrome and Firefox on Ubuntu. It should work in all modern browsers as it relies on <a href="http://github.com/gimite/web-socket-js/">web-socket-js</a> for websocket emulation in browsers that do not have native support. Please note the updated Usage instructions. The socket-policy-server necessary for Flash websocket emulation has to listen on port 843 (at least that is the first place Flash asks for the policy file) so the server has to be run using sudo.</p>
+
+<p>If you are interested the example is at hosted on <a href="http://github.com/maacl/aleph-ws-test">github</a>, along with usage instructions.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle vs Google - Implementing the JVM Specification]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/"/>
+    <updated>2010-08-24T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification</id>
+    <content type="html"><![CDATA[<p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
+
+<p>For context Oracle in the complaint defines Android as:</p>
+
+<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
+
+<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
+
+<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
+
+<p>Would the analysis under US copyright law be the same?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SAS vs World Programming - SAS' Vesion]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version/"/>
+    <updated>2010-07-29T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version</id>
+    <content type="html"><![CDATA[<p>SAS issued a <a href="http://www.sas.com/news/preleases/WPL.html">press release</a> today with its take on the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">recent decision</a> in the case between the two companies.</p>
+
+<p>While WPL’s <a href="http://teamwpc.co.uk/press/world_programming_secures_high_court_victory_against_SAS">press release</a> might have been s optimistic in its evaluation of the decision, SAS’ press release is a master piece of hypocrisy and highly tendentious. The headline:</p>
+
+<blockquote><p>“Court finds World Programming Ltd. Infringed on SAS Copyrights; refers case to European Court of Justice”</p></blockquote>
+
+<p>Technically this is wrong. The judge referred a number of key questions to the ECJ – not the case it self. More specifically the judge asked for a <a href="http://en.wikipedia.org/wiki/European_Court_of_Justice#References_for_a_preliminary_ruling">preliminary ruling</a> on 6 questions (<a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii):</p>
+
+<blockquote><p>“i) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect programming languages from being copied, I agree with him that this is a question on which guidance from the ECJ is required (see paragraphs 211-218 above).</p>
+
+<p>ii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect interfaces from being copied where this can be achieved without decompiling the object code, I consider this is also a question on which guidance from the ECJ is required (see paragraphs 219-227 above).</p>
+
+<p>iii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect the functions of the programs from being copied, and although his decision on that point was upheld by the Court of Appeal in <em>Nova</em>, I consider that this is also a question on which guidance from the ECJ is required (see paragraphs 228-238 above).</p>
+
+<p>…</p>
+
+<p>v) I consider that the reasoning which supports Pumfrey J’s interpretation of Article 1(2) of the Software Directive also applies to Article 2(a) of the Information Society Directive, but again this is a question on which guidance from the ECJ is required (see paragraphs 251-256 above).</p>
+
+<p>vi) On the assumption that Article 2(a) of the Information Society Directive is to be interpreted in the same manner as Article 1(2) of the Software Directive, WPL has not infringed SAS Institute’s copyright in the SAS Manuals by producing or testing WPS (see paragraphs 257-267 above).”</p></blockquote>
+
+<p>SAS completely neglects to mention that the judge is clearly prepared to find in favor of WPL in all these questions and cites English precedents in support of such a decision. He asks for the ECJs confirmation of his interpretation because the basis for the rules in English law is EU Directives (see here for the<a href="http://www.hmcourts-service.gov.uk/cms/801.htm"> practice directions </a>the court operates under).</p>
+
+<p>SAS goes on to state the following:</p>
+
+<blockquote><p>“The court also found that WPL acted outside the scope of its license agreement for SAS Learning Edition software by using that product to develop WPL’s World Programming System (WPS) software.”</p></blockquote>
+
+<p>What the judge actually said was this (my emphasis):</p>
+
+<blockquote><p>vii) WPL’s use of the SAS Learning Edition falls outside the scope of the terms of the relevant licences (see paragraphs 276-290 above).</p>
+
+<p>viii) The interpretation of Article 5(3) of the Software Directive is another question on which guidance from the ECJ is required (see paragraphs 291-311 and 314 above).</p>
+
+<p> <em>ix) On the interpretation of Article 5(3) which I favour, WPL’s use of the Learning Edition is within Article 5(3), and to the extent that the licence terms prevent this they are null and void, with the result that none of WPL’s acts complained of was a breach of contract or an infringement of copyright except perhaps one (see paragraphs 313-315 above).</em></p></blockquote>
+
+<p>Also on this issue SAS chooses not to disclose that the judge is prepared to find in favor of WPL.</p>
+
+<p>Accusing WPL of spinning the courts decision and then applying tornado class spin to the decision yourself is just pathetic.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Clojure, Jetty 7 and WebSockets]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/28/clojure-jetty-7-and-websockets/"/>
+    <updated>2010-07-28T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/28/clojure-jetty-7-and-websockets</id>
+    <content type="html"><![CDATA[<p>I found this <a href="http://gist.github.com/281490">gist</a> by Chris McDevitt&nbsp;which is a simple chat server and browser client that uses Jetty 7, Clojure and WebSockets.</p>
+
+<p>I turned out to be quite a hassle to get it running so I thought I would document it here so others might save some time.</p>
+
+<p>I have create a <a href="http://github.com/maacl/websocket-test">project</a> on github that includes all the dependencies. I run it in Emacs using swank-clojure-project. The two last forms start the two servers – one is the websocket chat server, the other just serves the index.html file (this is necessary for the web_socket.js&nbsp; to work). I have only been able to make this work in browsers with native websocket support (Chrome and Safari). If anybody can figure out what goes wrong in the other browsers (e.g. Firefox) let me know, and I will update.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SAS vs. World Programming]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/23/sas-vs-world-programming/"/>
+    <updated>2010-07-23T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/23/sas-vs-world-programming</id>
+    <content type="html"><![CDATA[<p>UPDATE: I did a follow-up post on the SAS Press Release <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a></p>
+
+<p>So the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">decision</a> in “SAS Institute Inc v World Programming Ltd” has been published and it is in favor of WPL on all counts, except that the judge finds that WPL – against it’s own policy – copied certain language from SAS’ manuals into its own manuals.</p>
+
+<p>Key questions pertaining to almost all the other claims will be submitted to the ECJ for confirmation of the judges interpretation of the law(specifically Articles 1(2) and 5(3) of the <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">Software Directive</a> and Article 2(a) of the <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32001L0029:EN:HTML">Information Society Directive</a>) (see below).</p>
+
+<p>If everything holds up this is potentially a huge win for competition in the software industry.The decision means that can re-implement the functionality of other software and reference that software and its documentation in the process, as long as you do not copy any source code or documentation. The judge (who appears to be quite technically savvy) analyses in detail how the SAS language is constructed. SAS appears to argue that the PROCS steps in the SAS Language is not a programming language, but in fact a computer program in itself. The SAS expert Dr. Ivey states the following on the matter:</p>
+
+<p>&gt; the SAS Language was a domain specific computer language with many of the attributes of a command language, rather than a programming language</p>
+
+<p>It is not clear to me exactly what SAS was hoping to achieve with this line of reasoning (<a href="http://news.ycombinator.com/item?id=1545404">perhaps they were trying to escape a suspected non-copyrightability of programming languages</a>) but whatever it was it did not work as the judge slightly sarcastically <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para56">finds</a> that:</p>
+
+<p>&gt; In my judgment the SAS Language is a programming language. I am comforted by the fact that this assessment coincides not only with SAS Institute’s own assessment in paragraph 6 of its Particulars of Claim and in its literature, but also with that of the anonymous author of the entry for “SAS language” in Wikipedia (as last modified on 25 April 2010), which states:
+&gt;
+&gt; “… SAS can be considered a general programming language, though it serves largely as a database programming language and a language with a wide variety of specialized analytic and graphic procedures.”</p>
+
+<p>The judge also analyses whether the <em>functionality </em>of a computer program (not the source code) is itself protectable by copyright and <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para236">finds</a> that:</p>
+
+<p>&gt; Accordingly, I consider that the functionality of a computer program falls on the wrong side of the line drawn by Article 1(2) of the Software Directive, Article 9(2) of TRIPS and Article 2 of the WIPO Copyright Treaty.</p>
+
+<p>So the functionality of a computer program is not protectable, which is not too surprising, but as the question in the judges opinion is not _<a href="http://www.translegal.com/legal-english-dictionary/acte-clair">acte clair_</a> it is submitted together with 5 other questions (<a href="http:/www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii)) to the ECJ for guidance. Among these is also the question of whether a programming language as such is protectable by copyright. The judge finds that this is probably not the case, but appears less certain on this question than the others.</p>
+
+<p>It will be really interesting to see if this will result alternative vendors deciding to challenge other dominant software products, by producing compatible solutions that release the customers from lock-in and introduce effective competition.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Open Source and Export Control]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/06/09/export-control-and-open-source/"/>
+    <updated>2010-06-09T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/06/09/export-control-and-open-source</id>
+    <content type="html"><![CDATA[<p>Ref my comments on export control rules in my previous post, it looks like these are now impacting open source in a major way. Apparently SourceForge in an effort to comply with US export control rules (specifically countries covered by sanctions administrated by <a href="http://www.ustreas.gov/offices/enforcement/ofac/">OFAC</a>) have blocked all users from Cuba, Iran, North Korea, Sudan, and Syria. <a href="http://notepad-plus-plus.org/">NotePad++</a> appears to be the first project to withdraw from SourceForge in protest.</p>
+
+<p>UPDATE: Apparently SourceForge has now made the blocking of users from sanctioned countries <a href="http://sourceforge.net/blog/some-good-news-SourceForge-removes-blanket-blocking/">optional</a>. This leaves the assessment of whether or not a project is subject to the rules up to the project owner. As export control is quite an esoteric topic some links to guidance on the applicability of US export control rules would probably have been a good idea, but SourceForge’s consel has probably counseled against that for liability reasons.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[An Acceptable EULA?]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula/"/>
+    <updated>2010-06-04T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/06/04/an-acceptable-eula</id>
+    <content type="html"><![CDATA[<p>Is there such a thing? Until today I did not think so, but after having
+watched Mixergy&rsquo;s
+<a href="http://www.spyfoos.com/web/20100907205218/http://mixergy.com/balsamiq-peldi-guilizzoni-interview/">interview</a>
+with Balsamiq’s Giacomo “Peldi” Guilizzoni, I was optimistic that I
+might have finally found one. Check Balsamiq’s EULA out
+<a href="http://www.spyfoos.com/web/20100907205218/http://www.balsamiq.com/images/BalsamiqEula.pdf">here</a>.
+Peldi mentions in the interview that a helpful customer in-house counsel
+gave him some great feedback that helped improve the license. To
+whatever she told him, I would add the following:</p>
+
+<h4>Preamble</h4>
+
+<p>Don’t use “represents and warrants” use only “represents”. The form is
+needless legalese and part of the reason why people hate lawyers. If you
+don’t agree read
+<a href="http://www.spyfoos.com/web/20100907205218/http://www.adamsdrafting.com/2009/09/18/rs-and-ws-once-more-with-feeling/">this</a>
+– then go change it.</p>
+
+<h4>Definitions</h4>
+
+<p>“Authorized Users” and “Authorized User” – makes no sense that the
+plural form would have a completely different meaning than the singular.
+“Authorized Users” is never used in the EULA. This might make sense when
+read together with the Quote/Receipt/Invoice but I doubt it. The
+definitions of “Authorized Machine” and “Authorized Server Node” do not
+appear to deal well with virtual environments.</p>
+
+<h4>Section 3 Grant of License</h4>
+
+<p>The license granted is “irrevocable” but at he same time terminable by
+Balsamiq as per section 12. This appears inconsistent. “(except pursuant
+to Clause 12 below)” should be added after “irrevocable”.</p>
+
+<h4>Section 4 No Warranty</h4>
+
+<p>Excluding all warranties does not strike me as compatible Balsamiqs
+mission to produce high quality software. You can’t claim to aim for
+excellence in everything you do, and the refuse to back it up – that’s
+simply not credible. On the other hand warranties provided for goods are
+not appropriate for software, as these are calibrated for defects that
+occur in individual instances (copies) of the product. I would suggest a
+warranty that better correspond to the apparently fanatical customer
+service Balsamiq provides. This does no mean warranting to fix bugs
+within a certain timeframe, but it does mean warranting a meaningful
+response to reported bugs etc. If you are doing it already it such a
+warranty is essential free, if you make sure that the customers remedies
+if you fail are manageable. If such remedies for instance only apply to
+the (first) reporter of the bug, you contain the effect of the warranty
+from spreading to all customers.</p>
+
+<h4>Section 6.1 Software Maintenance – For Plug-in Versions</h4>
+
+<p>Excellent to see inclusion of a reasonable price-escalation clause for
+Software Maintenance. This is something that I have had to negotiate
+many times and which any prudent licensee should always remember. You
+don’t want to be
+<a href="http://www.spyfoos.com/web/20100907205218/http://www.zdnet.com/blog/howlett/sap-pulls-the-trigger-on-higher-support-costs/442">treated</a>
+like SAP’s customers, do you?</p>
+
+<h4>Section 9 Investigation of Unauthorized Use and Distribution</h4>
+
+<p>This is a very pragmatic alternative to audit rights which especially a
+company the size of Balsamiq would have very little use for. The
+fairness of allocating the cost of producing the certificate to the
+licensee should be considered, since this might exceed the license fee
+by a factor of many in some cases. I would consider some kind of
+compensation (free maintenance?) to the customer if a request for a
+certificate is made and this is provided, as this is would indicate that
+Balsamiqs suspicion was not well-founded.</p>
+
+<h4>Section 10 (a) Licensee’s Restrictions</h4>
+
+<p>Very common provision which is also very unenforceable in the EU if the
+motif for the reverse engineering is a desire to “achieve the
+interoperability of an independently created computer program with other
+programs” (thanks to art. 5 and 6 of this
+EU <a href="http://www.spyfoos.com/web/20100907205218/http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31991L0250:EN:HTML">directive</a>).</p>
+
+<h4>Section 10 (b) Licensee’s Restrictions</h4>
+
+<p>Appears superfluous. How would the customer ever unilaterally be able to
+vary the “Authorized Use”? That said there might be a technicality in
+California law that makes it prudent to include this.</p>
+
+<h4>Section 10 (d) and (e) Licensee’s Restrictions</h4>
+
+<p>WTF! I can’t refer to Balsamiq’s name or do anything that has a
+“material and adverse effect on Balsamiq’s” interests. I am glad that I
+did not license Balsamiq’s software before writing this post. How can
+you promote Balsamiq as an open organisation in continuous dialog with
+its customers, and then muffle the same audience with your EULA?</p>
+
+<h4>Section 12 – Termination</h4>
+
+<p>The destruction of all copies of the software is a practical
+impossibility in many enterprise environments due to the back-up
+strategies employed. Since this will only become a requirement in case
+of a breach it might be justified nonetheless, but a more balanced
+alternative might be to require the destruction of all “readily usable
+copies” of the software or similar.</p>
+
+<h4>Section 13 – Infringement Indemnification</h4>
+
+<p>For the software in question and taking into account the size of the
+vendor (Balsamiq) this is a very reasonable clause, and it is a wise
+move to include indemnification if you want to have any hope selling
+your software to enterprise customers.</p>
+
+<h4>Section 14 – Limitation of Liability</h4>
+
+<p>Good to see that the indemnification obligations are exempted from the
+limitation of liability.</p>
+
+<h4>Section 16 – Open Source Code</h4>
+
+<p>For Balsamiq’s present product I wouldn’t worry much about the “viral”
+nature of the GPL and other similar licenses, which is clearly what this
+section is meant to address, but the section clearly does no harm
+either. If the software was meant for combination with the customer’s
+code or other software and subsequent distribution, I would be more
+interested in the list of of open source products/licenses in Exhibit A
+as this would enable me to assess any challenges related hereto.</p>
+
+<h4>Section 17 – Publicity Rights</h4>
+
+<p>This section solves a very common problem in a fairly practical way (the
+customer can opt out of Balsamiqs right to use the customer for
+publicity purpose prior to or any time after purchase) but a better more
+honest and straight forward solution, would be to permit the customer to
+opt out via the web form used to purchase the product.</p>
+
+<h4>Section 24 – Notices</h4>
+
+<p>While not critical why appear unreasonable by biasing this section in
+Balsamiqs favour? On Export Control (especially US) you really want to
+provide the relevant export control classification codes if you expect
+any one to comply with the rules. In general you want to try to avoid
+having your software subject to US export control rules as these are
+absolutely not trivial.</p>
+
+<p>On balance Balsamiq’s EULA is above average but still suffers from a few
+weakness as outlined above. Most of these can be fixed without exposing
+Balsamiq to any liability that is unmanageable.</p>
+
+<p>DISCLAIMER: Above is not legal advice bla, bla, bla.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Contracts and Game Mechanics]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics/"/>
+    <updated>2010-05-07T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics</id>
+    <content type="html"><![CDATA[<p>Game Mechanics (see<a href="http://en.wikipedia.org/wiki/Game_mechanics"> def</a>, great intro <a href="http://www.youtube.com/watch?v=ihUt-163gZI">video</a>)</p>
+
+<h2>How are contractual game mechanics different from liquidated damages / service credits?</h2>
+
+<p>Liquidated damages / service credits appear to me a subset of contractual game mechanics. Contractual game mechanics would also include non monetary and indirect monetary rewards. These could be classical rewards like points, badges etc. but could also include rights of potential monetary value. Intuitively I don&rsquo;t think the classical rewards would have much effect in a contractual setting as they depend on individual psychological mechanisms which would be subdued by the goals of the commercial entity that is party to the contract. If the latter category more interesting especially if applied across contracts  with competing vendors.</p>
+
+<h2>Can contractual game mechanics be applied across contracts?</h2>
+
+<p>Imagine three vendors of for example systems operations services. The customer has near identical contracts with the three vendors (there are ways to deal any differences, which I will get back to below), including the service catalog. Now imagine that the contracts have built-in game mechanics that rewards/punishes the vendors performance under the contract. High up time gives you points &ndash; low the opposite. Timely reporting 3 months in a row gives you a badge etc. etc. Estimates of time and material tasks within 5% of of actual usage gives you a golden star. The customer now tenders the operations and implementation of a new system among the different vendors. This being 2010 (or later) this is obviously done using an e-auction. But here is the trick &ndash; the three vendors are handicapped in the auction in accordance with the historic points, badges and golden stars. This handicap could be applied on top of a base handicap reflecting any permanent differences between the vendor contracts. Ideally the handicaps are transparent across vendors so there is a continuous incentive to offer better terms and improve performance.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Zed Shaw on Programming]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/04/30/zed-shaw-on-programming/"/>
+    <updated>2010-04-30T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/04/30/zed-shaw-on-programming</id>
+    <content type="html"><![CDATA[<p>Zed writes the following in his work-in-progress book on programming in Python:</p>
+
+<blockquote><p>Programming as a profession is only moderately interesting. It can be a good job, but if you want to make about thesame money and be happier you could actually just go run a fast food joint. You are much better off using code as your secret weapon in another profession.</p>
+
+<p>People who can code in the world of technology companies are a dime a dozen and get no respect. People who can code in biology, medicine, government, sociology, physics, history, and mathematics are respected and can do amazing things to advance those disciplines.</p></blockquote>
+
+<p>I am not sure that even Zed realizes how profound a truth the above is.</p>
+]]></content>
+  </entry>
+  
+</feed>

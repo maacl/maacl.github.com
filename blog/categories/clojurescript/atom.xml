@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: clojurescript | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/clojurescript/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2015-08-04T10:46:51+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Om, Clojure/ClojureScript and Event Sourcing]]></title>
+    <link href="http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/"/>
+    <updated>2014-09-09T22:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing</id>
+    <content type="html"><![CDATA[<p><a href="http://gotocon.com/cph-2014/">goto CPH</a> is closing in rapidly.</p>
+
+<p>As mentioned previously I am especially looking forward to  <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
+
+<p><a href="https://github.com/swannodette/om">Om</a> is getting a lot of coverage and even if it is still very new, it is seeing some heavy duty prodcution usage, for instance at <a href="http://www.getprismatic.com/">Prismatic</a>. But Prismatic has gone even further that just using Om and released <a href="https://github.com/Prismatic/om-tools">om-tools</a>, which makes it even more straight forward to use Om. I especially like how it smoothes over some of the slightly ugly Javascript interop that Om requires out of the box.</p>
+
+<p>Another talk I am looking very much forward to is <a href="http://gotocon.com/cph-2014/presentation/Event-sourcing">Greg Young&rsquo;s talk on Event Sourcing</a>. Event Sourcing is a very interesting <a href="http://martinfowler.com/eaaDev/EventSourcing.html">pattern</a> which has a very natural fit to many common business scenarios, and I am looking forward to Greg Young giving us some examples of that. The benefits of the event sourcing pattern appears to me to overlap somewhat with the benefits of the Clojure based database <a href="http://www.datomic.com/">Datomic</a> which also emphazises the need for a solid model of time.</p>
+
+<p>If you are interested in dabbling with Event Sourcing and have been inspired by David&rsquo;s talk on Om/ClojureScript you should check out the <a href="http://jvmsoup.com/2014/06/23/clojure-websockets-server-and-event-sourcing/">JVM Soup post on Event Sourcing in Clojure</a>. This post demonstrates how to use <a href="https://github.com/clojure/core.async">core.async</a> Clojure/ClojureScripts CSP implentation, which David also recommends to do inter component communication when using Om, to do event sourcing in Clojure/ClojureScript.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Om my CSP]]></title>
+    <link href="http://www.spyfoos.com/blog/2014/06/15/Om-my-CSP/"/>
+    <updated>2014-06-15T19:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2014/06/15/Om-my-CSP</id>
+    <content type="html"><![CDATA[<p>Looks like I will be at <a href="http://gotocon.com/cph-2014/">goto CPH</a> again this year.</p>
+
+<p>The format this year is quite different, but looks very interesting nonetheless. Especially the Leading &amp; Bleeding Edge track looks interesting. At this track I am especially looking forward to seeing <a href="http://gotocon.com/cph-2014/speaker/David+Nolen">David Nolen&rsquo;s</a> talk <a href="http://gotocon.com/cph-2014/presentation/Immutability:%20Putting%20The%20Dream%20Machine%20To%20Work">Putting the Dream Machine to Work</a>.</p>
+
+<p>David has created a <a href="https://github.com/clojure/clojurescript">ClojureScript</a> framework on top of <a href="http://facebook.github.io/react/">React</a> called <a href="https://github.com/swannodette/om">Om</a>. Om is not just a wrapper around React. It leverages ClojureScript&rsquo;s immutable datastructures to substitute costly object and array compares with reference equality checks. This results in quite significant <a href="http://swannodette.github.io/2013/12/17/the-future-of-javascript-mvcs/">performance improvements</a>.</p>
+
+<p>David in his <a href="https://github.com/swannodette/om/wiki/Basic-Tutorial#intercomponent-communication">tutorials</a> encourage another ClojureScript feature <a href="https://github.com/clojure/core.async">core.async</a> for intercomponent communication.</p>
+
+<p>As Om is still very new there are not many presentations available but <a href="https://vimeo.com/97516219">Functional UI programming with React.JS and ClojureScript</a> is a very good introduction.</p>
+
+<p>If you understand Norwegian (and maybe even if you don&rsquo;t) <a href="https://github.com/magnars">Magnar Sveen</a> and <a href="https://github.com/cjohansen">Christian Johansen</a> have recorded a very entertaining series of pair programming screencast where they use ClojureScript, <a href="https://github.com/levand/quiescent">Quiescent</a> (an alternative React ClojureScript library) and a TDD approach to create a Zombie themed Memory Flash Game called <a href="http://www.zombieclj.no/">ZOMBIECLJ</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GOTO Aarhus 2013 - ClojureScript]]></title>
+    <link href="http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript/"/>
+    <updated>2013-09-13T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2013/09/13/goto-aarhus-2013-clojurescript</id>
+    <content type="html"><![CDATA[<p>I put together my first draft itenary for <a href="http://gotocon.com/aarhus-2013/">GOTO Aarhus 2013</a>. You can see it <a href="http://gotocon.com/aarhus-2013/schedule/my-schedule.jsp#myschedlink1">here</a>.</p>
+
+<p>Fortunately the programme did not pose too many dilemma&rsquo;s for me to resolve, although choosing between &ldquo;Obstacles And Patterns To Maximize Flow In IT Operations&rdquo; and &ldquo;Lambdas in Java: A peek under the hood&rdquo; on Tuesday morning was a bit difficult.</p>
+
+<p>I was especially pleased to see that <a href="http://swannodette.github.io/">David Nolen</a> is giving a talk. David is fairly prolific in the <a href="http://clojure.org/">Clojure</a> community. He is the driving force behind core.logic and a significant contributor to <a href="https://github.com/clojure/clojurescript">ClojureScript</a>. <a href="https://github.com/clojure/core.logic">Core.logic</a> is a implementation of miniKaren and provides robust logic programming facilities in Clojure and <a href="https://github.com/clojure/clojurescript">ClojureScript</a>. As an example of how concise logic programming can be please see below Sudoku solver by David Nolen.</p>
+
+<p>;; based on core.logic 0.8-alpha2 or core.logic master branch</p>
+
+<pre><code>(ns sudoku
+    (:refer-clojure :exclude [==])
+        (:use clojure.core.logic))
+
+(defn get-square [rows x y]
+    (for [x (range x (+ x 3))
+          y (range y (+ y 3))]
+              (get-in rows [x y])))
+
+(defn init [vars hints]
+    (if (seq vars)
+        (let [hint (first hints)]
+            (all
+                (if-not (zero? hint)
+                    (== (first vars) hint)
+                        succeed)
+                            (init (next vars) (next hints))))
+                                succeed))
+
+(defn sudokufd [hints]
+    (let [vars (repeatedly 81 lvar)
+          rows (- vars (partition 9) (map vec) (into []))
+          cols (apply map vector rows)
+          sqs  (for [x (range 0 9 3)
+                     y (range 0 9 3)]
+                     (get-square rows x y))]
+                (run 1 [q]
+                    (== q vars)
+                    (everyg #(infd % (domain 1 2 3 4 5 6 7 8 9)) vars)
+                    (init vars hints)
+                    (everyg distinctfd rows)
+                    (everyg distinctfd cols)
+                    (everyg distinctfd sqs))))
+
+;; ====
+
+(comment
+(sudokufd
+    [0 0 3  0 2 0  6 0 0
+     9 0 0  3 0 5  0 0 1
+     0 0 1  8 0 6  4 0 0
+     0 0 8  1 0 2  9 0 0
+     7 0 0  0 0 0  0 0 8
+     0 0 6  7 0 8  2 0 0
+     0 0 2  6 0 9  5 0 0
+     8 0 0  2 0 3  0 0 9
+     0 0 5  0 1 0  3 0 0]))
+</code></pre>
+
+<p><a href="https://gist.github.com/swannodette/3217582#file-gistfile1-clj">gist</a></p>
+
+<p><a href="https://github.com/clojure/clojurescript">ClojureScript</a> compiles Clojure into Javascript which is guarenteed to be digestable by the <a href="https://developers.google.com/closure/">Goolge Closure</a> compiler. While the ClojureScript implementation of core.logic is somewhat limited compared to the Clojure based one, you can still do some interesting things with it. If you are not familiar with ClojureScript you might want to check <a href="https://github.com/magomimmo/modern-cljs">this tutorial</a> out. Some interesting examples of using canvas / SVG with ClojureScript, can be found <a href="https://github.com/rm-hull/programming-enchiladas#examples">here</a></p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+</feed>

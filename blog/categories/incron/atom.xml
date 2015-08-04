@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: incron | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/incron/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2015-08-04T10:46:51+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Dropbox Unzip]]></title>
+    <link href="http://www.spyfoos.com/blog/2011/04/24/dropbox-unzip/"/>
+    <updated>2011-04-24T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/04/24/dropbox-unzip</id>
+    <content type="html"><![CDATA[<p>Inspirer by this <a href="http://wetzler.me/ios-unzipping/">post</a> where the author shows how to add automatic unzipping to a <a href="http://www.dropbox.com/">Dropbox</a> folder on OS X, I wanted to see if something similar was easily achievable on Ubuntu (10.10).</p>
+
+<p>After a bit of searching I found <a href="http://inotify.aiken.cz/?section=inotify&amp;page=about&amp;lang=en">incron</a>. Quoting from the website incron “is an “inotify cron” system. It consists of a daemon and a table manipulator. You can use it a similar way as the regular cron. The difference is that the inotify cron handles filesystem events rather than time periods.”</p>
+
+<p>To create a folder in your Dropbox that automatically unzips any zip file dropped into it first install incron. It is available in the Ubuntu Universe repository and can be installed using:</p>
+
+<pre><code>sudo apt-get install incron
+</code></pre>
+
+<p>After the package is installed you must add the username of all users who should be permitted to add jobs to incron to /etc/incron.allow like this(replace [username] with your username):</p>
+
+<pre><code>sudo echo “[username]” &gt;&gt; /etc/incron.allow
+</code></pre>
+
+<p>Next create the unzip folder in your Dropbox folder:</p>
+
+<pre><code>mkdir [path to your Dropbox folder]/unzip
+</code></pre>
+
+<p>Next we need to add the actual unzip job row to incron like this:</p>
+
+<pre><code>icrontab -e
+</code></pre>
+
+<p>This opens the user incron table in the deafult editor. Insert the following line, replacing [path to your Dropbox folder] with the absolute path (don’t use ~) to your Dropbox folder:</p>
+
+<pre><code>[path to your Dropbox folder]/unzip IN_CLOSE_WRITE unzip $@/$# -d $@
+</code></pre>
+
+<p>Check that the job row was added to your incron table:</p>
+
+<pre><code>incrontab -l
+</code></pre>
+
+<p>This should output the line you just added above. If this works try copying a zip file into the Dropbox/unzip folder. If everything works it should unzip automatically. This obviously only so long the machine you installed the incron job is online.</p>
+]]></content>
+  </entry>
+  
+</feed>

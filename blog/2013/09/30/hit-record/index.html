@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Hit Record! - The Limiting Factor</title>
+  <meta name="author" content="Martin Clausen">
+
+  
+  <meta name="description" content="Richard Baeckman just did an excellent presentation on Java Flight Recorder at goto Aarhus 2013. Java Flight Recorder is an &ndash; enhanced &ndash; &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.spyfoos.com/blog/2013/09/30/hit-record">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="The Limiting Factor" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44225157-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">The Limiting Factor</a></h1>
+  
+    <h2>- semi-structured line noise.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.spyfoos.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Hit Record!</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-30T16:29:00+02:00" pubdate data-updated="true">Sep 30<span>th</span>, 2013</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Richard Baeckman just did an excellent presentation on <a href="http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html">Java Flight Recorder</a> at <a href="http://gotocon.com/aarhus-2013/">goto Aarhus 2013</a>. Java Flight Recorder is an &ndash; enhanced &ndash; port of JRockit Flight Recorder to the Oracle(Sun) JVM. It ships with  Java SE Development Kit 7u40 and includes a very nifty GUI called Java Mission Control that provides an excellent overvie of all the data collected in your recordings. I was very interested in seeing how useful JFR is when running Clojure code. Fortunately installation is very easy. After installing <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Platform (JDK) 7u40</a> I just added the following options to my project.clj file.</p>
+
+<p><code>:jvm-opts ["-XX:+UnlockCommercialFeatures" "-XX:+FlightRecorder"]</code></p>
+
+<p>On OS X you have to start the JMC from a terminal invoking the binary located at:</p>
+
+<p><code>/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/bin/jmc</code></p>
+
+<p>This brings up the JMC GUI. If you start your Clojure app (in my case Rich&rsquo;s ants.clj), your jvm(s) should be visible under the JVM Browser tab. From here you can start a recording by double-clicking the relevant JVM, right-clicking the Flight Recorder entry and choosing &ldquo;Start Flight Recording&hellip;&rdquo;. I have inlcuded a screenshot below of a 1 minute recording of ants.clj. As you can tell JFR collects an immense amount of information but the overhead is minimal, approx 3% according to Richard.</p>
+
+<p><img src="/images/posts/jmc.png" title="Java Mission Control Screenshot" alt="Java Mission Control" /></p>
+
+<p>Please do note that the Java Flight Recorder and JMC are both Commercial Features, which I have written about previously <a href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/">here</a>. This means that neither JFR and JMC may be used for production purposes without a separate payable license from Oracle. There is currently no public information regarding prices and other conditions available from Oracle.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Martin Clausen</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-30T16:29:00+02:00" pubdate data-updated="true">Sep 30<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/java/'>java</a>, <a class='category' href='/blog/categories/java-flight-recorder/'>java_flight_recorder</a>, <a class='category' href='/blog/categories/jmc/'>jmc</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://www.spyfoos.com/blog/2013/09/30/hit-record/" data-via="" data-counturl="http://www.spyfoos.com/blog/2013/09/30/hit-record/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/09/14/flexible-contracts/" title="Previous Post: Flexible Contracts">&laquo; Flexible Contracts</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/10/01/licensing-done-right/" title="Next Post: Licensing Done Right!">Licensing Done Right! &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/08/04/open-source-upsides/">Open Source Upsides</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/">Om, Clojure/ClojureScript and Event Sourcing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/15/Om-my-CSP/">Om My CSP</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/30/hit-record/">Hit Record!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/maacl">@maacl</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'maacl',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116274805578840683959?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Martin Clausen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'thelimitingfactor';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.spyfoos.com/blog/2013/09/30/hit-record/';
+        var disqus_url = 'http://www.spyfoos.com/blog/2013/09/30/hit-record/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

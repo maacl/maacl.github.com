@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: copyright | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/copyright/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2015-08-04T10:46:51+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Open Source Upsides]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/08/04/open-source-upsides/"/>
+    <updated>2015-08-04T10:00:03+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/08/04/open-source-upsides</id>
+    <content type="html"><![CDATA[<p>I am really looking forward to the <a href="http://gotocon.com/cph-2015">goto cph conference</a> this year.</p>
+
+<p>One of the talks on my personal iteneary is <a href="http://gotocon.com/cph-2015/presentation/How%20to%20train%20your%20corporation%20to%20prefer%20open%20source">How to train your corporation to prefer open source</a> by Richard Lander from the Microsoft core.net team.</p>
+
+<p>Microsoft is undergoing profound changes at the moment expecially in its approach to open source. One of the more prominent examples of this is the open sourcing of the <a href="https://github.com/Microsoft/dotnet">.NET stack</a> which I am sure Richard will be mentioning in his talk.</p>
+
+<p>The irony of course is that Microsoft still inflicts the pain of closed source on its customers on a monumental scale &ndash; and as closed licensors go Microsoft unfortunately is at the bad end of the spectrum and showing no signs of becoming even more rigid with time. My last encounter with Microsoft&rsquo;s licensing machine was less than a year ago, and for the umpteenth time numerous very reasonable requests for changes and clarifications to the license terms were summarily dismissed. It would be great to see a fresh approach to software licensing from Microsoft similar to how IBM has &ndash; although imperfectly &ndash; reinvented its <a href="http://www-05.ibm.com/support/operations/us/en/documents.html">terms and conditions</a>.</p>
+
+<p>There are of course many reasons to prefer open source to the extent possible. A prominent one is that you avoid the pain of license audits by vendors who missed their last quarter or who wants to strong arm you into using their latest solution that they haven&rsquo;t been able to sell to customers voluntarily, better known as the <a href="http://fortune.com/2015/07/10/oracle-sales-cloud-hard/">Oracle approach</a></p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SAS vs. World Programming – Opinion of the Advocate General]]></title>
+    <link href="http://www.spyfoos.com/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/"/>
+    <updated>2011-11-29T12:00:00+01:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general</id>
+    <content type="html"><![CDATA[<p>So the Advocate General to the ECJ has submitted its <a href="http://curia.europa.eu/jurisp/cgi-bin/form.pl?lang=en&amp;amp;jurcdj=jurcdj&amp;amp;newform=newform&amp;amp;docj=docj&amp;amp;docop=docop&amp;amp;docnoj=docnoj&amp;amp;typeord=ALLTYP&amp;amp;numaff=&amp;amp;ddatefs=22&amp;amp;mdatefs=11&amp;amp;ydatefs=2011&amp;amp;ddatefe=29&amp;amp;mdatefe=11&amp;amp;ydatefe=2011&amp;amp;nomusuel=&amp;amp;domaine=&amp;amp;mots=&amp;amp;resmax=100&amp;amp;Submit=Rechercher">opinion</a> to the Court on the questions submitted by the High Court of Justice of England and Wales in the SAS vs World Programming case that i wrote about <a href="http://www.spyfoos.com/index.php/2010/07/23/sas-vs-world-programming/">here</a> and <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a>.</p>
+
+<p>The Advocate concludes the following:</p>
+
+<blockquote><p>(1)</p>
+
+<p>Article 1(2) of Council Directive 91/250/EEC of 14 May 1991 on the legal protection of computer programs is to be interpreted as meaning that the functionalities of a computer program and the programming language are not eligible, as such, for copyright protection. It will be for the national court to examine whether, in reproducing these functionalities in its computer program, the author of the program has reproduced a substantial part of the elements of the first program which are the expression of the author’s own intellectual creation.</p>
+
+<p>(2)</p>
+
+<p>Articles 1(2) and 6 of Directive 91/250 are to be interpreted as meaning that it is not regarded as an act subject to authorisation for a licensee to reproduce a code or to translate the form of the code of a data file format so as to be able to write, in his own computer program, a source code which reads and writes that file format, provided that that act is absolutely indispensable for the purposes of obtaining the information necessary to achieve interoperability between the elements of different programs. That act must not have the effect of enabling the licensee to recopy the code of the computer program in his own program, a question which will be for the national court to determine.</p>
+
+<p>(3)</p>
+
+<p>Article 5(3) of Directive 91/250, read in conjunction with Articles 4(a) and (b) and 5(1) thereof, is to be interpreted as meaning that the expression ‘any of the acts of loading, displaying, running, transmitting or storing the computer program [which the person having the right] is entitled to do’ relates to the acts for which that person has obtained authorisation from the rightholder and to the acts of loading and running necessary in order to use the computer program in accordance with its intended purpose. Acts of observing, studying or testing the functioning of a computer program which are performed in accordance with that provision must not have the effect of enabling the person having a right to use a copy of the program to access information which is protected by copyright, such as the source code or the object code.</p>
+
+<p>(4)</p>
+
+<p>Article 2(a) of Directive 2001/29/EC of the European Parliament and of the Council of 22 May 2001 on the harmonisation of certain aspects of copyright and related rights in the information society is to be interpreted as meaning that the reproduction, in a computer program or a user manual, of certain elements described in the manual for another computer program may constitute an infringement of the copyright in the latter manual if – a question which will be for the national court to determine – the elements reproduced in this way are the expression of their author’s own intellectual creation.</p></blockquote>
+
+<p>The opinion is pretty much a slam dunk for World Programming. The only hiccup is the issue related to the copying of parts of SAS’ manuals, but that is a minor issue compared to a situation where World Programming would have been restricted in their ability to produce a product compatible with SAS’ product. Now we just have to hope that the Court agrees with the Advocate General.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle Java 7 and 'Commercial Features']]></title>
+    <link href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/"/>
+    <updated>2011-07-28T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features</id>
+    <content type="html"><![CDATA[<p>Oracle has just announced the general availability of Java 7 SE including Java SE Advanced and Java SE Suite.</p>
+
+<p>Being a software license nerd I of course skimmed the <a href="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">Java SE License Agreement </a>(full title “Oracle Binary Code License Agreement for the Java SE Platform Products”).</p>
+
+<p>The license contains some interesting wording regarding “Commercial Features” in section 1, 2 and SUPPLEMENTAL LICENSE TERMS section A and G. The “Commercial Features” are defined in <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this</a> document (PDF version with better layout <a href="http://www.oracle.com/technetwork/java/javase/documentation/java-se-product-editions-397069.pdf">here</a>). Please note that the specification of “Commercial Features” is not part of the license as such and therefor subject to change at Oracle’s discretion.</p>
+
+<p><img src="/images/posts/jvm_commercial_features_table.png" title="JVM Commercial Features Table" alt="jvm_commercial_features_table" /></p>
+
+<p>It turns out the “Commercial Features” are subject to rather draconian restrictions (SUPPLEMENTAL LICENSE TERMS section A):</p>
+
+<blockquote><p>COMMERCIAL FEATURES You may not use the Commercial Features for running Programs, Java applets or applications in your internal business operations or for any commercial or production&nbsp; purpose, or for any purpose other than as set forth in Sections B, C, D and E of these Supplemental Terms.&nbsp; If You want to use the Commercial Features for any purpose other than as permitted in this Agreement, You must obtain a separate license from Oracle.</p></blockquote>
+
+<p>As you can tell any meaningful business use of the “Commercial Features” are subject to a separate license.</p>
+
+<p>So does the regular Java 7 SE download contain any of these “Commercial Features”? It does not look like it and the Java Se Advance and Java SE Suite packages doesn’t either, because they do not exist. From below two sections that appear at end of <a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">this </a>document, it is clear that the Java SE Advanced and Java SE Suite “products” are a combination of the Java 7 SE and a number of separate packages.</p>
+
+<blockquote><h2>Installation of Java SE Product Editions</h2>
+
+<p>Oracle does not provide installation programs that correspond directly to Java SE, Oracle Java SE Advanced and Oracle Java SE Suite. Depending on the features licensed, one or more of the following individual packages must be downloaded:</p>
+
+<p>JRE&nbsp;JDK</p>
+
+<p>JRockit JDK</p>
+
+<p>JRockit Mission Control</p>
+
+<p>Java for Business JRE</p>
+
+<p>Java for Business JDK</p>
+
+<h3>Licensing Considerations and Restricted-Use Licensing</h3>
+
+<p>Some of the packages described in Installation of Java SE Product Editions install commercial features that are restricted to Oracle Java SE Advanced or Oracle Java SE Suite. For example, the JRockit JDK comes with a deterministic garbage collector that requires a Oracle Java SE Suite license.</p></blockquote>
+
+<p>If you download (which you can do for instance <a href="http://www.oracle.com/technetwork/java/javase/downloads/jrefb-5u30-download-401429.html">here</a> and <a href="http://www.oracle.com/technetwork/middleware/jrockit/downloads/index.html">here</a>) and use these extra packages for the purposes outlined above (any meaning full business use) in combination with Java 7 SE you are subject to a separate (ostensibly payable) license.</p>
+
+<p>The only mention I can find of this change from Oracle is <a href="http://blogs.oracle.com/henrik/entry/jrockit_is_now_free_and">this</a> blog post with the clearly misleading title “JRockit is Now Free (and Other Java License Updates)”, as this does not apply to the JRockit “Commercial Features” listed above.</p>
+
+<p>You should make sure that your developers, ops people and relevant vendors of such service knows this, or you could end up breaching your license and owing Oracle a lot of money.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Oracle vs Google - Implementing the JVM Specification]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification/"/>
+    <updated>2010-08-24T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/08/24/oracle-vs-google-implementing-the-jvm-specification</id>
+    <content type="html"><![CDATA[<p>A lot has already been written on the Oracle vs. Google Android <a href="http:/www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement">case</a>. <a href="http://blog.headius.com/2010/08/my-thoughts-on-oracle-v-google.html">Some</a> of it is brilliant. <a href="http://tirania.org/blog/archive/2010/Aug-13.html">Some</a> is illuminating, <a href="http://fosspatents.blogspot.com/2010/08/oracle-vs-google-licensing-issues.html">some</a> less so. Since the complaint is devoid of any details as to how Android infringes upon the patents listed in the complaint, I will focus on the alleged copyright infringement. Here too Oracle is not specific but it is clear that the infringement is alleged at least in part on the basis of unlicensed use of specification(s) in which Oracle holds copyright(cf. Count VIII section 38 of the complaint) .</p>
+
+<p>For context Oracle in the complaint defines Android as:</p>
+
+<p>The Android operating-system software “stack” consists of Java applications running on a Java-based object-oriented application framework, and core libraries running on a “Dalvik” virtual machine (VM) that features just-in-time (JIT) compilation.</p>
+
+<p>One aspect that appears to confuse matters is what <a href="http://en.wikipedia.org/wiki/Dalvik_(software)">Dalvik</a> is. Dalvik is VM but <em>not</em> a Java VM. Dalvik executes .dex files which are created from .class files produced by a Java compiler. The .dex files are created by a tool called “dx”. As such Dalvik does not implement the Java Language Specification. The “dx” tool does however appear to implement part of the Java <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Virtual Machine Specification</a>, namely <a href="http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html">the part</a> that specifies the .class file format. As the “dx” tool does not comply with the conditions of SUN’s <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Copyright.doc.html">license grant</a> the question is then: Does Google need a copyright license from SUN to implement the “dx” tool?</p>
+
+<p>From a European perspective the recent SAS vs. World Programming(WPL) case sheds some very interesting light on this issue. The case a addresses the application of copyright to programming languages, interfaces and functionality. While the judge submits all of the questions to the ECJ for a preliminary ruling, he clearly thinks, on the strength English precedents(specifically the Navitaire <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2004/1725.html">case</a>) that neither programming languages, interfaces or functionality is protectable by copyright. If the ECJ concurs with the judges&nbsp;opinion it is hard to see why Google would need a license to implement the .class file format as part of their “dx” tool.</p>
+
+<p>Would the analysis under US copyright law be the same?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SAS vs World Programming - SAS' Vesion]]></title>
+    <link href="http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version/"/>
+    <updated>2010-07-29T12:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2010/07/29/sas-vs-world-programming-sas-version</id>
+    <content type="html"><![CDATA[<p>SAS issued a <a href="http://www.sas.com/news/preleases/WPL.html">press release</a> today with its take on the <a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html">recent decision</a> in the case between the two companies.</p>
+
+<p>While WPL’s <a href="http://teamwpc.co.uk/press/world_programming_secures_high_court_victory_against_SAS">press release</a> might have been s optimistic in its evaluation of the decision, SAS’ press release is a master piece of hypocrisy and highly tendentious. The headline:</p>
+
+<blockquote><p>“Court finds World Programming Ltd. Infringed on SAS Copyrights; refers case to European Court of Justice”</p></blockquote>
+
+<p>Technically this is wrong. The judge referred a number of key questions to the ECJ – not the case it self. More specifically the judge asked for a <a href="http://en.wikipedia.org/wiki/European_Court_of_Justice#References_for_a_preliminary_ruling">preliminary ruling</a> on 6 questions (<a href="http://www.bailii.org/ew/cases/EWHC/Ch/2010/1829.html#para332">para 332</a> i, ii, iii, v, vi and viii):</p>
+
+<blockquote><p>“i) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect programming languages from being copied, I agree with him that this is a question on which guidance from the ECJ is required (see paragraphs 211-218 above).</p>
+
+<p>ii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect interfaces from being copied where this can be achieved without decompiling the object code, I consider this is also a question on which guidance from the ECJ is required (see paragraphs 219-227 above).</p>
+
+<p>iii) Although I am not persuaded that Pumfrey J was wrong to conclude in <em>Navitaire</em> that, on the true interpretation of Article 1(2) of the Software Directive, copyright in computer programs does not protect the functions of the programs from being copied, and although his decision on that point was upheld by the Court of Appeal in <em>Nova</em>, I consider that this is also a question on which guidance from the ECJ is required (see paragraphs 228-238 above).</p>
+
+<p>…</p>
+
+<p>v) I consider that the reasoning which supports Pumfrey J’s interpretation of Article 1(2) of the Software Directive also applies to Article 2(a) of the Information Society Directive, but again this is a question on which guidance from the ECJ is required (see paragraphs 251-256 above).</p>
+
+<p>vi) On the assumption that Article 2(a) of the Information Society Directive is to be interpreted in the same manner as Article 1(2) of the Software Directive, WPL has not infringed SAS Institute’s copyright in the SAS Manuals by producing or testing WPS (see paragraphs 257-267 above).”</p></blockquote>
+
+<p>SAS completely neglects to mention that the judge is clearly prepared to find in favor of WPL in all these questions and cites English precedents in support of such a decision. He asks for the ECJs confirmation of his interpretation because the basis for the rules in English law is EU Directives (see here for the<a href="http://www.hmcourts-service.gov.uk/cms/801.htm"> practice directions </a>the court operates under).</p>
+
+<p>SAS goes on to state the following:</p>
+
+<blockquote><p>“The court also found that WPL acted outside the scope of its license agreement for SAS Learning Edition software by using that product to develop WPL’s World Programming System (WPS) software.”</p></blockquote>
+
+<p>What the judge actually said was this (my emphasis):</p>
+
+<blockquote><p>vii) WPL’s use of the SAS Learning Edition falls outside the scope of the terms of the relevant licences (see paragraphs 276-290 above).</p>
+
+<p>viii) The interpretation of Article 5(3) of the Software Directive is another question on which guidance from the ECJ is required (see paragraphs 291-311 and 314 above).</p>
+
+<p> <em>ix) On the interpretation of Article 5(3) which I favour, WPL’s use of the Learning Edition is within Article 5(3), and to the extent that the licence terms prevent this they are null and void, with the result that none of WPL’s acts complained of was a breach of contract or an infringement of copyright except perhaps one (see paragraphs 313-315 above).</em></p></blockquote>
+
+<p>Also on this issue SAS chooses not to disclose that the judge is prepared to find in favor of WPL.</p>
+
+<p>Accusing WPL of spinning the courts decision and then applying tornado class spin to the decision yourself is just pathetic.</p>
+]]></content>
+  </entry>
+  
+</feed>
