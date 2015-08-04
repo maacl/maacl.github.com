@@ -5,7 +5,6 @@ date: 2013-09-14 12:00
 comments: true
 external-url:
 categories: [contracts, law, drafting]
-alias: "#/posts/20130914000000.markdown/"
 ---
 <h4 id="/posts/20130914000000.markdown"></h4>
 
