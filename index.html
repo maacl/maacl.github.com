@@ -9,7 +9,7 @@
   <meta name="author" content="Martin Clausen">
 
   
-  <meta name="description" content="I am really looking forward to the goto cph conference this year. One of the talks on my personal iteneary is How to train your corporation to prefer &hellip;">
+  <meta name="description" content="As I wrote previuously I am going to the goto cph conference this year. One speaker that I am definitively will go see is Dave Thomas. Besides being &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/09/14/GUI+DSLs/">GUI DSLs</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-09-14T23:40:00+02:00" pubdate data-updated="true">Sep 14<span>th</span>, 2015</time>
+        
+           | <a href="/blog/2015/09/14/GUI+DSLs/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2015/09/14/GUI+DSLs/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As I wrote previuously I am going to the <a href="http://gotocon.com/cph-2015">goto cph conference</a> this year.</p>
+
+<p>One speaker that I am definitively will go see is <a href="http://gotocon.com/cph-2015/presentation/The%20State%20of%20Data%203">Dave Thomas</a>. Besides being consistently entertaining Dave Thomas also have enough experience that he can reach into the great work of Computer Science past and show how it remains relevant today.</p>
+
+<p>Dave&rsquo;s company has a product called <a href="http://www.bedarra.com/product_overview.html">Ivy</a>. It is a analytics product based on the programming language <a href="https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)">Q</a> &ndash; a decendant of <a href="https://en.wikipedia.org/wiki/APL_(programming_language)">APL</a>/<a href="https://en.wikipedia.org/wiki/K_(programming_language)">K</a> &ndash; and the <a href="http://kx.com/software.php">KDb+</a> database.</p>
+
+<p>Ivy&rsquo;s primary usecase appears to be financial analytics, and area I know little about, but I find its approach to user interface fascinating. It shows how you can precent a contemporary web based GUI using familiar metaphors and maintain the ability to drop down to code when you need to.</p>
+
+<p>Ivy has a very cool modern looking in-browser inteface with spreadsheet like overview of the massive volumes of data the system is designed to handle, a visual query builder and supoorts a wide range of visualizations. But it also has strong support for the Q language including a debugger.</p>
+
+<p>I hope to be able to chat with Dave about his thoughts on DSLs and GUIs during the conference and get his take on questions like &ldquo;When do you want both?&rdquo;, &ldquo;What kind of IDE do you need if you want to support non-programmers programming?&rdquo;, &ldquo;Are projectional editors the future of DSLs?&rdquo; etc. and report here on the conversation.</p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -653,79 +704,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/04/24/dropbox-unzip/">Dropbox Unzip</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-24T12:00:00+02:00" pubdate data-updated="true">Apr 24<span>th</span>, 2011</time>
-        
-           | <a href="/blog/2011/04/24/dropbox-unzip/#disqus_thread"
-             data-disqus-identifier="http://www.spyfoos.com/blog/2011/04/24/dropbox-unzip/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Inspirer by this <a href="http://wetzler.me/ios-unzipping/">post</a> where the author shows how to add automatic unzipping to a <a href="http://www.dropbox.com/">Dropbox</a> folder on OS X, I wanted to see if something similar was easily achievable on Ubuntu (10.10).</p>
-
-<p>After a bit of searching I found <a href="http://inotify.aiken.cz/?section=inotify&amp;page=about&amp;lang=en">incron</a>. Quoting from the website incron “is an “inotify cron” system. It consists of a daemon and a table manipulator. You can use it a similar way as the regular cron. The difference is that the inotify cron handles filesystem events rather than time periods.”</p>
-
-<p>To create a folder in your Dropbox that automatically unzips any zip file dropped into it first install incron. It is available in the Ubuntu Universe repository and can be installed using:</p>
-
-<pre><code>sudo apt-get install incron
-</code></pre>
-
-<p>After the package is installed you must add the username of all users who should be permitted to add jobs to incron to /etc/incron.allow like this(replace [username] with your username):</p>
-
-<pre><code>sudo echo “[username]” &gt;&gt; /etc/incron.allow
-</code></pre>
-
-<p>Next create the unzip folder in your Dropbox folder:</p>
-
-<pre><code>mkdir [path to your Dropbox folder]/unzip
-</code></pre>
-
-<p>Next we need to add the actual unzip job row to incron like this:</p>
-
-<pre><code>icrontab -e
-</code></pre>
-
-<p>This opens the user incron table in the deafult editor. Insert the following line, replacing [path to your Dropbox folder] with the absolute path (don’t use ~) to your Dropbox folder:</p>
-
-<pre><code>[path to your Dropbox folder]/unzip IN_CLOSE_WRITE unzip $@/$# -d $@
-</code></pre>
-
-<p>Check that the job row was added to your incron table:</p>
-
-<pre><code>incrontab -l
-</code></pre>
-
-<p>This should output the line you just added above. If this works try copying a zip file into the Dropbox/unzip folder. If everything works it should unzip automatically. This obviously only so long the machine you installed the incron job is online.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -741,6 +719,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/09/14/GUI+DSLs/">GUI DSLs</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/08/04/open-source-upsides/">Open Source Upsides</a>
       </li>
     
@@ -754,10 +736,6 @@
     
       <li class="post">
         <a href="/blog/2013/10/01/licensing-done-right/">Licensing Done Right!</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/09/30/hit-record/">Hit Record!</a>
       </li>
     
   </ul>
