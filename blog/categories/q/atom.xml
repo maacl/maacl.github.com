@@ -4,7 +4,7 @@
   <title><![CDATA[Category: q | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/q/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2015-09-14T23:48:30+02:00</updated>
+  <updated>2015-09-14T23:52:02+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[GUI DSLs]]></title>
-    <link href="http://www.spyfoos.com/blog/2015/09/14/GUI+DSLs/"/>
+    <link href="http://www.spyfoos.com/blog/2015/09/14/GUI-DSLs/"/>
     <updated>2015-09-14T23:40:00+02:00</updated>
-    <id>http://www.spyfoos.com/blog/2015/09/14/GUI DSLs</id>
+    <id>http://www.spyfoos.com/blog/2015/09/14/GUI-DSLs</id>
     <content type="html"><![CDATA[<p>As I wrote previuously I am going to the <a href="http://gotocon.com/cph-2015">goto cph conference</a> this year.</p>
 
 <p>One speaker that I am definitively will go see is <a href="http://gotocon.com/cph-2015/presentation/The%20State%20of%20Data%203">Dave Thomas</a>. Besides being consistently entertaining Dave Thomas also have enough experience that he can reach into the great work of Computer Science past and show how it remains relevant today.</p>
