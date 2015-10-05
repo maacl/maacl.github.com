@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gotocon | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/gotocon/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2015-09-18T10:57:53+02:00</updated>
+  <updated>2015-10-05T14:16:54+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[git]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/10/05/git/"/>
+    <updated>2015-10-05T00:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/10/05/git</id>
+    <content type="html"><![CDATA[<p>I just attended Edward Thomson&rsquo;s talk <a href="http://gotocon.com/cph-2015/presentation/Deep%20Dive%20into%20Git">&ldquo;Deep Dive into Git&rdquo;</a>.</p>
+
+<p>I find version control and especially git&rsquo;s approach to version control especially interesting because because it is such a good examples of a hacker power tool that would add tremendous value if applied to other trades, like contract drafting.</p>
+
+<p>Edward works on Microsoft&rsquo;s reimplementation of git <a href="https://libgit2.github.com/">libgit2</a>. Apparently the original git has certain issues when used as a library (especially in Visual Studio)</p>
+
+<p>git is essentially distributed and branching is cheap and easy, which Edward demonstrated convincingly. But the higlight of the talk for me was Edward&rsquo;s explanation of the dreaded &ldquo;rebase&rdquo; command. Edward succeeded where a others have failed misrably in explaning rebase in a way that actually makes sense &ndash; at least to me. Instead of merging rebase generates a set of diffs between the most recent ancestor of your present branch and the ancestor. Theses diffs are then applied to the branch your are rebasing to. When I realised <a href="https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg">this image</a> from the Atlassian git tutorial actually made sense to me.</p>
+
+<p>Related to git but not Edwards talk I recently discovered <a href="https://github.com/ryuslash/git-auto-commit-mode">git auto commit mode</a> for Emacs. I don&rsquo;t think this would work for code, but I plan to try it out for the prose writing I do in Emacs.</p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GUI DSLs]]></title>
