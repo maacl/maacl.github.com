@@ -9,7 +9,7 @@
   <meta name="author" content="Martin Clausen">
 
   
-  <meta name="description" content="I just attended Edward Thomson&rsquo;s talk &ldquo;Deep Dive into Git&rdquo;. I find version control and especially git&rsquo;s approach to version &hellip;">
+  <meta name="description" content="Prior to his gotocon CPH talk &ldquo;Fast Data –Tools and Peopleware&rdquo; I had a brief chat with Dave. I was interested in hearing what had &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,66 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2015/10/06/More-On-GUIs-And-DSLs/">More on GUIs and DSLs</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-10-06T00:00:00+02:00" pubdate data-updated="true">Oct 6<span>th</span>, 2015</time>
+        
+           | <a href="/blog/2015/10/06/More-On-GUIs-And-DSLs/#disqus_thread"
+             data-disqus-identifier="http://www.spyfoos.com/blog/2015/10/06/More-On-GUIs-And-DSLs/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Prior to his <a href="http://gotocon.com/cph-2015/">gotocon CPH</a> talk <a href="http://gotocon.com/cph-2015/presentation/Fast%20Data%20%E2%80%93Tools%20and%20Peopleware">&ldquo;Fast Data –Tools and Peopleware&rdquo;</a> I had a brief chat with Dave.</p>
+
+<p>I was interested in hearing what had informed the design of his <a href="http://www.bedarra.com/product_overview.html">Ivy</a> system, especially the combination of a rich HTML based GUI and a DSL edited in the browser.</p>
+
+<p>This post is a overview of what I consider the key take aways from the chat and some of my subsequent reflections.</p>
+
+<ul>
+<li><p>Combining well known metaphors like a spreadsheet and boosting learnability example based queries with a DSL has been a very useful approach.</p></li>
+<li><p>Supporting power users is a challenge but doable in a mordern web app.</p></li>
+</ul>
+
+
+<p>1) Firstly the app has to be designed to support that user type expects, like short cuts etc. Ivy is not just a editable field for code, but a complete IDE including debugger etc.</p>
+
+<p>2) Secondly if you include a DSL don&rsquo;t do it to boost your ego but because it provides actual leverage. Also don&rsquo;t forget that putting a DSL out there which power users are going to trly on require that you can support it. This means that you have the physical resoources available for the long run.</p>
+
+<ul>
+<li>Building a web app offers the possibility of offloading computationally demanding operations to the backend, for instance generation of SVG graphs.</li>
+</ul>
+
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2015/10/05/git/">Git</a></h1>
     
     
@@ -116,6 +176,8 @@
 <p>Edward works on Microsoft&rsquo;s reimplementation of git <a href="https://libgit2.github.com/">libgit2</a>. Apparently the original git has certain issues when used as a library (especially in Visual Studio)</p>
 
 <p>git is essentially distributed and branching is cheap and easy, which Edward demonstrated convincingly. But the higlight of the talk for me was Edward&rsquo;s explanation of the dreaded &ldquo;rebase&rdquo; command. Edward succeeded where a others have failed misrably in explaning rebase in a way that actually makes sense &ndash; at least to me. Instead of merging rebase generates a set of diffs between the most recent ancestor of your present branch and the ancestor. Theses diffs are then applied to the branch your are rebasing to. When I realised <a href="https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg">this image</a> from the Atlassian git tutorial actually made sense to me.</p>
+
+<p><img class="center" src="https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg" title="rebase" ></p>
 
 <p>Related to git but not Edwards talk I recently discovered <a href="https://github.com/ryuslash/git-auto-commit-mode">git auto commit mode</a> for Emacs. I don&rsquo;t think this would work for code, but I plan to try it out for the prose writing I do in Emacs.</p>
 
@@ -617,65 +679,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/">SAS vs. World Programming – Opinion of the Advocate General</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-29T12:00:00+01:00" pubdate data-updated="true">Nov 29<span>th</span>, 2011</time>
-        
-           | <a href="/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/#disqus_thread"
-             data-disqus-identifier="http://www.spyfoos.com/blog/2011/11/29/sas-vs-world-programming-opinion-of-the-advocate-general/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>So the Advocate General to the ECJ has submitted its <a href="http://curia.europa.eu/jurisp/cgi-bin/form.pl?lang=en&amp;amp;jurcdj=jurcdj&amp;amp;newform=newform&amp;amp;docj=docj&amp;amp;docop=docop&amp;amp;docnoj=docnoj&amp;amp;typeord=ALLTYP&amp;amp;numaff=&amp;amp;ddatefs=22&amp;amp;mdatefs=11&amp;amp;ydatefs=2011&amp;amp;ddatefe=29&amp;amp;mdatefe=11&amp;amp;ydatefe=2011&amp;amp;nomusuel=&amp;amp;domaine=&amp;amp;mots=&amp;amp;resmax=100&amp;amp;Submit=Rechercher">opinion</a> to the Court on the questions submitted by the High Court of Justice of England and Wales in the SAS vs World Programming case that i wrote about <a href="http://www.spyfoos.com/index.php/2010/07/23/sas-vs-world-programming/">here</a> and <a href="http://www.spyfoos.com/index.php/2010/07/29/sas-vs-world-programming-sas-version/">here</a>.</p>
-
-<p>The Advocate concludes the following:</p>
-
-<blockquote><p>(1)</p>
-
-<p>Article 1(2) of Council Directive 91/250/EEC of 14 May 1991 on the legal protection of computer programs is to be interpreted as meaning that the functionalities of a computer program and the programming language are not eligible, as such, for copyright protection. It will be for the national court to examine whether, in reproducing these functionalities in its computer program, the author of the program has reproduced a substantial part of the elements of the first program which are the expression of the author’s own intellectual creation.</p>
-
-<p>(2)</p>
-
-<p>Articles 1(2) and 6 of Directive 91/250 are to be interpreted as meaning that it is not regarded as an act subject to authorisation for a licensee to reproduce a code or to translate the form of the code of a data file format so as to be able to write, in his own computer program, a source code which reads and writes that file format, provided that that act is absolutely indispensable for the purposes of obtaining the information necessary to achieve interoperability between the elements of different programs. That act must not have the effect of enabling the licensee to recopy the code of the computer program in his own program, a question which will be for the national court to determine.</p>
-
-<p>(3)</p>
-
-<p>Article 5(3) of Directive 91/250, read in conjunction with Articles 4(a) and (b) and 5(1) thereof, is to be interpreted as meaning that the expression ‘any of the acts of loading, displaying, running, transmitting or storing the computer program [which the person having the right] is entitled to do’ relates to the acts for which that person has obtained authorisation from the rightholder and to the acts of loading and running necessary in order to use the computer program in accordance with its intended purpose. Acts of observing, studying or testing the functioning of a computer program which are performed in accordance with that provision must not have the effect of enabling the person having a right to use a copy of the program to access information which is protected by copyright, such as the source code or the object code.</p>
-
-<p>(4)</p>
-
-<p>Article 2(a) of Directive 2001/29/EC of the European Parliament and of the Council of 22 May 2001 on the harmonisation of certain aspects of copyright and related rights in the information society is to be interpreted as meaning that the reproduction, in a computer program or a user manual, of certain elements described in the manual for another computer program may constitute an infringement of the copyright in the latter manual if – a question which will be for the national court to determine – the elements reproduced in this way are the expression of their author’s own intellectual creation.</p></blockquote>
-
-<p>The opinion is pretty much a slam dunk for World Programming. The only hiccup is the issue related to the copying of parts of SAS’ manuals, but that is a minor issue compared to a situation where World Programming would have been restricted in their ability to produce a product compatible with SAS’ product. Now we just have to hope that the Court agrees with the Advocate General.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -691,6 +694,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/10/06/More-On-GUIs-And-DSLs/">More on GUIs and DSLs</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/10/05/git/">Git</a>
       </li>
     
@@ -704,10 +711,6 @@
     
       <li class="post">
         <a href="/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/">Om, Clojure/ClojureScript and Event Sourcing</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/15/Om-my-CSP/">Om My CSP</a>
       </li>
     
   </ul>

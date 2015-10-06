@@ -4,7 +4,7 @@
   <title><![CDATA[The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2015-10-05T14:16:54+02:00</updated>
+  <updated>2015-10-06T12:45:18+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[More on GUIs and DSLs]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/10/06/More-On-GUIs-And-DSLs/"/>
+    <updated>2015-10-06T00:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/10/06/More-On-GUIs-And-DSLs</id>
+    <content type="html"><![CDATA[<p>Prior to his <a href="http://gotocon.com/cph-2015/">gotocon CPH</a> talk <a href="http://gotocon.com/cph-2015/presentation/Fast%20Data%20%E2%80%93Tools%20and%20Peopleware">&ldquo;Fast Data –Tools and Peopleware&rdquo;</a> I had a brief chat with Dave.</p>
+
+<p>I was interested in hearing what had informed the design of his <a href="http://www.bedarra.com/product_overview.html">Ivy</a> system, especially the combination of a rich HTML based GUI and a DSL edited in the browser.</p>
+
+<p>This post is a overview of what I consider the key take aways from the chat and some of my subsequent reflections.</p>
+
+<ul>
+<li><p>Combining well known metaphors like a spreadsheet and boosting learnability example based queries with a DSL has been a very useful approach.</p></li>
+<li><p>Supporting power users is a challenge but doable in a mordern web app.</p></li>
+</ul>
+
+
+<p>1) Firstly the app has to be designed to support that user type expects, like short cuts etc. Ivy is not just a editable field for code, but a complete IDE including debugger etc.</p>
+
+<p>2) Secondly if you include a DSL don&rsquo;t do it to boost your ego but because it provides actual leverage. Also don&rsquo;t forget that putting a DSL out there which power users are going to trly on require that you can support it. This means that you have the physical resoources available for the long run.</p>
+
+<ul>
+<li>Building a web app offers the possibility of offloading computationally demanding operations to the backend, for instance generation of SVG graphs.</li>
+</ul>
+
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Git]]></title>
@@ -25,6 +55,8 @@
 <p>Edward works on Microsoft&rsquo;s reimplementation of git <a href="https://libgit2.github.com/">libgit2</a>. Apparently the original git has certain issues when used as a library (especially in Visual Studio)</p>
 
 <p>git is essentially distributed and branching is cheap and easy, which Edward demonstrated convincingly. But the higlight of the talk for me was Edward&rsquo;s explanation of the dreaded &ldquo;rebase&rdquo; command. Edward succeeded where a others have failed misrably in explaning rebase in a way that actually makes sense &ndash; at least to me. Instead of merging rebase generates a set of diffs between the most recent ancestor of your present branch and the ancestor. Theses diffs are then applied to the branch your are rebasing to. When I realised <a href="https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg">this image</a> from the Atlassian git tutorial actually made sense to me.</p>
+
+<p><img class="center" src="https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg" title="rebase" ></p>
 
 <p>Related to git but not Edwards talk I recently discovered <a href="https://github.com/ryuslash/git-auto-commit-mode">git auto commit mode</a> for Emacs. I don&rsquo;t think this would work for code, but I plan to try it out for the prose writing I do in Emacs.</p>
 
@@ -683,23 +715,6 @@ weakness as outlined above. Most of these can be fixed without exposing
 Balsamiq to any liability that is unmanageable.</p>
 
 <p>DISCLAIMER: Above is not legal advice bla, bla, bla.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Contracts and Game Mechanics]]></title>
-    <link href="http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics/"/>
-    <updated>2010-05-07T12:00:00+02:00</updated>
-    <id>http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics</id>
-    <content type="html"><![CDATA[<p>Game Mechanics (see<a href="http://en.wikipedia.org/wiki/Game_mechanics"> def</a>, great intro <a href="http://www.youtube.com/watch?v=ihUt-163gZI">video</a>)</p>
-
-<h2>How are contractual game mechanics different from liquidated damages / service credits?</h2>
-
-<p>Liquidated damages / service credits appear to me a subset of contractual game mechanics. Contractual game mechanics would also include non monetary and indirect monetary rewards. These could be classical rewards like points, badges etc. but could also include rights of potential monetary value. Intuitively I don&rsquo;t think the classical rewards would have much effect in a contractual setting as they depend on individual psychological mechanisms which would be subdued by the goals of the commercial entity that is party to the contract. If the latter category more interesting especially if applied across contracts  with competing vendors.</p>
-
-<h2>Can contractual game mechanics be applied across contracts?</h2>
-
-<p>Imagine three vendors of for example systems operations services. The customer has near identical contracts with the three vendors (there are ways to deal any differences, which I will get back to below), including the service catalog. Now imagine that the contracts have built-in game mechanics that rewards/punishes the vendors performance under the contract. High up time gives you points &ndash; low the opposite. Timely reporting 3 months in a row gives you a badge etc. etc. Estimates of time and material tasks within 5% of of actual usage gives you a golden star. The customer now tenders the operations and implementation of a new system among the different vendors. This being 2010 (or later) this is obviously done using an e-auction. But here is the trick &ndash; the three vendors are handicapped in the auction in accordance with the historic points, badges and golden stars. This handicap could be applied on top of a base handicap reflecting any permanent differences between the vendor contracts. Ideally the handicaps are transparent across vendors so there is a continuous incentive to offer better terms and improve performance.</p>
 ]]></content>
   </entry>
   

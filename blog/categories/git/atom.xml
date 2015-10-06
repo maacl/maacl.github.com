@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
-  <updated>2015-10-05T14:16:54+02:00</updated>
+  <updated>2015-10-06T12:45:18+02:00</updated>
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -25,6 +25,8 @@
 <p>Edward works on Microsoft&rsquo;s reimplementation of git <a href="https://libgit2.github.com/">libgit2</a>. Apparently the original git has certain issues when used as a library (especially in Visual Studio)</p>
 
 <p>git is essentially distributed and branching is cheap and easy, which Edward demonstrated convincingly. But the higlight of the talk for me was Edward&rsquo;s explanation of the dreaded &ldquo;rebase&rdquo; command. Edward succeeded where a others have failed misrably in explaning rebase in a way that actually makes sense &ndash; at least to me. Instead of merging rebase generates a set of diffs between the most recent ancestor of your present branch and the ancestor. Theses diffs are then applied to the branch your are rebasing to. When I realised <a href="https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg">this image</a> from the Atlassian git tutorial actually made sense to me.</p>
+
+<p><img class="center <a" src="href="https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg">https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg</a>" title="rebase" ></p>
 
 <p>Related to git but not Edwards talk I recently discovered <a href="https://github.com/ryuslash/git-auto-commit-mode">git auto commit mode</a> for Emacs. I don&rsquo;t think this would work for code, but I plan to try it out for the prose writing I do in Emacs.</p>
 
