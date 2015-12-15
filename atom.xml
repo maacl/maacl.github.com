@@ -4,7 +4,11 @@
   <title><![CDATA[The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
+<<<<<<< HEAD
   <updated>2014-09-09T22:20:09+02:00</updated>
+=======
+  <updated>2015-10-06T12:45:18+02:00</updated>
+>>>>>>> master
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -14,6 +18,100 @@
 
   
   <entry>
+<<<<<<< HEAD
+=======
+    <title type="html"><![CDATA[More on GUIs and DSLs]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/10/06/More-On-GUIs-And-DSLs/"/>
+    <updated>2015-10-06T00:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/10/06/More-On-GUIs-And-DSLs</id>
+    <content type="html"><![CDATA[<p>Prior to his <a href="http://gotocon.com/cph-2015/">gotocon CPH</a> talk <a href="http://gotocon.com/cph-2015/presentation/Fast%20Data%20%E2%80%93Tools%20and%20Peopleware">&ldquo;Fast Data –Tools and Peopleware&rdquo;</a> I had a brief chat with Dave.</p>
+
+<p>I was interested in hearing what had informed the design of his <a href="http://www.bedarra.com/product_overview.html">Ivy</a> system, especially the combination of a rich HTML based GUI and a DSL edited in the browser.</p>
+
+<p>This post is a overview of what I consider the key take aways from the chat and some of my subsequent reflections.</p>
+
+<ul>
+<li><p>Combining well known metaphors like a spreadsheet and boosting learnability example based queries with a DSL has been a very useful approach.</p></li>
+<li><p>Supporting power users is a challenge but doable in a mordern web app.</p></li>
+</ul>
+
+
+<p>1) Firstly the app has to be designed to support that user type expects, like short cuts etc. Ivy is not just a editable field for code, but a complete IDE including debugger etc.</p>
+
+<p>2) Secondly if you include a DSL don&rsquo;t do it to boost your ego but because it provides actual leverage. Also don&rsquo;t forget that putting a DSL out there which power users are going to trly on require that you can support it. This means that you have the physical resoources available for the long run.</p>
+
+<ul>
+<li>Building a web app offers the possibility of offloading computationally demanding operations to the backend, for instance generation of SVG graphs.</li>
+</ul>
+
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Git]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/10/05/git/"/>
+    <updated>2015-10-05T00:00:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/10/05/git</id>
+    <content type="html"><![CDATA[<p>I just attended Edward Thomson&rsquo;s talk <a href="http://gotocon.com/cph-2015/presentation/Deep%20Dive%20into%20Git">&ldquo;Deep Dive into Git&rdquo;</a>.</p>
+
+<p>I find version control and especially git&rsquo;s approach to version control especially interesting because because it is such a good examples of a hacker power tool that would add tremendous value if applied to other trades, like contract drafting.</p>
+
+<p>Edward works on Microsoft&rsquo;s reimplementation of git <a href="https://libgit2.github.com/">libgit2</a>. Apparently the original git has certain issues when used as a library (especially in Visual Studio)</p>
+
+<p>git is essentially distributed and branching is cheap and easy, which Edward demonstrated convincingly. But the higlight of the talk for me was Edward&rsquo;s explanation of the dreaded &ldquo;rebase&rdquo; command. Edward succeeded where a others have failed misrably in explaning rebase in a way that actually makes sense &ndash; at least to me. Instead of merging rebase generates a set of diffs between the most recent ancestor of your present branch and the ancestor. Theses diffs are then applied to the branch your are rebasing to. When I realised <a href="https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg">this image</a> from the Atlassian git tutorial actually made sense to me.</p>
+
+<p><img class="center" src="https://www.atlassian.com/git/images/tutorials/getting-started/rewriting-history/02.svg" title="rebase" ></p>
+
+<p>Related to git but not Edwards talk I recently discovered <a href="https://github.com/ryuslash/git-auto-commit-mode">git auto commit mode</a> for Emacs. I don&rsquo;t think this would work for code, but I plan to try it out for the prose writing I do in Emacs.</p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GUI DSLs]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/09/14/GUI-DSLs/"/>
+    <updated>2015-09-14T23:40:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/09/14/GUI-DSLs</id>
+    <content type="html"><![CDATA[<p>As I wrote previuously I am going to the <a href="http://gotocon.com/cph-2015">goto cph conference</a> this year.</p>
+
+<p>One speaker that I am definitively will go see is <a href="http://gotocon.com/cph-2015/presentation/The%20State%20of%20Data%203">Dave Thomas</a>. Besides being consistently entertaining Dave Thomas also has the experience required to reach into the great work of Computer Science past and show how it remains relevant the practical business challenges of today.</p>
+
+<p>Dave&rsquo;s company has a product called <a href="http://www.bedarra.com/product_overview.html">Ivy</a>. It is a analytics product based on the programming language <a href="https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)">Q</a> &ndash; a decendant of <a href="https://en.wikipedia.org/wiki/APL_(programming_language)">APL</a>/<a href="https://en.wikipedia.org/wiki/K_(programming_language)">K</a> &ndash; and the <a href="http://kx.com/software.php">KDb+</a> database.</p>
+
+<p>Ivy&rsquo;s primary usecase appears to be financial analytics, an area I know little about, but I find its approach to user interface fascinating. It shows how you can precent a contemporary web based GUI using familiar metaphors and maintain the ability to drop down to code when you need to.</p>
+
+<p>Ivy has a very cool modern looking in-browser inteface with spreadsheet like overview of the massive volumes of data the system is designed to handle, a visual query builder and supports a wide range of visualizations. But it also has strong support for the Q language, including a debugger.</p>
+
+<p>I hope to be able to chat with Dave about his thoughts on DSLs and GUIs during the conference and get his take on questions like &ldquo;When do you want both?&rdquo;, &ldquo;What kind of IDE do you need if you want to support non-programmers programming?&rdquo;, &ldquo;Are projectional editors the future of DSLs?&rdquo; etc. and report here on the conversation.</p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Open Source Upsides]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/08/04/open-source-upsides/"/>
+    <updated>2015-08-04T10:00:03+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/08/04/open-source-upsides</id>
+    <content type="html"><![CDATA[<p>I am really looking forward to the <a href="http://gotocon.com/cph-2015">goto cph conference</a> this year.</p>
+
+<p>One of the talks on my personal iteneary is <a href="http://gotocon.com/cph-2015/presentation/How%20to%20train%20your%20corporation%20to%20prefer%20open%20source">How to train your corporation to prefer open source</a> by Richard Lander from the Microsoft core.net team.</p>
+
+<p>Microsoft is undergoing profound changes at the moment expecially in its approach to open source. One of the more prominent examples of this is the open sourcing of the <a href="https://github.com/Microsoft/dotnet">.NET stack</a> which I am sure Richard will be mentioning in his talk.</p>
+
+<p>The irony of course is that Microsoft still inflicts the pain of closed source on its customers on a monumental scale &ndash; and as closed licensors go Microsoft unfortunately is at the bad end of the spectrum and showing no signs of becoming even more rigid with time. My last encounter with Microsoft&rsquo;s licensing machine was less than a year ago, and for the umpteenth time numerous very reasonable requests for changes and clarifications to the license terms were summarily dismissed. It would be great to see a fresh approach to software licensing from Microsoft similar to how IBM has &ndash; although imperfectly &ndash; reinvented its <a href="http://www-05.ibm.com/support/operations/us/en/documents.html">terms and conditions</a>.</p>
+
+<p>There are of course many reasons to prefer open source to the extent possible. A prominent one is that you avoid the pain of license audits by vendors who missed their last quarter or who wants to strong arm you into using their latest solution that they haven&rsquo;t been able to sell to customers voluntarily, better known as the <a href="http://fortune.com/2015/07/10/oracle-sales-cloud-hard/">Oracle approach</a></p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+>>>>>>> master
     <title type="html"><![CDATA[Om, Clojure/ClojureScript and Event Sourcing]]></title>
     <link href="http://www.spyfoos.com/blog/2014/09/09/Om-ClojureScript-and-Event-Sourcing/"/>
     <updated>2014-09-09T22:00:00+02:00</updated>
@@ -627,6 +725,7 @@ Balsamiq to any liability that is unmanageable.</p>
 ]]></content>
   </entry>
   
+<<<<<<< HEAD
   <entry>
     <title type="html"><![CDATA[Contracts and Game Mechanics]]></title>
     <link href="http://www.spyfoos.com/blog/2010/05/07/contracts-and-game-mechanics/"/>
@@ -659,4 +758,6 @@ Balsamiq to any liability that is unmanageable.</p>
 ]]></content>
   </entry>
   
+=======
+>>>>>>> master
 </feed>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: k | The Limiting Factor]]></title>
+  <link href="http://www.spyfoos.com/blog/categories/k/atom.xml" rel="self"/>
+  <link href="http://www.spyfoos.com/"/>
+  <updated>2015-10-06T12:45:18+02:00</updated>
+  <id>http://www.spyfoos.com/</id>
+  <author>
+    <name><![CDATA[Martin Clausen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[GUI DSLs]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/09/14/GUI-DSLs/"/>
+    <updated>2015-09-14T23:40:00+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/09/14/GUI-DSLs</id>
+    <content type="html"><![CDATA[<p>As I wrote previuously I am going to the <a href="http://gotocon.com/cph-2015">goto cph conference</a> this year.</p>
+
+<p>One speaker that I am definitively will go see is <a href="http://gotocon.com/cph-2015/presentation/The%20State%20of%20Data%203">Dave Thomas</a>. Besides being consistently entertaining Dave Thomas also has the experience required to reach into the great work of Computer Science past and show how it remains relevant the practical business challenges of today.</p>
+
+<p>Dave&rsquo;s company has a product called <a href="http://www.bedarra.com/product_overview.html">Ivy</a>. It is a analytics product based on the programming language <a href="https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)">Q</a> &ndash; a decendant of <a href="https://en.wikipedia.org/wiki/APL_(programming_language)">APL</a>/<a href="https://en.wikipedia.org/wiki/K_(programming_language)">K</a> &ndash; and the <a href="http://kx.com/software.php">KDb+</a> database.</p>
+
+<p>Ivy&rsquo;s primary usecase appears to be financial analytics, an area I know little about, but I find its approach to user interface fascinating. It shows how you can precent a contemporary web based GUI using familiar metaphors and maintain the ability to drop down to code when you need to.</p>
+
+<p>Ivy has a very cool modern looking in-browser inteface with spreadsheet like overview of the massive volumes of data the system is designed to handle, a visual query builder and supports a wide range of visualizations. But it also has strong support for the Q language, including a debugger.</p>
+
+<p>I hope to be able to chat with Dave about his thoughts on DSLs and GUIs during the conference and get his take on questions like &ldquo;When do you want both?&rdquo;, &ldquo;What kind of IDE do you need if you want to support non-programmers programming?&rdquo;, &ldquo;Are projectional editors the future of DSLs?&rdquo; etc. and report here on the conversation.</p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+</feed>

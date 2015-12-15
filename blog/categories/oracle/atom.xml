@@ -4,7 +4,11 @@
   <title><![CDATA[Category: oracle | The Limiting Factor]]></title>
   <link href="http://www.spyfoos.com/blog/categories/oracle/atom.xml" rel="self"/>
   <link href="http://www.spyfoos.com/"/>
+<<<<<<< HEAD
   <updated>2014-09-09T22:20:09+02:00</updated>
+=======
+  <updated>2015-10-06T12:45:18+02:00</updated>
+>>>>>>> master
   <id>http://www.spyfoos.com/</id>
   <author>
     <name><![CDATA[Martin Clausen]]></name>
@@ -14,6 +18,28 @@
 
   
   <entry>
+<<<<<<< HEAD
+=======
+    <title type="html"><![CDATA[Open Source Upsides]]></title>
+    <link href="http://www.spyfoos.com/blog/2015/08/04/open-source-upsides/"/>
+    <updated>2015-08-04T10:00:03+02:00</updated>
+    <id>http://www.spyfoos.com/blog/2015/08/04/open-source-upsides</id>
+    <content type="html"><![CDATA[<p>I am really looking forward to the <a href="http://gotocon.com/cph-2015">goto cph conference</a> this year.</p>
+
+<p>One of the talks on my personal iteneary is <a href="http://gotocon.com/cph-2015/presentation/How%20to%20train%20your%20corporation%20to%20prefer%20open%20source">How to train your corporation to prefer open source</a> by Richard Lander from the Microsoft core.net team.</p>
+
+<p>Microsoft is undergoing profound changes at the moment expecially in its approach to open source. One of the more prominent examples of this is the open sourcing of the <a href="https://github.com/Microsoft/dotnet">.NET stack</a> which I am sure Richard will be mentioning in his talk.</p>
+
+<p>The irony of course is that Microsoft still inflicts the pain of closed source on its customers on a monumental scale &ndash; and as closed licensors go Microsoft unfortunately is at the bad end of the spectrum and showing no signs of becoming even more rigid with time. My last encounter with Microsoft&rsquo;s licensing machine was less than a year ago, and for the umpteenth time numerous very reasonable requests for changes and clarifications to the license terms were summarily dismissed. It would be great to see a fresh approach to software licensing from Microsoft similar to how IBM has &ndash; although imperfectly &ndash; reinvented its <a href="http://www-05.ibm.com/support/operations/us/en/documents.html">terms and conditions</a>.</p>
+
+<p>There are of course many reasons to prefer open source to the extent possible. A prominent one is that you avoid the pain of license audits by vendors who missed their last quarter or who wants to strong arm you into using their latest solution that they haven&rsquo;t been able to sell to customers voluntarily, better known as the <a href="http://fortune.com/2015/07/10/oracle-sales-cloud-hard/">Oracle approach</a></p>
+
+<p>Full Disclosure:  I am receiving a free GOTO ticket from the producers in exchange for blogging about the conference.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+>>>>>>> master
     <title type="html"><![CDATA[Oracle Java 7 and 'Commercial Features']]></title>
     <link href="http://www.spyfoos.com/blog/2011/07/28/oracle-java-7-and-commercial-features/"/>
     <updated>2011-07-28T12:00:00+02:00</updated>
