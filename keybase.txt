@@ -4,66 +4,49 @@ https://keybase.io/maacl
 
 I hereby claim:
 
-  * I am an admin of http://www.spyfoos.com
+  * I am an admin of https://www.spyfoos.com
   * I am maacl (https://keybase.io/maacl) on keybase.
-  * I have a public key with fingerprint C27A 624F B588 C9E5 A87C  64EA 8964 3DFB CE73 B95E
+  * I have a public key ASC79fwSaSxnQRNbix8wRHSYLMG09Opk9NtKCc9DIMf0gAo
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "fingerprint": "c27a624fb588c9e5a87c64ea89643dfbce73b95e",
-            "host": "keybase.io",
-            "key_id": "89643dfbce73b95e",
-            "kid": "0101b7eac58542ba481d364cf372c0911358b8a6facf35e11a42e11b2288f9909d130a",
-            "uid": "c848dbef929c83cb906b750ee81ebe19",
-            "username": "maacl"
-        },
-        "service": {
-            "hostname": "www.spyfoos.com",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "0101b7eac58542ba481d364cf372c0911358b8a6facf35e11a42e11b2288f9909d130a",
+      "host": "keybase.io",
+      "kid": "0120bbf5fc12692c6741135b8b1f304474982cc1b4f4ea64f4db4a09cf4320c7f4800a",
+      "uid": "c848dbef929c83cb906b750ee81ebe19",
+      "username": "maacl"
     },
-    "ctime": 1441371320,
-    "expire_in": 157680000,
-    "prev": "e94d84df2f8281f42b16a87857ee7eee4cf3203b92514220f96aa506d3222aa7",
-    "seqno": 4,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1573827379,
+      "hash": "1789ed31c915df2cae16d08fc1c8f7662e9951f8c63331eab5577d1caf8f5221a198fe5e0e5d5b0fd1283c039b35b8214a5a918bfb753859e27f59f24b4ef1e2",
+      "hash_meta": "4789d1cd16f567ef0262f2c6ab307fac54783d57fb180fb9ff6995a8cfcf2b73",
+      "seqno": 9655852
+    },
+    "service": {
+      "entropy": "+Kk0ffuwm06GgoiLkjw257fx",
+      "hostname": "www.spyfoos.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.7.1"
+  },
+  "ctime": 1573827390,
+  "expire_in": 504576000,
+  "prev": "daecb68d550dd949bedbc31884c8fc93504cc018a805aaf27b2c6598da8a73d2",
+  "seqno": 25,
+  "tag": "signature"
 }
 
 which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.43
-Comment: https://keybase.io/crypto
-
-yMM2AnicbVJ7UFRVHN5FF3GVoHXMTKfkIgnOut73Y1NcLBDZZmIKDR0ecx/n4uWx
-d90XEIjjLDmJGJqLSDVLDyVyiiKd4eE4E2BgkjKpFUYDBQ1ChI8YRiLAzmXsv86c
-OWfO7/d93zm/7/wuhy/SGfVHpK3/XHe3Zul72m1e3a6xQEsJIqhSMWItQfLAwiYr
-jhzgcroUhwexIiLO8DROygLFsiIHKJ5lRJoEPMvRJCHJgggYQuAogJiRfapbY0AZ
-gXcDi6LCGDxkKxKM/g8+byGBYigmMIAXKZYicYEnWUwiaFKUCQYXUQ7DCIoVWJ6W
-eRiiAIbxJA5XAcdZVuY4lJMwAuWhnHdBTmRJVhKAzOGcyBKiwKG0wFAoACwGBIBx
-GtANXA6+AEB0Ac+L+cgBMwJDPkUEWv1aGY/ThYWFFrezWFZVt0VUCyDX6VI9qqjm
-w+Q+j8dp1bieYucCGAjZj2WyBcUhQRshwQdcbkV1IFYMIkWPouliJIkRDEbgqBkB
-RU7FBbIVDUExNIvCoV0DfFAScKTEkpKMyyzOYjK0B6PhB7AUAwCcQHMJR6GfOIWR
-OI7KHM3zFEpLBI7jPM8gWmH7HSpiJeEz+Rwo6VZyHLzH6wLIgY72jMU6vVEXagjR
-GkFnXBr5X3tkZkXqPvx7TRO4kxtGbDI1bm34YtoQ2Xg8+NxMjG30fD+XtFN+eWT3
-zCc6xd92IrVq19fLzx6byevYHzvszV9yJ+p0hiWxLCnr0Uj6ljfHEsXB81FNr097
-6osOEg8SZotbG5IizkYfi0v5yFVWZ+pfO9vydJez00MfR7cTyiF0OGFwUfzUEdsv
-c74zLy5+Yv60XVmxEvk8+ucSXn/Zvt4+HXLqeYt6cfPdveKE7pkGtLrm9nTsH1HN
-teZLxrBz92T9/TiZTBmJD9S/HTt4e31KaG5tfuj3NzKfDP7OTfxm79p2+Nc25/xM
-wFQ7XDHUF1H1U+My++Qh51RiS2d0Q+9c9w9P1aeW+y/eYEf+WhPXE+zTGwam+hvQ
-PdF1pxKbSXvf0MrebqS0/37GoG2+4tVttctJ44pVTstd/2x1WEJ/U25VaRr1bne4
-EI4Hl5nDDid/+8HEVxvf8H8MhJsVNRV/DojU0U2m9OTOoYQN51ZvfiurtGbum8+i
-NpbVvJ/x5ac79Lvvzb20zlF4snzJpciryNWH/q7C+FSuwJHwjk2H1dmv7/HvPRo7
-3BtY+17y5GTOtUoqLa0yZvwV4Uop5Y54GFL02sEtwXLsx4HYUSuT9cItU+aFVc3j
-7RknrqiVoaO3DPPGMdpw4cEO73e2jkqDL6ZnLH380Ya2aS69tbrjWqD72XVS6tLV
-Z/pu/gsv5KVu
-=q8xO
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgu/X8EmksZ0ETW4sfMER0mCzBtPTqZPTbSgnPQyDH9IAKp3BheWxvYWTESpcCGcQg2uy2jVUN2Um+28MYhMj8k1BMwBioBaryeyxlmNqKc9LEIO9kd1Qo5XbqgsNARFV1Pr2IeRVcGX4rQc+2JneQaj1MAgHCo3NpZ8RAmHyCfm1+N6wLlyZxUO7Jg1ePWLC5FcdBVCWxCGItRXnjptNL7zAm0624zSAZpXBvB4VIGQH9MldxCIqjRIucDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIF5VL8vrBFtuvmEBZH+x22z82uuwMz4oaQSeKyipMWq+o3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
